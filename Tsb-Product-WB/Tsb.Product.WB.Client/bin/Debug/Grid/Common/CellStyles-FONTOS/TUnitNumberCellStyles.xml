@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<TUnitNumberCellStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/TUnitNumberCellStyles.xsd">
+  <CellStyles>
+    <TUnitNumberCellStyle>
+      <CellStyleID>Unit Number</CellStyleID>
+      <DecimalPlace>0</DecimalPlace>
+      <Separator>Y</Separator>
+      <MaxValue>100</MaxValue>
+      <MinValue>0</MinValue>
+      <StringTrim>N</StringTrim>
+      <NegativeRed>N</NegativeRed>
+      <SpinButton>N</SpinButton>
+      <UnitSymbol>$</UnitSymbol>
+    </TUnitNumberCellStyle>
+  </CellStyles>
+</TUnitNumberCellStyles>

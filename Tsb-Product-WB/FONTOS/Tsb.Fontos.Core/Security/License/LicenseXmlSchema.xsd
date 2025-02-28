@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="LicenseXmlSchema"
+    targetNamespace="http://www.tsb.co.kr/xsd/LicenseXmlSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://www.tsb.co.kr/xsd/LicenseXmlSchema.xsd"
+    xmlns:mstns="http://http://www.tsb.co.kr/xsd/LicenseXmlSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      License XML Schema for TSB Product
+      Copyright (C) 2005-2010 TOTAL SOFT BANK LIMITED. All Rights
+    </xs:documentation>
+  </xs:annotation>
+
+  <xs:element name="TSB-Licenses" type="TSB-LicensesType"/>
+
+  <xs:complexType name="TSB-LicensesType">
+    <xs:sequence>
+      <xs:element name="Publisher"    type="xs:string"/>
+      <xs:element name="PublishDate"  type="xs:string"/>
+      <xs:element name="KeyMaker"     type="xs:string"/>
+      <xs:element name="License"      minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="ProductName" type="xs:string"/>
+          <xs:attribute name="ProductID"   type="xs:string"/>
+          <xs:attribute name="ModuleName"  type="xs:string"/>
+          <xs:attribute name="ModuleID"    type="xs:string"/>
+          <xs:attribute name="Licensee"    type="xs:string"/>
+          <xs:attribute name="Expiration"  type="xs:string"/>
+          <xs:attribute name="CPUs"        type="xs:string"/>
+          <xs:attribute name="IP"          type="xs:string"/>
+          <xs:attribute name="Unit"        type="xs:string"/>
+          <xs:attribute name="DevLang"     type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

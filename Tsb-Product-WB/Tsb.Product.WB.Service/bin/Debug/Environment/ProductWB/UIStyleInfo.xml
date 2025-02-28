@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="COMMON_GENERAL">
+    <setting name ="GNRL_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="GNRL_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="GNRL_FONT_STYLE_DEFAULT">Regular</setting>
+    
+    <setting name ="GNRL_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="GNRL_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="GNRL_FONT_STYLE_MANDATORY">Bold</setting>
+    
+    <setting name ="GNRL_FONT_GRAPHICS_UNIT">Point</setting>
+
+    <setting name ="GNRL_BACKCOLOR_READ_INPUT">255, 255, 255</setting>
+    <setting name ="GNRL_BACKCOLOR_DIRECT_INPUT">192, 255, 255</setting>
+    <setting name ="GNRL_BACKCOLOR_LIST_INPUT"  >192, 255, 192</setting>
+  </section>
+  <section name ="COMMON_LABEL">
+    <!-- Optional START-->
+    <!--<setting name ="LABEL_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="LABEL_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="LABEL_FONT_STYLE_DEFAULT">Regular</setting>-->
+    <!--<setting name ="LABEL_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="LABEL_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="LABEL_FONT_STYLE_MANDATORY">Bold</setting>-->
+    <!-- Optional END-->
+  </section>
+  <section name ="COMMON_BUTTON">
+    <!-- Optional START-->
+    <!--<setting name ="BUTTON_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="BUTTON_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="BUTTON_FONT_STYLE_DEFAULT">Regular</setting>-->
+     <!--<setting name ="BUTTON_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="BUTTON_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="BUTTON_FONT_STYLE_MANDATORY">Bold</setting>-->
+    <!-- Optional END-->
+    <setting name ="BUTTON_GAPSIZE_BUTTONS">4</setting>
+    <setting name ="BUTTON_GAPSIZE_GRIDROW_BUTTONS">2</setting>
+  </section>
+  <section name ="COMMON_COMBO">
+    <!-- Optional START-->
+    <!--<setting name ="COMBO_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="COMBO_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="COMBO_FONT_STYLE_DEFAULT">Regular</setting>-->
+    <!--<setting name ="COMBO_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="COMBO_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="COMBO_FONT_STYLE_MANDATORY">Bold</setting>-->
+    <!--<setting name ="COMBO_BACKCOLOR_READ_INPUT">255, 255, 255</setting>
+    <setting name ="COMBO_BACKCOLOR_DIRECT_INPUT">192, 255, 255</setting>
+    <setting name ="COMBO_BACKCOLOR_LIST_INPUT"  >192, 255, 192</setting>-->
+    <!-- Optional END-->
+  </section>
+  <section name ="COMMON_TEXTBOX">
+    <!-- Optional START-->
+    <!--<setting name ="TEXTBOX_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="TEXTBOX_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="TEXTBOX_FONT_STYLE_DEFAULT">Regular</setting>-->
+    <!--<setting name ="TEXTBOX_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="TEXTBOX_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="TEXTBOX_FONT_STYLE_MANDATORY">Bold</setting>-->
+    <!--<setting name ="TEXTBOX_BACKCOLOR_READ_INPUT">255, 255, 255</setting>
+    <setting name ="TEXTBOX_BACKCOLOR_DIRECT_INPUT">192, 255, 255</setting>
+    <setting name ="TEXTBOX_BACKCOLOR_LIST_INPUT"  >192, 255, 192</setting>-->
+    <!-- Optional END-->
+  </section>
+  <section name ="COMMON_VALUE_CONTROL">
+    <!-- Optional START-->
+    <!--<setting name ="VALUE_CONTROL_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="VALUE_CONTROL_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="VALUE_CONTROL_FONT_STYLE_DEFAULT">Regular</setting>-->
+    <!--<setting name ="VALUE_CONTROL_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="VALUE_CONTROL_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="VALUE_CONTROL_FONT_STYLE_MANDATORY">Bold</setting>-->
+    <!--<setting name ="VALUE_CONTROL_BACKCOLOR_READ_INPUT">255, 255, 255</setting>
+    <setting name ="VALUE_CONTROL_BACKCOLOR_DIRECT_INPUT">192, 255, 255</setting>
+    <setting name ="VALUE_CONTROL_BACKCOLOR_LIST_INPUT"  >192, 255, 192</setting>-->
+    <!-- Optional END-->
+  </section>
+  <section name ="COMMON_GRID">
+    <setting name ="GRID_COL_HEADER_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="GRID_COL_HEADER_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="GRID_COL_HEADER_FONT_STYLE_DEFAULT">Regular</setting>
+    <setting name ="GRID_COL_HEADER_FONT_NAME_MANDATORY">Tahoma</setting>
+    <setting name ="GRID_COL_HEADER_FONT_SIZE_MANDATORY">9</setting>
+    <setting name ="GRID_COL_HEADER_FONT_STYLE_MANDATORY">Bold</setting>
+    <setting name ="GRID_COL_HEADER_FONT_NAME_FILTERED" >Tahoma</setting>
+    <setting name ="GRID_COL_HEADER_FONT_SIZE_FILTERED" >9</setting>
+    <setting name ="GRID_COL_HEADER_FONT_STYLE_FILTERED">Bold,Italic,Underline</setting>
+    <setting name ="GRID_COL_HEADER_HEIGHT">30</setting>
+    <setting name ="GRID_COL_BACKCOLOR_HEADER">228, 236, 247</setting>
+    <setting name ="GRID_COL_FORECOLOR_HEADER">0,0,0</setting>
+    <setting name ="GRID_ROW_HEADER_HEIGHT">20</setting>
+    <setting name ="GRID_ROW_BACKCOLOR_HEADER">228, 236, 247</setting>
+    <setting name ="GRID_ROW_FORECOLOR_HEADER">0,0,0</setting>
+    <setting name ="GRID_CEL_FONT_NAME_DEFAULT">Tahoma</setting>
+    <setting name ="GRID_CEL_FONT_SIZE_DEFAULT">9</setting>
+    <setting name ="GRID_CEL_FONT_STYLE_DEFAULT">Regular</setting>
+    <setting name ="GRID_CEL_PADDING_ALL">5</setting>
+    <setting name ="GRID_CEL_MARGIN_ALL" >5</setting>
+    <setting name ="GRID_CEL_FORECOLOR_DEFAULT">0, 0, 0</setting>
+    <setting name ="GRID_CEL_BACKCOLOR_SELECTION">175, 215, 255</setting>
+    <setting name ="GRID_CEL_BACKCOLOR_READ_INPUT" >255, 255, 255</setting>
+    <setting name ="GRID_CEL_BACKCOLOR_DIRECT_INPUT" >192, 255, 255</setting>
+    <setting name ="GRID_CEL_BACKCOLOR_LIST_INPUT" >192, 255, 192</setting>
+    <setting name ="GRID_DOCK_STYLE_DEFAULT" >Fill</setting>
+  </section>
+  <section name ="BIZ_FONT">
+  </section>
+  <section name ="BIZ_COLOR">
+  </section>
+  <section name ="BIZ_HIGHT">
+  </section>
+  <section name ="BIZ_WIDTH">
+  </section>
+  <section name ="BIZ_PADDING">
+  </section>
+  <section name ="BIZ_MARGIN">
+  </section>
+  <section name ="BIZ_ENABLE">
+  </section>
+  <section name ="BIZ_VISIBLE">
+  </section>
+</configuration>

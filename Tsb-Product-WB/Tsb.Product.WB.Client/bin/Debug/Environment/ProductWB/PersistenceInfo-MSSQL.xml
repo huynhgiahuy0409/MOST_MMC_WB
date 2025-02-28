@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+	<section name ="TRANSACTION">
+		<!-- TransactionScope/ORMTechInternal/DBProviderInternal/DITechInternal-->
+		<setting name ="TransactionManager">ORMTechInternal</setting>
+	</section>
+	<!-- Single DB Test 
+  <section name ="MAIN_DATABASE">
+    
+    <setting name ="Product">ORACLE</setting>
+    <setting name ="Version">11g</setting>
+    <setting name ="AssemblyName">Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342</setting>
+  </section>
+  -->
+	<!--  Multiple DB Test -->
+	<section name ="MAIN_DATABASE">
+		<!-- ORACLE,MSSQL,MYSQL -->
+		<setting name ="Product">MSSQL</setting>
+		<setting name ="StatementNamePrefix">MSSQL-</setting>
+		<setting name ="Version">2.0</setting>
+		<setting name ="AssemblyName">System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</setting>
+		<!--!
+      reference size
+      http://msdn.microsoft.com/ko-kr/library/system.data.sqlclient.sqlconnection.connectionstring(v=vs.90).aspx
+    -->
+		<setting name="DB Connection Custom Attributes">Connection Timeout=15;Min Pool Size=1;Max Pool Size=5;Connection Lifetime=0</setting>
+
+		<!--<setting name ="Product">MSSQL</setting>
+    <setting name ="Version">11g</setting>
+    <setting name ="AssemblyName">Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342</setting>-->
+		<!--<setting name ="SqlMapConfig">SqlMap-FontosSample.config</setting>-->
+		<setting name ="SqlMapConfig">SqlMap-ProductWB-MSSQL.config</setting>
+		<setting name ="DSN"></setting>
+
+		<!--<setting name ="UID">MSC_PROD_0717</setting>
+		<setting name ="PWD">KLiDLPSQz98eWS8MRY/EtQ==</setting>
+		<setting name ="DBQ">TSB-TEST-216-NPD-ORA11.2</setting>-->
+
+		<setting name ="UID">MSC_PROD_0717</setting>
+		<setting name ="PWD">qosv5wLaUjiR+GwlEl2JMg==</setting>
+		<setting name ="DBQ">SQL1127.tsb.co.kr;database=MOST_TS</setting>
+
+	</section>
+</configuration>

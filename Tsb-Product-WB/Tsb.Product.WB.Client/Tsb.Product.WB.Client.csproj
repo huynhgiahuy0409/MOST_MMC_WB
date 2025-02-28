@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B2F5A009-0D7A-47D5-A507-5DF2B1348822}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tsb.Product.WB.Client</RootNamespace>
+    <AssemblyName>Module</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>Tsb.Product.WB.Client.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>Current</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1Ribbon.2, Version=2.0.20092.178, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Tsb-Global-Libraries\Lib\C1\C1.Win.C1Ribbon.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Ribbon.Design.2">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\C1\C1.Win.C1Ribbon.Design.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=1.2.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Log4.Net\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Localization, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\FarPoint\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\FarPoint\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\FarPoint\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.CalcEngine, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Spreadsheet, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\FarPoint\GrapeCity.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Spreadsheet.Win, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\FarPoint\GrapeCity.Spreadsheet.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="GrapeCity.Win.PluginInputMan, Version=14.45.20213.0, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="IBatisNet.Common">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\IBatis.Net\IBatisNet.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.Common.Logging.Log4Net">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\IBatis.Net\IBatisNet.Common.Logging.Log4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\IBatis.Net\IBatisNet.DataMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Log4.Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\MicroSoft\Report\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\MicroSoft\Report\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Aop.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Core">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Data">
+      <HintPath>..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Login\LoginInterface.cs" />
+    <Compile Include="Login\LoginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginView.designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log\GeneralLogger.cs" />
+    <Compile Include="Popup\TruckListPopupController.cs" />
+    <Compile Include="Popup\TruckListPopupInterface.cs" />
+    <Compile Include="Popup\TruckListPopupView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popup\TruckListPopupView.designer.cs">
+      <DependentUpon>TruckListPopupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportHandler\CIRReportHdl.cs" />
+    <Compile Include="Sample\SingleGridController.cs" />
+    <Compile Include="Sample\SingleGridDetailController.cs" />
+    <Compile Include="Sample\SingleGridDetailInterface.cs" />
+    <Compile Include="Sample\SingleGridDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\SingleGridDetailView.Designer.cs">
+      <DependentUpon>SingleGridDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample\SingleGridInterface.cs" />
+    <Compile Include="Sample\SingleGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sample\SingleGridView.designer.cs">
+      <DependentUpon>SingleGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WBMenuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WBMenuView.designer.cs">
+      <DependentUpon>WBMenuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WeightBridge\MainController.cs" />
+    <Compile Include="WeightBridge\MainSingleGridInterface.cs" />
+    <Compile Include="WeightBridge\WBMainView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeightBridge\WBMainView.Designer.cs">
+      <DependentUpon>WBMainView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popup\TruckListPopupView.resx">
+      <DependentUpon>TruckListPopupView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\SingleGridDetailView.resx">
+      <DependentUpon>SingleGridDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sample\SingleGridView.resx">
+      <DependentUpon>SingleGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WBMenuView.resx">
+      <DependentUpon>WBMenuView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeightBridge\WBMainView.resx">
+      <DependentUpon>WBMainView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Environment\ProductWB\LocalizationInfo.xml" />
+    <Content Include="CatosConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Levi.txt" />
+    <Content Include="Resources\btn_down.png" />
+    <Content Include="Resources\btn_up.png" />
+    <Content Include="Resources\find.png" />
+    <Content Include="Resources\icon_TpMenuTitle.gif" />
+    <Content Include="Resources\icon_TpMenuTitle.ico" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\logoLogo.jpeg" />
+    <Content Include="Resources\menu_About.png" />
+    <Content Include="Resources\menu_BookingList.png" />
+    <Content Include="Resources\menu_Cascade.png" />
+    <Content Include="Resources\menu_ColumnSetting.png" />
+    <Content Include="Resources\menu_Configuration.gif" />
+    <Content Include="Resources\menu_ContainerDetail.png" />
+    <Content Include="Resources\menu_Copy.gif" />
+    <Content Include="Resources\menu_Delete.png" />
+    <Content Include="Resources\menu_Detail.png" />
+    <Content Include="Resources\menu_Excel.png" />
+    <Content Include="Resources\menu_Exit.png" />
+    <Content Include="Resources\menu_Filter.png" />
+    <Content Include="Resources\menu_Find.png" />
+    <Content Include="Resources\menu_SingleGrid.png" />
+    <Content Include="Resources\menu_Horizontal.png" />
+    <Content Include="Resources\menu_Inquiry.gif" />
+    <Content Include="Resources\menu_Insert.png" />
+    <Content Include="Resources\menu_New.gif" />
+    <Content Include="Resources\menu_Option.png" />
+    <Content Include="Resources\menu_Paste.png" />
+    <Content Include="Resources\menu_Pdf.png" />
+    <Content Include="Resources\menu_Preview.png" />
+    <Content Include="Resources\menu_Print.png" />
+    <Content Include="Resources\menu_Save.gif" />
+    <Content Include="Resources\menu_Sort.png" />
+    <Content Include="Resources\menu_Summary.png" />
+    <Content Include="Resources\menu_Vertical.png" />
+    <None Include="Resources\truck.png" />
+    <None Include="Resources\truck.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Catos-Cm\MAIN\8.0-Std-Main\Tsb-Catos-Cm\Tsb.Catos.Cm.Core\Tsb.Catos.Cm.Core.csproj">
+      <Project>{51ee7fdd-aae6-4e45-83b5-de68dc182392}</Project>
+      <Name>Tsb.Catos.Cm.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Catos-Cm\MAIN\8.0-Std-Main\Tsb-Catos-Cm\Tsb.Catos.Cm.Win\Tsb.Catos.Cm.Win.csproj">
+      <Project>{57770b81-b9c4-4563-b93f-1e8194e0a6ff}</Project>
+      <Name>Tsb.Catos.Cm.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Core\Tsb.Fontos.Core.csproj">
+      <Project>{305aeb21-9c74-4486-bec9-c230d9fad98f}</Project>
+      <Name>Tsb.Fontos.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win.Drawing\Tsb.Fontos.Win.Drawing.csproj">
+      <Project>{98c17a29-41ec-4509-bd04-bf9d023be32b}</Project>
+      <Name>Tsb.Fontos.Win.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win\Tsb.Fontos.Win.csproj">
+      <Project>{7c1c1800-c613-4e7b-b5a2-4778bb655dae}</Project>
+      <Name>Tsb.Fontos.Win</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Tsb.Global.Libraries.csproj">
+      <Project>{796fc00e-649f-459a-8afb-2f720704deb6}</Project>
+      <Name>Tsb.Global.Libraries</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Product.WB.Common\Tsb.Product.WB.Common.csproj">
+      <Project>{d9019c9a-597c-4710-80ac-7c36f346007a}</Project>
+      <Name>Tsb.Product.WB.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Product.WB.Config\Tsb.Product.WB.Config.csproj">
+      <Project>{52964714-64a5-43ef-bd8f-ceda8a226939}</Project>
+      <Name>Tsb.Product.WB.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Product.WB.Service\Tsb.Product.WB.Service.csproj">
+      <Project>{e167c8be-36c4-41fe-adc6-7a6227031f95}</Project>
+      <Name>Tsb.Product.WB.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Help\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

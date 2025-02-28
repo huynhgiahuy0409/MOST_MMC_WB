@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TCurrencyCellStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/TCurrencyCellStyles.xsd">
+  <CellStyles>
+    <TCurrencyCellStyle>
+      <CellStyleID>Currency</CellStyleID>
+      <DecimalPlace>3</DecimalPlace>
+      <Separator>Y</Separator>
+      <MaxValue>1000000000</MaxValue>
+      <MinValue>0</MinValue>
+      <StringTrim>Y</StringTrim>
+      <NegativeRed>Y</NegativeRed>
+    </TCurrencyCellStyle>
+  </CellStyles>
+</TCurrencyCellStyles>

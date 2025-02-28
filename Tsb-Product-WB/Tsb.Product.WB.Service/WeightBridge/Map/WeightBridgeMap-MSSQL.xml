@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Product.WB.Service.WeightBridge.Map.WeightBridgeMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+	<alias>
+		<typeAlias  alias="weightBridgeItem"                    type="Tsb.Product.WB.Common.Item.WeightBridge.WeightBridgeItem,         Tsb.Product.WB.Common" />
+		<typeAlias  alias="weightBridgeParam"                   type="Tsb.Product.WB.Common.Param.WeightBridge.WeightBridgeParam,       Tsb.Product.WB.Common" />
+	</alias>
+
+	<resultMaps>
+		<resultMap id="weightBridgeResult" class="weightBridgeItem">
+			<result property="TransactionNo"                    column="TRANSACTION_NO" />
+			<result property="GateTicketNo"                     column="GATE_TICKET_NO" />
+			<result property="TransactionDt"                    column="TRANSACTION_DT" />
+			<result property="VslCallId"                        column="VSL_CALL_ID" />
+			<result property="VslCd"                            column="VSL_CD" />
+			<result property="CallYear"                         column="CALL_YEAR" />
+			<result property="CallSeq"                          column="CALL_SEQ" />
+			<result property="MfDocId"                          column="MF_DOC_ID" />
+			<result property="ShipgNoteNo"                      column="SHIPG_NOTE_NO" />
+			<result property="GrNo"                             column="GR_NO" />
+			<result property="BlNo"                             column="BL_NO" />
+			<result property="DoNo"                             column="DO_NO" />
+			<result property="SdoNo"                            column="SDO_NO" />
+			<result property="UnitNo"                           column="UNIT_NO" />
+			<result property="GpNo"                             column="GP_NO" />
+			<result property="TsptComp"                         column="TSPT_COMP" />
+			<result property="LorryNo"                          column="LORRY_NO" />
+			<result property="DriverId"                         column="DRIVER_ID" />
+			<result property="ChassisNo"                        column="CHASSIS_NO" />
+			<result property="TrkMode"                          column="TRK_MODE" />
+			<result property="FirstWgt"                         column="FIRST_WGT" />
+			<result property="SecondWgt"                        column="SECOND_WGT" />
+			<result property="BagWgt"                           column="BAG_WGT" />
+			<result property="PkgQty"                           column="PKG_QTY" />
+			<result property="CgVol"                            column="CG_VOL" />
+			<result property="TrkGrsWgt"                        column="TRK_GRS_WGT" />
+			<result property="TrkTreWgt"                        column="TRK_TRE_WGT" />
+			<result property="TrkNetWgt"                        column="TRK_NET_WGT" />
+			<result property="GateinDt"                         column="GATEIN_DT" />
+			<result property="GateinCd"                         column="GATEIN_CD" />
+			<result property="GateoutDt"                        column="GATEOUT_DT" />
+			<result property="GateoutCd"                        column="GATEOUT_CD" />
+			<result property="ToLocation"                       column="TO_LOCATION" />
+			<result property="PrnCnt"                           column="PRN_CNT" />
+			<result property="Rmk"                              column="RMK" />
+			<result property="RhdlMode"                         column="RHDL_MODE" />
+			<result property="StaffCd"                          column="STAFF_CD" />
+			<result property="UpdateTime"                       column="UPDATE_TIME" />
+			<result property="FirstWgtDt"                       column="FIRST_WGT_DT" />
+			<result property="SecondWgtDt"                      column="SECOND_WGT_DT" />
+			<result property="Status"                           column="STATUS" />
+		</resultMap>
+		<resultMap id="transactionResult" class="weightBridgeItem">
+			<result property="TransactionNo"                    column="TRANSACTION_NO" />
+		</resultMap>
+	</resultMaps>
+
+	<statements>
+		<!-- SEARCH AREA START -->
+		<select id="select-transactionNo" parameterType="weightBridgeParam" resultMap="transactionResult">
+			SELECT
+			FORMAT(GETDATE(),'yyyyMMdd') + RIGHT(REPLICATE('0',5) + FORMAT(CONVERT(BIGINT, ISNULL(MAX(SUBSTRING(TRANSACTION_NO,9,5)),0)) + 1,''),5) TRANSACTION_NO
+			FROM TMT_WEIGHTBRIDGE
+			WHERE TRANSACTION_NO LIKE FORMAT(GETDATE(),'yyyyMMdd') + '%'
+		</select>
+
+		<select id="select-weightBridge" parameterType="weightBridgeParam" resultMap="weightBridgeResult">
+			SELECT
+			*
+			FROM TMT_WEIGHTBRIDGE
+			WHERE 1=1
+			<isNotEmpty property="TransactionNo" prepend="AND">
+				TRANSACTION_NO = #TransactionNo#
+			</isNotEmpty>
+		</select>
+		<!-- SELECT AREA END -->
+
+		<!-- CUD AREA START -->
+		<insert id="insert-weightBridge" parameterClass="weightBridgeItem">
+			INSERT INTO TMT_WEIGHTBRIDGE
+			(TRANSACTION_NO
+			,GATE_TICKET_NO
+			,TRANSACTION_DT
+			,VSL_CALL_ID
+			,VSL_CD
+			,CALL_YEAR
+			,CALL_SEQ
+			,MF_DOC_ID
+			,SHIPG_NOTE_NO
+			,GR_NO
+			,BL_NO
+			,DO_NO
+			,SDO_NO
+			,UNIT_NO
+			,DELV_TP_CD
+			,FWRD
+			,CNSNE
+			,SHPR
+			,GP_NO
+			,TSPT_COMP
+			,LORRY_NO
+			,DRIVER_ID
+			,CHASSIS_NO
+			,TRK_MODE
+			,FIRST_WGT
+			,SECOND_WGT
+			,BAG_WGT
+			,PKG_QTY
+			,CG_VOL
+			,TRK_GRS_WGT
+			,TRK_TRE_WGT
+			,TRK_NET_WGT
+			,GATEIN_DT
+			,GATEIN_CD
+			,GATEOUT_DT
+			,GATEOUT_CD
+			,TO_LOCATION
+			,PRN_CNT
+			,RMK
+			,RHDL_MODE
+			,STAFF_CD
+			,UPDATE_TIME
+			,FIRST_WGT_DT
+			,SECOND_WGT_DT
+			,STATUS)
+			VALUES
+			(#TransactionNo#
+			,#GateTicketNo#
+			,#TransactionDt#
+			,#VslCallId#
+			,#VslCd#
+			,#CallYear#
+			,#CallSeq#
+			,#MfDocId#
+			,#ShipgNoteNo#
+			,#GrNo#
+			,#BlNo#
+			,#DoNo#
+			,#SdoNo#
+			,#UnitNo#
+			,#DelvTpCd#
+			,#Fwrd#
+			,#Cnsne#
+			,#Shpr#
+			,#GpNo#
+			,#TsptComp#
+			,#LorryNo#
+			,#DriverId#
+			,#ChassisNo#
+			,#TrkMode#
+			,#FirstWgt#
+			,#SecondWgt#
+			,#BagWgt#
+			,#PkgQty#
+			,#CgVol#
+			,#TrkGrsWgt#
+			,#TrkTreWgt#
+			,#TrkNetWgt#
+			,#GateinDt#
+			,#GateinCd#
+			,#GateoutDt#
+			,#GateoutCd#
+			,#ToLocation#
+			,#PrnCnt#
+			,#Rmk#
+			,#RhdlMode#
+			,#StaffCd#
+			,#UpdateTime#
+			,#FirstWgtDt#
+			,#SecondWgtDt#
+			,#Status#)
+		</insert>
+
+		<update id="update-weightBridge" parameterClass="weightBridgeItem">
+			UPDATE TMT_WEIGHTBRIDGE
+			SET RMK             = #Rmk#,
+			SECOND_WGT      = #SecondWgt#,
+			SECOND_WGT_DT   = #SecondWgtDt#,
+			UPDATE_TIME     = #UpdateTime#,
+			STAFF_CD        = #StaffCd#,
+			TRK_GRS_WGT     = #TrkGrsWgt#,
+			TRK_TRE_WGT     = #TrkTreWgt#,
+			TRK_NET_WGT     = #TrkNetWgt#,
+			DELV_TP_CD      = #DelvTpCd#,
+			CNSNE           = #Cnsne#,
+			SHPR            = #Shpr#,
+			STATUS			= #Status#
+			WHERE
+			TRANSACTION_NO = #TransactionNo#
+		</update>
+		<!-- CUD AREA END -->
+	</statements>
+
+</sqlMap>

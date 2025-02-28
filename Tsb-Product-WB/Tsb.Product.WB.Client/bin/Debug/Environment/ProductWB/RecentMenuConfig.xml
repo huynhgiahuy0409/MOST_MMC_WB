@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RecentMenuSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/RecentMenuXmlSchema.xsd">
+  <RecentMenus>
+    <Menu>
+      <IsAllowedMultiForm />
+      <MaxDetailCount>0</MaxDetailCount>
+      <MaxViewOpenCount>0</MaxViewOpenCount>
+      <PreAuthCheck xsi:nil="true" />
+      <TextVisible>false</TextVisible>
+      <AlwaysEnable>false</AlwaysEnable>
+      <ImgSize />
+      <MenuType />
+      <ResourceKey>WRD_PTWB_Menu_SingleGrid</ResourceKey>
+      <ShortcutKey />
+      <AsbmName />
+      <ActionTarget>common</ActionTarget>
+      <ImgName>menu_SingleGrid</ImgName>
+      <FrmId>SingleGridView</FrmId>
+      <ActionId>OpenFrm</ActionId>
+      <Name>SingleGrid Sample</Name>
+      <Id>mnuSingleGrid</Id>
+      <UseViewStateString />
+      <UseViewState>false</UseViewState>
+      <IsInvisibleOnNavigator />
+    </Menu>
+  </RecentMenus>
+</RecentMenuSchema>

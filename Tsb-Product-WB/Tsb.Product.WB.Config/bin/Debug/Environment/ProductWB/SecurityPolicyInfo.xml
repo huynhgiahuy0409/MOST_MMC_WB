@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="Authentication">
+    <!-- Password,Window,LDAP,External -->
+    <setting name ="Policy">Password</setting>
+    <!--Default,DES,MD5,RSA-->
+    <setting name ="Encryption">Default</setting>
+  </section>
+  <section name ="Authorization">
+    <!-- Operation, Control, Object -->
+    <setting name ="Level">Operation</setting>
+  </section>
+</configuration>

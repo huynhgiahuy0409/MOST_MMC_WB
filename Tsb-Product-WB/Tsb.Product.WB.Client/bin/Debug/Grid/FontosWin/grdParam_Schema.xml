@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<GridColumnSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/GridColumnXmlSchema.xsd">
+  <GridSchema>
+    <FrozenColumnCount>0</FrozenColumnCount>
+  </GridSchema>
+  <ColumnSchemas>
+    <ColumnSchema>
+      <Seq>0</Seq>
+      <ViewColumnSeq>0</ViewColumnSeq>
+      <Key>Field</Key>
+      <LabelResKey>WRD_FTCO_Field</LabelResKey>
+      <DataField>DisplayName</DataField>
+      <CodeType />
+      <ColumnMaxLength>0</ColumnMaxLength>
+      <DBField>DisplayName</DBField>
+      <CellType>General</CellType>
+      <CellStyleID />
+      <CellTypeID />
+      <Width>20</Width>
+      <Visible>Y</Visible>
+      <AllowCodeExclude />
+      <ForeColor>0</ForeColor>
+      <BackColor>14803425</BackColor>
+      <Filter />
+      <Sort>N</Sort>
+      <SortSeq>0</SortSeq>
+      <SortComparer>D</SortComparer>
+      <HorizontalAlignment>L</HorizontalAlignment>
+      <DummyFieldEditable />
+      <VerticalAlignment>C</VerticalAlignment>
+      <Lock>N</Lock>
+      <Mandatory>Y</Mandatory>
+      <PrimaryKey>N</PrimaryKey>
+      <Preview>Y</Preview>
+      <Copy />
+      <NotAllowHidden>Y</NotAllowHidden>
+      <CellEditor>N</CellEditor>
+      <CellTypeCode>N</CellTypeCode>
+      <ColorRuleType>D</ColorRuleType>
+      <CellInput />
+      <CellDisplay />
+      <ValueDisplay />
+      <ValueOrder />
+      <AutoSortSeq>0</AutoSortSeq>
+      <CheckBoxMaxSelections>0</CheckBoxMaxSelections>
+    </ColumnSchema>
+    <ColumnSchema>
+      <Seq>1</Seq>
+      <ViewColumnSeq>1</ViewColumnSeq>
+      <Key>Value</Key>
+      <LabelResKey>WRD_FTCO_Value</LabelResKey>
+      <DataField>Value</DataField>
+      <CodeType />
+      <ColumnMaxLength>0</ColumnMaxLength>
+      <DBField>Value</DBField>
+      <CellType>General</CellType>
+      <CellStyleID />
+      <CellTypeID />
+      <Width>40</Width>
+      <Visible>Y</Visible>
+      <AllowCodeExclude />
+      <ForeColor>0</ForeColor>
+      <BackColor>16777215</BackColor>
+      <Filter />
+      <Sort>N</Sort>
+      <SortSeq>0</SortSeq>
+      <SortComparer>D</SortComparer>
+      <HorizontalAlignment>L</HorizontalAlignment>
+      <DummyFieldEditable />
+      <VerticalAlignment>C</VerticalAlignment>
+      <Lock>N</Lock>
+      <Mandatory>Y</Mandatory>
+      <PrimaryKey>N</PrimaryKey>
+      <Preview>Y</Preview>
+      <Copy />
+      <NotAllowHidden>Y</NotAllowHidden>
+      <CellEditor>N</CellEditor>
+      <CellTypeCode>N</CellTypeCode>
+      <ColorRuleType>D</ColorRuleType>
+      <CellInput />
+      <CellDisplay />
+      <ValueDisplay />
+      <ValueOrder />
+      <AutoSortSeq>0</AutoSortSeq>
+      <CheckBoxMaxSelections>0</CheckBoxMaxSelections>
+    </ColumnSchema>
+  </ColumnSchemas>
+</GridColumnSchema>

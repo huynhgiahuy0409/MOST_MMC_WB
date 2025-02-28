@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Product.WB.Service.WeightBridge.Map.SingleGridMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+  <alias>
+    <typeAlias alias="singleGridItem"   type="Tsb.Product.WB.Common.Item.Sample.SingleGridItem,   Tsb.Product.WB.Common" />
+    <typeAlias alias="singleGridParam"  type="Tsb.Product.WB.Common.Param.Sample.SingleGridParam, Tsb.Product.WB.Common" />
+  </alias>
+
+  <resultMaps>
+    <resultMap id="singleGridResult" class="singleGridItem">
+      <result property="Unid"             column="UNID" />
+      <result property="Unno"             column="UNNO" />
+      <result property="Class"            column="CLASS" />
+      <result property="PackingGrp"       column="PACKING_GRP" />
+      <result property="ProperShipNm"     column="PROPER_SHIP_NM" />
+      <result property="SubsidiaryRisk"   column="SUBSIDIARY_RISK" />
+      <result property="LimitedQty"       column="LIMITED_QTY" />
+      <result property="MarinePollut"     column="MARINE_POLLUT" />
+      <result property="Ems"              column="EMS" />
+      <result property="FlashPoint"       column="FLASH_POINT" />
+      <result property="ExtendGrp"        column="EXTEND_GRP" />
+      <result property="ValueColor"       column="VALUECOLOR" nullValue="16777215" />
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <!-- SEARCH AREA  START -->
+    <select id="select-singleGrid" parameterClass="singleGridParam" resultMap="singleGridResult">
+      SELECT DISTINCT UNID, UNNO, CLASS,PACKING_GRP,PROPER_SHIP_NM,
+             SUBSIDIARY_RISK, LIMITED_QTY, MARINE_POLLUT, EMS, FLASH_POINT,
+             EXTEND_GRP, VALUECOLOR
+        FROM TB_IMDGDATA
+       WHERE 1=1
+      <isNotEmpty property="ImdgClass" prepend="AND">
+        (CLASS LIKE #ImdgClass# || '%')
+      </isNotEmpty>
+      <isNotEmpty property="Unno" prepend="AND">
+        (UNNO LIKE #Unno# || '%')
+      </isNotEmpty>
+    </select>
+    <!-- SELECT AREA  END -->
+    
+    <!-- CUD AREA START -->
+    <insert id="insert-singleGrid" parameterClass="singleGridItem">
+      INSERT INTO TB_IMDGDATA (
+        UNID, UNNO, CLASS, PACKING_GRP, PROPER_SHIP_NM,
+        SUBSIDIARY_RISK, LIMITED_QTY, MARINE_POLLUT, EMS, FLASH_POINT,
+        EXTEND_GRP, VALUECOLOR, STAFF_CD, UPDATE_TIME
+      ) VALUES (
+        #Unid#, #Unno#, #Class#, #PackingGrp#, #ProperShipNm#,
+        #SubsidiaryRisk#, #LimitedQty#, #MarinePollut#, #Ems#, #FlashPoint#,
+        #ExtendGrp#, #ValueColor#, #StaffCd#, SYSDATE
+      )
+    </insert>
+   
+    <update id="update-singleGrid" parameterClass="singleGridItem">
+      UPDATE TB_IMDGDATA
+      SET STAFF_CD = #StaffCd#
+      , UPDATE_TIME = SYSDATE
+      <isNotEqual property="PackingGrp" compareProperty="BackupItem.PackingGrp" prepend=",">
+            PACKING_GRP = #PackingGrp#
+          </isNotEqual>
+          <isNotEqual property="ProperShipNm" compareProperty="BackupItem.ProperShipNm" prepend=",">
+            PROPER_SHIP_NM = #ProperShipNm#
+          </isNotEqual>
+          <isNotEqual property="SubsidiaryRisk" compareProperty="BackupItem.SubsidiaryRisk" prepend=",">
+            SUBSIDIARY_RISK = #SubsidiaryRisk#
+          </isNotEqual>
+          <isNotEqual property="LimitedQty" compareProperty="BackupItem.LimitedQty" prepend=",">
+            LIMITED_QTY = #LimitedQty#
+          </isNotEqual>
+          <isNotEqual property="MarinePollut" compareProperty="BackupItem.MarinePollut" prepend=",">
+            MARINE_POLLUT = #MarinePollut#
+          </isNotEqual>
+          <isNotEqual property="Ems" compareProperty="BackupItem.Ems" prepend=",">
+            EMS = #Ems#
+          </isNotEqual>
+          <isNotEqual property="FlashPoint" compareProperty="BackupItem.FlashPoint" prepend=",">
+            FLASH_POINT = #FlashPoint#
+          </isNotEqual>
+          <isNotEqual property="ExtendGrp" compareProperty="BackupItem.ExtendGrp" prepend=",">
+            EXTEND_GRP = #ExtendGrp#
+          </isNotEqual>
+          <isNotEqual property="ValueColor" compareProperty="BackupItem.ValueColor" prepend=",">
+            VALUECOLOR = #ValueColor#
+          </isNotEqual>
+      WHERE 1=1
+      AND UNID = #Unid#
+    </update>
+
+    <delete id="delete-singleGrid" parameterClass="singleGridItem">
+      DELETE TB_IMDGDATA
+       WHERE 1=1
+         AND UNID = #Unid#
+    </delete>
+    <!-- CUD AREA END -->
+    
+  </statements>
+
+</sqlMap>

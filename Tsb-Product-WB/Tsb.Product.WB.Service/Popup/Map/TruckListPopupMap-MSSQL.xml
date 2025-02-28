@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Product.WB.Service.Popup.Map.TruckListPopupMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+  <alias>
+    <!--<typeAlias alias="truckListPopupItem"	type="Tsb.Product.WB.Common.Item.Popup.TruckListPopupItem,   Tsb.Product.WB.Common" />-->
+    <typeAlias alias="truckListPopupParam"		type="Tsb.Product.WB.Common.Param.Popup.TruckListPopupParam, Tsb.Product.WB.Common" />
+	<typeAlias alias="truckListPopupItem"			type="Tsb.Product.WB.Common.Item.WeightBridge.WeightInfoItem" />				 
+   </alias>
+
+  <resultMaps>
+    <!--<resultMap id="truckListPopupResult" class="truckListPopupItem">
+      <result property="LorryNo"            column="LORRY_NO" />
+      <result property="VslCallId"          column="VSL_CALL_ID" />
+      <result property="MasterBlNo"         column="MASTER_BL_NO" />
+      <result property="BlNo"				column="BL_NO" />
+      <result property="SdoNo"				column="SDO_NO" />
+      <result property="BookingNo"			column="BOOKING_NO" />
+      <result property="ShipgNoteNo"		column="SHIPG_NOTE_NO" />
+      <result property="GrNo"				column="GR_NO" />
+      <result property="QrCd"				column="QR_CD" />
+
+    </resultMap>-->
+	  <resultMap id="truckListPopupResult"						class="truckListPopupItem">
+		  <!-- NM -->
+		  <result property="BlConsigneeNm"						column="BL_CNSNE_NM" />
+		  <result property="BlCShipperNm"						column="BL_SHIPPER_NM" />
+		  <result property="SnShiperNm"							column="SN_SHIPPER_NM" />
+		  <result property="SnConsigneeNm"						column="SN_CNSNE_NM" />
+		  <result property="CnsnShprNm"							column="CNSN_SHPR" />
+		  <result property="TransporterNm"						column="TRST_NM" />
+		  <result property="BlConsigneeCd"						column="BL_CNSNE_CD" />
+		  <result property="BlShipperCd"						column="BL_SHIPPER_CD" />
+		  <result property="SnConsigneeCd"						column="SN_SHIPPER_CD" />
+		  <result property="SnShiperCd"							column="SN_CNSNE_CD" />
+		  <!-- VSL -->
+		  <result property="VslCallId"							column="VSL_CALL_ID" />
+		  <result property="VslCd"								column="VSL_CD" />
+		  <result property="CallYear"			                column="CALL_YEAR" />
+		  <result property="CallSeq"			                column="CALL_SEQ" />
+		  <!-- LORRY -->
+		  <result property="LorryNo"				            column="LORRY_NO" />
+		  <result property="DriverNo"							column="DRIVER_ID" />
+		  <result property="ChassisNo"							column="CHASSIS_NO" />
+		  <result property="TruckMode"							column="TRUCK_MODE" />
+		  <result property="TsptComp"			                column="TSPT_COMP" />
+		  <result property="QrCd"								column="QR_CD" />  <!--for show data trucklist-->
+		  <!-- DOC -->
+		  <result property="BlNo"				  	            column="BL_NO" />
+		  <result property="DoNo"				                column="DO_NO" />
+		  <result property="SdoNo"								column="SDO_NO" />
+		  <result property="ShipgNoteNo"						column="SHIPG_NOTE_NO" />
+		  <result property="GrNo"								column="GR_NO" />
+		  <result property="MfDocId"							column="MF_DOC_ID" />
+		  <result property="Category"							column="CATEGORY" />
+		  <result property="BlOrSn"								column="BL_SN" />
+		  <result property="SdoOrGr"							column="SDO_GR" />
+		  <result property="DelvTpCd"							column="DELV_TP_CD" />
+		  <!-- GT -->
+		  <result property="GateInDt"							column="GATE_IN_DT" />
+		  <result property="GateCd"								column="GATE_CD" />
+		  <result property="GateOutDt"							column="GATE_OUT_DT" />
+		  <result property="GateCdOut"							column="GATE_CD_OUT" />
+		  <result property="CgNo"								column="CG_NO" />
+		  <result property="GateTxnNo"							column="GATE_TXN_NO" />
+		  <result property="PkgQty"								column="PKG_QTY" />
+		  <result property="CgVol"								column="CG_VOL" />
+		  <!-- WB -->
+		  <result property="FirstWgt"							column="FIRST_WGT" />
+		  <result property="SecondWgt"							column="SECOND_WGT" />
+		  <result property="CargoWeight"						column="TRK_NET_WGT" />
+		  <result property="Rmk"								column="RMK" />
+		  <result property="TransactionNo"						column="TRANSACTION_NO" />
+		  <result property="TransactionDt"						column="TRANSACTION_DT" />
+		  <result property="PrintCir"							column="PRINT_CIR" />
+		  <result property="Status"							    column="STATUS" />
+		  <!-- CMDT -->
+		  <result property="CmdtDesc"							column="CMDT_DESC" />
+	  </resultMap>  
+	  
+	  
+  </resultMaps>
+
+  <statements>
+
+	  <!--<select id="select-LorryList" parameterClass="truckListPopupParam" resultMap="truckListPopupResult">
+		  SELECT
+		  B.LORRY_NO, B.VSL_CALL_ID, '' as MASTER_BL_NO, B.BL_NO, B.SDO_NO,
+		  A. MF_DOC_ID as BOOKING_NO, B.SHIPG_NOTE_NO , B.GR_NO, B.QR_CD
+		  FROM TMT_SHIPG_NOTE A
+		  join TMT_ASSIGN_TRANSPORT B
+		  ON A. vsl_cd = B.vsl_Cd
+		  AND A.CALL_YEAR = B.CALL_YEAR
+		  AND A.CALL_SEQ = B.CALL_SEQ
+		  AND A.VSL_CALL_ID = B.VSL_CALL_ID
+		  AND A.SHIPG_NOTE_NO = B.SHIPG_NOTE_NO
+		  WHERE 1 = 1
+		  AND B.LORRY_NO like  '%' + #LorryNo# + '%'
+		  UNION ALL
+		  SELECT
+		  B.LORRY_NO, B.VSL_CALL_ID, A. MF_DOC_ID as MASTER_BL_NO, B.BL_NO, B.SDO_NO,
+		  '' as BOOKING_NO, B.SHIPG_NOTE_NO , B.GR_NO, B.QR_CD
+		  FROM TMT_BL A
+		  join TMT_ASSIGN_TRANSPORT B
+		  ON A. vsl_cd = B.vsl_Cd
+		  AND A.CALL_YEAR = B.CALL_YEAR
+		  AND A.CALL_SEQ = B.CALL_SEQ
+		  AND A.VSL_CALL_ID = B.VSL_CALL_ID
+		  AND A.BL_NO = B.BL_NO
+		  WHERE  1 = 1
+		  AND B.LORRY_NO like '%' + #LorryNo# + '%'
+	  </select>-->
+
+	  <select id="select-LorryList" parameterClass="truckListPopupParam" resultMap="truckListPopupResult">
+		 /* Formatted on 7/23/2024 4:29:03 PM (QP5 v5.252.13127.32867) */
+    WITH TRANSPORT_INFO
+         AS (SELECT *
+               FROM TMT_ASSIGN_TRANSPORT
+              WHERE LORRY_NO LIKE '%' + #LorryNo# + '%'),
+         LORRY_PTNR_INFO
+         AS (SELECT PTNR_CD, LORRY_NO
+               FROM TMT_TRUCK_MST
+                    JOIN TMT_PTNR PTNR ON TMT_TRUCK_MST.PTNR_CD = PTNR.PTNR_CODE
+              WHERE PTNR.PTNR_TYPE = 'TRK')
+    SELECT dbo.F_GET_PTNR_SNM (BL.CNSNE) AS BL_CNSNE_NM,
+           dbo.F_GET_PTNR_SNM (BL.SHPR) AS BL_SHIPPER_NM,
+           dbo.F_GET_PTNR_SNM (SN.CNSNE) AS SN_CNSNE_NM,
+           dbo.F_GET_PTNR_SNM (SN.SHPR) AS SN_SHIPPER_NM,
+           dbo.F_GET_PTNR_SNM (LORRY_PTNR_INFO.PTNR_CD) AS TRST_NM,
+           LORRY_PTNR_INFO.PTNR_CD AS TSPT_COMP,
+           BL.CNSNE AS BL_CNSNE_CD,
+           BL.SHPR AS BL_SHIPPER_CD,
+           SN.CNSNE AS SN_CNSNE_CD,
+           SN.SHPR AS SN_SHIPPER_CD,
+           TRANSPORT_INFO.VSL_CALL_ID,
+           TRANSPORT_INFO.VSL_CD,
+           TRANSPORT_INFO.CALL_YEAR,
+           TRANSPORT_INFO.CALL_SEQ,
+           TRANSPORT_INFO.LORRY_NO,
+           TRANSPORT_INFO.DRIVER_ID,
+           TRANSPORT_INFO.CHASSIS_NO,
+           TRANSPORT_INFO.BL_NO,
+           TRANSPORT_INFO.DO_NO,
+           TRANSPORT_INFO.SDO_NO,
+           TRANSPORT_INFO.SHIPG_NOTE_NO,
+           TRANSPORT_INFO.GR_NO,
+           TRANSPORT_INFO.TRUCK_MODE,
+           TRANSPORT_INFO.QR_CD,
+            <!--GT.MF_DOC_ID,-->
+           CASE
+              WHEN BL.BL_NO IS NOT NULL THEN BL.MF_DOC_ID
+              WHEN SN.SHIPG_NOTE_NO IS NOT NULL THEN SN.MF_DOC_ID
+           END
+              AS MF_DOC_ID,
+           GT.GATE_IN_DT,
+           GT.GATE_CD,
+           GT.GATE_OUT_DT,
+           GT.GATE_CD_OUT,
+           GT.CG_NO,
+           GT.GATE_TXN_NO,
+           GT.PKG_QTY,
+           GT.CG_VOL,
+           WB.FIRST_WGT,
+           WB.SECOND_WGT,
+           WB.TRK_NET_WGT,
+           WB.RMK,
+           WB.TRANSACTION_NO,
+           WB.TRANSACTION_DT,
+		   WB.STATUS,
+           CMDT.CMDT_DESC,
+           CASE
+              WHEN BL.CATG_CD = 'I' OR SN.CATG_CD = 'I' THEN 'Import'
+              WHEN BL.CATG_CD = 'E' OR SN.CATG_CD = 'E' THEN 'Export'
+           END
+              AS CATEGORY,
+           CASE
+              WHEN WB.DELV_TP_CD IS NOT NULL THEN WB.DELV_TP_CD
+              WHEN BL.BL_NO IS NOT NULL THEN BL.DELV_TP_CD
+              WHEN SN.SHIPG_NOTE_NO IS NOT NULL THEN SN.DELV_TP_CD
+           END
+              AS DELV_TP_CD,
+           CASE
+              WHEN BL.BL_NO IS NOT NULL THEN BL.BL_NO
+              WHEN SN.SHIPG_NOTE_NO IS NOT NULL THEN SN.SHIPG_NOTE_NO
+           END
+              AS BL_SN,
+           CASE
+              WHEN TRANSPORT_INFO.SDO_NO IS NOT NULL THEN TRANSPORT_INFO.SDO_NO
+              WHEN TRANSPORT_INFO.GR_NO IS NOT NULL THEN TRANSPORT_INFO.GR_NO
+           END
+              AS SDO_GR,
+           CASE
+              WHEN BL.BL_NO IS NOT NULL AND TRANSPORT_INFO.SDO_NO IS NOT NULL
+              THEN
+                 dbo.F_GET_PTNR_SNM (BL.CNSNE)
+              WHEN     SN.SHIPG_NOTE_NO IS NOT NULL
+                   AND TRANSPORT_INFO.GR_NO IS NOT NULL
+              THEN
+                 dbo.F_GET_PTNR_SNM (SN.SHPR)
+           END
+              AS CNSN_SHPR,
+           CASE
+              WHEN WB.PRN_CNT IS NULL OR WB.PRN_CNT = 0 THEN 'No'
+              ELSE 'Yes'
+           END
+              AS PRINT_CIR
+      FROM TRANSPORT_INFO
+           LEFT JOIN TMT_BL                                                AS BL
+              ON     TRANSPORT_INFO.BL_NO = BL.BL_NO
+                 AND TRANSPORT_INFO.VSL_CALL_ID = BL.VSL_CALL_ID
+           LEFT JOIN TMT_SHIPG_NOTE                                        AS SN
+              ON     TRANSPORT_INFO.SHIPG_NOTE_NO = SN.SHIPG_NOTE_NO
+                 AND TRANSPORT_INFO.VSL_CALL_ID = SN.VSL_CALL_ID
+           LEFT JOIN LORRY_PTNR_INFO
+              ON     LORRY_PTNR_INFO.LORRY_NO = TRANSPORT_INFO.LORRY_NO
+                 <!--AND LORRY_PTNR_INFO.PTNR_CD = TRANSPORT_INFO.TRANSPORT-->
+				 AND (	
+				    (TRANSPORT_INFO.TRANSPORT = LORRY_PTNR_INFO.PTNR_CD )
+			      OR
+				    (TRANSPORT_INFO.TRANSPORT like ''+ LORRY_PTNR_INFO.PTNR_CD +'[,]%' )
+			      OR
+				    (TRANSPORT_INFO.TRANSPORT like  +'%[,]'+ LORRY_PTNR_INFO.PTNR_CD +'[,]%'  )
+			      OR 	
+				    (TRANSPORT_INFO.TRANSPORT like  + '%[,]'+ LORRY_PTNR_INFO.PTNR_CD  +'' ) 
+			      )
+				 
+           LEFT JOIN TMT_CMDT CMDT
+              ON CMDT.CMDT_CD = BL.CMDT_CD AND CMDT.CMDT_GRP_CD = BL.CMDT_GRP_CD
+           LEFT OUTER JOIN TMT_CG_ARRV_DELV GT
+              ON     TRANSPORT_INFO.VSL_CALL_ID = GT.VSL_CALL_ID
+                 AND TRANSPORT_INFO.LORRY_NO = GT.LORRY_NO
+                 AND (   (    TRANSPORT_INFO.SDO_NO IS NOT NULL
+                          AND TRANSPORT_INFO.SDO_NO = GT.SDO_NO
+                          AND TRANSPORT_INFO.BL_NO = GT.CG_NO)
+                      OR (    TRANSPORT_INFO.GR_NO IS NOT NULL
+                          AND TRANSPORT_INFO.GR_NO = GT.GR_NO))
+           LEFT JOIN TMT_WEIGHTBRIDGE                                      AS WB
+              ON     (   (  COALESCE (TRANSPORT_INFO.BL_NO, '') != ''
+                            AND TRANSPORT_INFO.BL_NO = WB.BL_NO 
+                            AND COALESCE (TRANSPORT_INFO.SDO_NO, '') = COALESCE (WB.SDO_NO, ''))
+                      OR (  COALESCE (TRANSPORT_INFO.SHIPG_NOTE_NO, '') != ''
+                            AND TRANSPORT_INFO.SHIPG_NOTE_NO = WB.SHIPG_NOTE_NO 
+                            AND COALESCE (TRANSPORT_INFO.GR_NO, '') = COALESCE (WB.GR_NO, '')))
+                 AND TRANSPORT_INFO.LORRY_NO = WB.LORRY_NO
+                 AND TRANSPORT_INFO.VSL_CALL_ID = WB.VSL_CALL_ID
+                 AND COALESCE (WB.GATE_TICKET_NO, '') =  COALESCE (GT.GATE_TXN_NO, '')
+				 AND WB.SECOND_WGT IS NULL
+                AND COALESCE (WB.STATUS, 'N')  NOT IN ('C', 'Y')
+     WHERE     1 = 1
+           
+  </select>
+
+
+    
+  </statements>
+
+</sqlMap>

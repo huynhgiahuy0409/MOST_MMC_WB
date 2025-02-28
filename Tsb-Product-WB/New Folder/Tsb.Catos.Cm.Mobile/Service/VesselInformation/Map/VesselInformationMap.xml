@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Catos.Cm.Mobile.Service.VesselInformation.Map.VesselInformationMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  
+  <alias>
+    <typeAlias alias="berthPlanItem" type="Tsb.Catos.Cm.Mobile.Common.Item.VesselInformation.BerthPlanItem, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="hatchInfoItem" type="Tsb.Catos.Cm.Mobile.Common.Item.VesselInformation.HatchInfoItem, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="vesselInformationParam" type="Tsb.Catos.Cm.Mobile.Common.Param.VesselInformation.VesselInformationParam, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="activatedVesselInformationParam" type ="Tsb.Catos.Cm.Mobile.Common.Param.VesselInformation.ActivatedVesselInformationParam, Tsb.Catos.Cm.Mobile"/><!--added by YoungHwan Choi (2020.06.30) - Mantis 107546 GCT Activated 작업이 있는 베이를 구분할 수 있는 방법-->
+    <typeAlias alias="activatedHatchInfoItem" type="Tsb.Catos.Cm.Mobile.Common.Item.VesselInformation.ActivatedHatchInfoItem, Tsb.Catos.Cm.Mobile" /><!--added by YoungHwan Choi (2020.06.30) - Mantis 107546 GCT Activated 작업이 있는 베이를 구분할 수 있는 방법-->
+    <typeAlias alias="vesselBayItem"  type="Tsb.Catos.Cm.Mobile.Common.Item.VesselInformation.VesselBayItem, Tsb.Catos.Cm.Mobile" />
+  </alias>
+
+  <resultMaps>
+    <resultMap id="vesselScheduleResult" class="berthPlanItem">
+      <result property = "VslCd"                column ="vsl_cd" 	                    nullValue=""/>
+      <result property = "CallYear"             column ="call_year"                   nullValue=""/>
+      <result property = "CallSeq"              column ="call_seq"                    nullValue=""/>
+      <result property = "UserVoy"              column ="user_voy"                    nullValue=""/>
+      <result property = "PartnerCode"          column ="ptnr_code"                   nullValue=""/>
+      <result property = "BerthNo"              column ="berth_no"                    nullValue=""/>
+      <result property = "ASide"                column ="alongside"                   nullValue=""/>
+      <result property = "DPos"                 column ="deck_pos"                    nullValue=""/>
+      <result property = "Ata"                  column ="ata" />
+      <result property = "Atb"                  column ="atb" />
+      <result property = "Atw"                  column ="atw" />
+      <result property = "Atc"                  column ="atc" />
+      <result property = "Atd"                  column ="atd" />
+      <result property = "VslType"              column ="vsl_type"                    nullValue=""/>
+      <result property = "InLane"               column ="in_lane"                     nullValue=""/>
+      <result property = "OutLane"              column ="out_lane"                    nullValue=""/>
+      <result property = "DisChk"               column ="s_dis_chk"                   nullValue=""/>
+      <result property = "BargeChk"             column ="barge_chk"                   nullValue=""/>
+      <result property = "VslName"              column ="vsl_nm"                      nullValue=""/>
+      <result property = "PortVoy"              column ="port_voy"                    nullValue=""/>
+    </resultMap>
+    
+    <resultMap id="hatchItemListResult"        class="hatchInfoItem">
+      <result property = "HatchIdx"                 column ="hatch_idx" 	            nullValue="0"></result>
+      <result property = "StartBayIdx"              column ="start_bay_idx"           nullValue="0"></result>
+      <result property = "EndBayIdx"                column ="end_bay_idx"             nullValue="0"></result>
+      <result property = "StartBayNo"               column ="start_bay_no"            nullValue=""></result>
+      <result property = "EndBayNo"                 column ="end_bay_no"              nullValue=""></result>
+    </resultMap>
+
+    <resultMap id="activatedHatchItemListResult" class="activatedHatchInfoItem"><!--added by YoungHwan Choi (2020.06.30) - Mantis 107546 GCT Activated 작업이 있는 베이를 구분할 수 있는 방법-->
+      <result property = "HatchIdx"               column ="hatch_idx"            nullValue=""></result>
+    </resultMap>
+    
+    <resultMap id="bayResult"        class="vesselBayItem">
+      <result property="BayIndex"                         column="BayIndex"                 nullValue="0"/>
+      <result property="NO"                               column="NO"                       nullValue=""/>
+      <result property="UserNO"                           column="UserNO"                   nullValue=""/>
+      <result property="HatchIndex"                       column="HatchIndex"               nullValue="0"/>
+      <result property="HatchCoverNo"                     column="HatchCoverNo"             nullValue="0"/>
+      <result property="DeckLCG"                          column="DeckLCG"                  nullValue="0"/>
+      <result property="HoldLCG"                          column="HoldLCG"                  nullValue="0"/>
+      <result property="HoldTopTierIndex"                 column="HoldTopTierIndex"         nullValue="0"/>
+      <result property="HoldNo"                           column="HoldNo"                   nullValue="0"/>
+      <result property="ChkCrane"                         column="ChkCrane"                 nullValue="N"/>
+      <!--<result property="NotLoaded40Cntr"                  column="NotLoaded40Cntr"          nullValue="N" dbtype="Varchar2" type="bool" />-->
+    </resultMap>
+    
+  </resultMaps>
+
+
+  <statements>
+    <select id="select-vesselScheduleList" resultMap="vesselScheduleResult">
+     SELECT b.vsl_cd, b.call_year, b.call_seq, b.user_voy, b.ptnr_code,
+            CASE WHEN ss.berth_no IS NULL THEN b.berth_no ELSE ss.berth_no END berth_no,
+            CASE WHEN ss.alongside IS NULL THEN b.alongside ELSE ss.alongside END alongside,
+            TO_CHAR(b.deck_pos) as deck_pos, b.ata, b.atb, b.atw, b.atc, b.atd,
+            b.vsl_type, b.in_lane, b.out_lane, b.s_dis_chk, b.barge_chk, v.vsl_nm, b.port_voy
+       FROM tb_berthplan b, tb_vsl v,
+            ( SELECT s.vsl_cd, s.call_year, s.call_seq, s.alongside, s.berth_no, s.from_pos, s.to_pos
+                FROM tb_shiftberth s, 
+                     ( SELECT vsl_cd, call_year, call_seq, MAX(alsst) alsst
+                         FROM tb_shiftberth
+                        WHERE alsst IS NOT NULL
+                          AND alsst <![CDATA[<=]]> SYSDATE
+                     GROUP BY vsl_cd, call_year, call_seq
+                     ) t
+               WHERE s.vsl_cd = t.vsl_cd
+                 AND s.call_year = t.call_year
+                 AND s.call_seq = t.call_seq
+                 AND s.alsst = t.alsst
+            ) ss
+      WHERE b.vsl_cd = v.vsl_cd
+        AND b.vsl_cd = ss.vsl_cd(+)
+        AND b.call_year = ss.call_year(+)
+        AND b.call_seq = ss.call_seq(+)
+        AND b.atw IS NOT NULL
+        AND b.atc IS NULL
+        AND b.atd IS NULL
+        AND b.storage_type IS NULL
+        AND NVL(b.status, 'NULL') <![CDATA[<>]]> 'C'
+   ORDER BY b.vsl_cd, b.call_year, b.call_seq
+    </select>
+    
+    <select id="select-hatchItemList" parameterClass="vesselInformationParam" resultMap="hatchItemListResult">
+     SELECT hatch_idx, MIN(bay_idx) start_bay_idx, MAX(bay_idx) end_bay_idx, MIN(bay_no) start_bay_no, MAX(bay_no) end_bay_no
+       FROM vd_gnrl_arr
+      WHERE vsl_cd = #VesselCode#
+   GROUP BY hatch_idx
+   ORDER BY TO_NUMBER(hatch_idx)
+    </select>
+
+    <select id="select-ativatedHatchItemList" parameterClass="activatedVesselInformationParam" resultMap="activatedHatchItemListResult">  <!--added by YoungHwan Choi (2020.06.30) - Mantis 107546 GCT Activated 작업이 있는 베이를 구분할 수 있는 방법-->
+      SELECT DISTINCT DECODE(QJOB_TYPE, 'GL', LHATCH_IDX , 'SL' , LHATCH_IDX , DHATCH_IDX) AS hatch_idx
+      FROM TB_GC_ODR
+      WHERE VSL_CD  = #VesselCode#
+      AND CALL_YEAR = #CallYear#
+      AND CALL_SEQ = #CallSequence#
+      AND EQU_NO = #EquNo#
+      AND Actual_Time IS NULL
+      AND(DEALLOC_CHK IS NULL OR DeaLLOC_CHK ='N')
+      AND PAUSE_CHK ='N'
+      ORDER BY hatch_idx
+    </select>
+
+    <select id="select-bayList" parameterClass="vesselInformationParam" resultMap="bayResult">
+      SELECT VSL_CD           AS VESSELCD
+      , BAY_IDX          AS BAYINDEX
+      , BAY_NO           AS NO
+      , BAY_NO_USER      AS USERNO
+      , HATCH_IDX        AS HATCHINDEX
+      , HC_NO            AS HATCHCOVERNO
+      , LCG_DECK         AS DECKLCG
+      , LCG_HOLD         AS HOLDLCG
+      , HOLD_TIER        AS HOLDTOPTIERINDEX
+      , HOLD_IDX         AS HOLDNO
+      , CHK_CRANE        AS CHKCRANE
+      , NOT_ALLOW40_ON20 AS NOTLOADED40CNTR
+      FROM VD_GNRL_ARR
+      WHERE VSL_CD = #VesselCode#
+      ORDER BY TO_NUMBER(BAY_IDX)
+    </select>
+
+    <select id="select-vesselSchedule" parameterClass="activatedVesselInformationParam" resultMap="vesselScheduleResult">
+      SELECT b.vsl_cd, b.call_year, b.call_seq, b.user_voy, b.ptnr_code,
+             CASE WHEN ss.berth_no IS NULL THEN b.berth_no ELSE ss.berth_no END berth_no,
+             CASE WHEN ss.alongside IS NULL THEN b.alongside ELSE ss.alongside END alongside,
+             TO_CHAR(b.deck_pos) as deck_pos, b.ata, b.atb, b.atw, b.atc, b.atd,
+             b.vsl_type, b.in_lane, b.out_lane, b.s_dis_chk, b.barge_chk, v.vsl_nm, b.port_voy
+        FROM tb_berthplan b, tb_vsl v,
+             ( SELECT s.vsl_cd, s.call_year, s.call_seq, s.alongside, s.berth_no, s.from_pos, s.to_pos
+                 FROM tb_shiftberth s,
+                      ( SELECT vsl_cd, call_year, call_seq, MAX(alsst) alsst
+                          FROM tb_shiftberth
+                         WHERE alsst IS NOT NULL
+                           AND alsst <![CDATA[<=]]> SYSDATE
+                      GROUP BY vsl_cd, call_year, call_seq
+                      ) t
+                WHERE s.vsl_cd = t.vsl_cd
+                  AND s.call_year = t.call_year
+                  AND s.call_seq = t.call_seq
+                  AND s.alsst = t.alsst
+             ) ss
+       WHERE b.vsl_cd = v.vsl_cd
+         AND b.vsl_cd = ss.vsl_cd(+)
+         AND b.call_year = ss.call_year(+)
+         AND b.call_seq = ss.call_seq(+)
+         AND b.VSL_CD = #VesselCode#
+         AND b.CALL_YEAR = #CallYear#
+         AND b.CALL_SEQ = #CallSequence#
+         AND b.storage_type IS NULL
+         AND NVL(b.status, 'NULL') <![CDATA[<>]]> 'C'
+    </select>
+    
+  </statements>
+</sqlMap>

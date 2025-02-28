@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+TEMPLATE MENU
+-->
+<tsbMenu>
+  <menu menutype="ribbon">
+    <menuTab name="Home" id="mnGrpHome" resourcekey="WRD_CTCM_File">
+      <menuItemGroup name="Data" id="itmGrpData" resourcekey="WRD_CTCM_Menu_Data">
+        <!-- START Common Button is defined by FrameWork -->
+        <menuItem name="New"     id="mniNew"     resourcekey="WRD_CTCM_Menu_New"     frmid="" actionid="New"     actiontarget="custom" actionclass="Menu.Action.DataMenuGroupAction" asmbname="Tsb.Fontos.Win" shortcutkey="131072 | 78" imgname="menu_New" imgsize="L"/>        
+        <menuItem name="Save"    id="mniSave"    resourcekey="WRD_CTCM_Menu_Save"    frmid="" actionid="Save"    actiontarget="custom" actionclass="Menu.Action.DataMenuGroupAction" asmbname="Tsb.Fontos.Win" shortcutkey="131072 | 83" imgname="menu_Save" imgsize="L"/>
+        <menuItem name="Delete"  id="mniDelete"  resourcekey="WRD_CTCM_Menu_Delete"  frmid="" actionid="Delete"  actiontarget="custom" actionclass="Menu.Action.DataMenuGroupAction" asmbname="Tsb.Fontos.Win" imgname="menu_Delete" imgsize="S"/>
+        <menuItem name="Print"   id="mniPrint"       resourcekey="WRD_CTCM_Menu_Print"          frmid="" actionid=""       actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" imgname="menu_Print" imgsize="S">
+          <menuItem name="Print"    id="mniPrint"    resourcekey="WRD_CTCM_Menu_Print"         frmid="" actionid="Print"   actiontarget="custom" actionclass="Menu.Action.GridPrintAction" asmbname="Tsb.Fontos.Win" imgname="menu_Print" imgsize="S"/>
+          <menuItem name="Preview"  id="mniPreview"  resourcekey="WRD_CTCM_Menu_Preview"       frmid="" actionid="Preview" actiontarget="custom" actionclass="Menu.Action.GridPrintAction" asmbname="Tsb.Fontos.Win" imgname="menu_Preview" imgsize="S"/>
+          <menuItem name="Option"   id="mniOption"   resourcekey="WRD_CTCM_Menu_Option"        frmid="" actionid="Option"  actiontarget="custom" actionclass="Menu.Action.GridPrintAction" asmbname="Tsb.Fontos.Win" imgname="menu_Option" imgsize="S"/>
+          <menuItem name="Excel"    id="mniExcel"    resourcekey="WRD_CTCM_Menu_ExportToExcel" frmid="" actionid="Excel"   actiontarget="custom" actionclass="Menu.Action.GridPrintAction" asmbname="Tsb.Fontos.Win" imgname="menu_Excel" imgsize="S"/>
+          <menuItem name="PDF"      id="mniPdf"      resourcekey="WRD_CTCM_Menu_ExportToPDF"   frmid="" actionid="Pdf"     actiontarget="custom" actionclass="Menu.Action.GridPrintAction" asmbname="Tsb.Fontos.Win" imgname="menu_Pdf" imgsize="S"/>
+        </menuItem>
+        <menuItem name="Exit" id="mniExit" resourcekey="WRD_CTCM_Exit" frmid="" actionid="Exit" actiontarget="common" actionclass="" asmbname="" imgname="menu_Exit"/>
+      </menuItemGroup>
+      <menuItemGroup name="Data" id="itmGrpData" resourcekey="WRD_CTCM_Refresh">
+        <menuItem name="Refresh" id="mniInquiry" resourcekey="WRD_CTCM_Refresh" frmid="" actionid="Inquiry" actiontarget="custom" actionclass="Menu.Action.DataMenuGroupAction" asmbname="Tsb.Fontos.Win" shortcutkey="116" imgname="menu_Inquiry" imgsize="L"/>
+      </menuItemGroup>
+    </menuTab>
+    <menuTab name="Home" id="mnGrpHome" resourcekey="WRD_CTCM_Menu_Edit">
+      <menuItemGroup name="Edit" id="GRP_Edit" resourcekey="WRD_CTCM_Menu_Edit">
+        <menuItem name="Copy"    id="mniCopy"    resourcekey="WRD_CTCM_Menu_Copy"        frmid="" actionid="Copy"   actiontarget="custom" actionclass="Menu.Action.GridRowAction" asmbname="Tsb.Fontos.Win" imgname="menu_Copy" imgsize="S"/>
+        <menuItem name="Paste"    id="mniPaste"    resourcekey="WRD_CTCM_Paste"        frmid="" actionid="Paste"   actiontarget="custom" actionclass="Menu.Action.GridRowAction" asmbname="Tsb.Fontos.Win" imgname="menu_Paste" imgsize="S"/>        
+      </menuItemGroup>
+      <menuItemGroup name="Grid" id="GRP_Grid" resourcekey="WRD_CTCM_Grid">
+        <menuItem name="Insert"  id="mniInsert"  resourcekey="WRD_CTCM_Menu_Insert"      frmid="" actionid="Insert" actiontarget="custom" actionclass="Menu.Action.GridRowAction" asmbname="Tsb.Fontos.Win" shortcutkey="115" imgname="menu_Insert" imgsize="S"/>
+      </menuItemGroup>
+    </menuTab>
+    <!-- BUSINESS MENU AREA START -->
+    <menuTab name="Sample" id="mnGrpSample" resourcekey="WRD_PTWB_Sample" >
+      <menuItemGroup name="Sample" id="itmSample" resourcekey="WRD_PTWB_SampleGrid">
+        <menuItem name="SingleGrid Sample" id="mnuSingleGrid" resourcekey="WRD_PTWB_Menu_SingleGrid" frmid="SingleGridView" actionid="OpenFrm" actiontarget="common" actionclass="" asmbname="" imgname="menu_SingleGrid"/>
+      </menuItemGroup>
+    </menuTab>
+    	  
+    <!-- BUSINESS MENU AREA END -->
+
+    <menuTab name="Tools" id="mnGrpTools" resourcekey="WRD_CTCM_ToolsMenu" >
+      <menuItemGroup name="List"       id="itmGrpList"    resourcekey="WRD_CTCM_Menu_List">
+        <menuItem name="Filter"        id="mniFilter"     resourcekey="WRD_CTCM_Menu_Filter"        frmid="" actionid="Filter"     actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" imgname="menu_Filter" imgsize="S"/>
+        <menuItem name="ColumnSetting" id="mniColSetting" resourcekey="WRD_CTCM_Menu_ColumnSetting" frmid="" actionid="ColSetting" actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" imgname="menu_ColumnSetting" imgsize="S"/>
+        <menuItem name="Find"          id="mniFind"       resourcekey="WRD_CTCM_Menu_Find"          frmid="" actionid="Find"       actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" shortcutkey="131072 | 70" imgname="menu_Find" imgsize="S"/>
+        <menuItem name="Summary"       id="mniSummary"    resourcekey="WRD_CTCM_Menu_Summary"       frmid="" actionid="Summary"    actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" shortcutkey="118" imgname="menu_Summary" imgsize="S"/>
+        <menuItem name="Sort"          id="mniSort"       resourcekey="WRD_CTCM_Menu_Sort"          frmid="" actionid="Sort"       actiontarget="custom" actionclass="Menu.Action.GridDataAction" asmbname="Tsb.Fontos.Win" shortcutkey="131072 | 87" imgname="menu_Sort" imgsize="S"/>
+      </menuItemGroup>
+      <menuItemGroup name="Tools" id="itmGrpTools" resourcekey="WRD_CTCM_ToolsMenu">
+        <menuItem name="Detail" id="mniDetail" resourcekey="WRD_CTCM_Detail" frmid="" actionid="Detail"   actiontarget="custom" actionclass="Menu.Action.DataMenuGroupAction" asmbname="Tsb.Fontos.Win" shortcutkey="117" imgname="menu_Detail" imgsize="s"/>
+      </menuItemGroup>      
+    </menuTab>
+
+    <menuTab name="Window" id="mnGrpWindow" resourcekey="WRD_CTCM_Window">
+      <menuItemGroup name="Window" id="itmWindow" resourcekey="WRD_CTCM_Window">
+        <menuItem name="Cascade" id="mniCascade"       resourcekey="WRD_CTCM_Cascade" frmid="" actionid="Cascade" actiontarget="common" actionclass="" asmbname="" imgname="menu_Cascade"/>
+        <menuItem name="Vertical" id="mniVertical"     resourcekey="WRD_CTCM_Vertical" frmid="" actionid="Vertical" actiontarget="common" actionclass="" asmbname="" imgname="menu_Vertical"/>
+        <menuItem name="Horizontal" id="mniHorizontal" resourcekey="WRD_CTCM_Horizontal" frmid="" actionid="Horizontal" actiontarget="common" actionclass="" asmbname="" imgname="menu_Horizontal"/>
+      </menuItemGroup>
+    </menuTab>
+	  <menuTab name="Weight Bridge" id="mnGrpWB" resourcekey="WRD_PTWB_WB">
+		  <menuItemGroup name="Weight Bridge" id="mnItemGrpWB" resourcekey="WRD_PTWB_WB">
+			  <menuItem name="Weight Bridge" id="mnuItemWB" resourcekey="WRD_PTWB_WB" frmid="WBMainView" actionid="OpenFrm" imgname=""/>
+		  </menuItemGroup>
+	  </menuTab>
+  </menu>
+
+  <ContextMenu>
+    <menuItemGroup id="First">
+      <menuItem actionid="Insert" isContextMenu="Y"/>
+      <menuItem actionid="Inquiry" isContextMenu="Y"/>
+      <menuItem actionid="Preview" isContextMenu="Y"/>
+    </menuItemGroup>
+    <menuItemGroup id="Second">
+      <menuItem actionid="Find" isContextMenu="Y"/>
+      <menuItem actionid="Sort" isContextMenu="Y"/>
+      <menuItem actionid="Summary" isContextMenu="Y"/>
+      <menuItem actionid="Filter" isContextMenu="Y"/>
+      <menuItem actionid="ColSetting" isContextMenu="Y"/>
+    </menuItemGroup>
+    <menuItemGroup id="Third">
+      <menuItem actionid="Detail" isContextMenu="Y"/>
+      <menuItem actionid="CntrDetail" isContextMenu="Y"/>
+    </menuItemGroup>
+  </ContextMenu>
+</tsbMenu>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<TMaskCellStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/TMaskCellStyles.xsd">
+  <CellStyles>
+    <TMaskCellStyle>
+      <CellStyleID>Mask Cell</CellStyleID>
+      <Mask>__SSS</Mask>
+      <MaskCharacter>#</MaskCharacter>
+      <StringTrim>Y</StringTrim>
+    </TMaskCellStyle>
+    <TMaskCellStyle>
+      <CellStyleID>ShortTime</CellStyleID>
+      <Mask>##:##:##</Mask>
+      <MaskCharacter>#</MaskCharacter>
+      <StringTrim>Y</StringTrim>
+    </TMaskCellStyle>
+    <TMaskCellStyle>
+      <CellStyleID>HourMinTime</CellStyleID>
+      <Mask>00:00</Mask>
+      <MaskCharacter>0</MaskCharacter>
+      <StringTrim>Y</StringTrim>
+    </TMaskCellStyle>
+    <TMaskCellStyle>
+      <CellStyleID>RehandlingTime</CellStyleID>
+      <Mask>###:##</Mask>
+      <MaskCharacter>0</MaskCharacter>
+      <StringTrim>Y</StringTrim>
+    </TMaskCellStyle>
+    <TMaskCellStyle>
+      <CellStyleID>FiscalYear</CellStyleID>
+      <Mask>0000/0000</Mask>
+      <MaskCharacter>0</MaskCharacter>
+      <StringTrim>Y</StringTrim>
+    </TMaskCellStyle>
+  </CellStyles>
+</TMaskCellStyles>

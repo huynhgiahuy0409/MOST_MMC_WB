@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+  <!-- AESEncrypter: MSCTV, GOCT -->
+  
+  <object id="SYS_OBJECT_APP_AUTHEN_MSG_SERVER_HANDLER" singleton="true" type="Tsb.Catos.Cm.Net.Security.Authentication.C3ITAuthenHandler, Tsb.Catos.Cm.Net">
+    <property name="PasswordEncrypter">
+      <object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_APP_AUTHEN_LDAP_SERVER_HANDLER" singleton="true" type="Tsb.Catos.Cm.Net.Security.Authentication.LDAPAuthenHandler, Tsb.Catos.Cm.Net">
+    <property name="PasswordEncrypter">
+      <object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_APP_AUTHEN_XIS_SERVER_HANDLER" singleton="true" type="Tsb.Catos.Cm.Net.Security.Authentication.XISAuthenHandler, Tsb.Catos.Cm.Net">
+    <property name="PasswordEncrypter">
+      <object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_APP_AUTHEN_XIS_SEMI_SERVER_HANDLER" singleton="true" type="Tsb.Catos.Cm.Net.Security.Authentication.XISSemiAuthenHandler, Tsb.Catos.Cm.Net">
+    <property name="PasswordEncrypter">
+      <object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />
+    </property>
+  </object>
+
+</objects>

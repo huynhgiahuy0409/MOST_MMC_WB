@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<GridColumnSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/GridColumnXmlSchema.xsd">
+  <GridSchema>
+    <FrozenColumnCount>0</FrozenColumnCount>
+  </GridSchema>
+  <ColumnSchemas>
+    <ColumnSchema>
+      <Seq>0</Seq>
+      <ViewColumnSeq>0</ViewColumnSeq>
+      <Key>Stime</Key>
+      <LabelResKey>WRD_CTCM_Stime</LabelResKey>
+      <DataField>Stime</DataField>
+      <CodeType />
+      <ColumnMaxLength>0</ColumnMaxLength>
+      <DBField>Stime</DBField>
+      <CellType>Mask</CellType>
+      <CellStyleID>ShortTime</CellStyleID>
+      <CellTypeID>ShortTime</CellTypeID>
+      <Width>8</Width>
+      <Visible>Y</Visible>
+      <ForeColor>0</ForeColor>
+      <BackColor>16777152</BackColor>
+      <Filter />
+      <Sort>N</Sort>
+      <SortSeq>0</SortSeq>
+      <HorizontalAlignment>C</HorizontalAlignment>
+      <RefDBField />
+      <RefCodeType />
+      <DummyFieldEditable />
+      <VerticalAlignment>C</VerticalAlignment>
+      <Lock>N</Lock>
+      <Mandatory>Y</Mandatory>
+      <PrimaryKey>Y</PrimaryKey>
+      <Preview>Y</Preview>
+      <Copy>N</Copy>
+      <NotAllowHidden>Y</NotAllowHidden>
+      <CellEditor>N</CellEditor>
+      <CellTypeCode>N</CellTypeCode>
+      <ColorRuleType>N</ColorRuleType>
+      <CellInput>D</CellInput>
+      <CellDisplay>N</CellDisplay>
+      <ValueDisplay>N</ValueDisplay>
+    </ColumnSchema>
+    <ColumnSchema>
+      <Seq>1</Seq>
+      <ViewColumnSeq>1</ViewColumnSeq>
+      <Key>Ttime</Key>
+      <LabelResKey>WRD_CTCM_Ttime</LabelResKey>
+      <DataField>Ttime</DataField>
+      <CodeType />
+      <ColumnMaxLength>0</ColumnMaxLength>
+      <DBField>Ttime</DBField>
+      <CellType>Mask</CellType>
+      <CellStyleID>ShortTime</CellStyleID>
+      <CellTypeID>ShortTime</CellTypeID>
+      <Width>8</Width>
+      <Visible>Y</Visible>
+      <ForeColor>0</ForeColor>
+      <BackColor>16777152</BackColor>
+      <Filter />
+      <Sort>N</Sort>
+      <SortSeq>0</SortSeq>
+      <HorizontalAlignment>C</HorizontalAlignment>
+      <RefDBField />
+      <RefCodeType />
+      <DummyFieldEditable />
+      <VerticalAlignment>C</VerticalAlignment>
+      <Lock>N</Lock>
+      <Mandatory>Y</Mandatory>
+      <PrimaryKey>Y</PrimaryKey>
+      <Preview>Y</Preview>
+      <Copy>N</Copy>
+      <NotAllowHidden>Y</NotAllowHidden>
+      <CellEditor>N</CellEditor>
+      <CellTypeCode>N</CellTypeCode>
+      <ColorRuleType>N</ColorRuleType>
+      <CellInput>D</CellInput>
+      <CellDisplay>N</CellDisplay>
+      <ValueDisplay>N</ValueDisplay>
+    </ColumnSchema>
+    <ColumnSchema>
+      <Seq>2</Seq>
+      <ViewColumnSeq>2</ViewColumnSeq>
+      <Key>HourCode</Key>
+      <LabelResKey>WRD_CTCM_HourCode</LabelResKey>
+      <DataField>HourCode</DataField>
+      <CodeType>HCD</CodeType>
+      <ColumnMaxLength>0</ColumnMaxLength>
+      <DBField>HourCode</DBField>
+      <CellType>Text</CellType>
+      <CellStyleID>Basic Text</CellStyleID>
+      <CellTypeID>Basic Text</CellTypeID>
+      <Width>12</Width>
+      <Visible>Y</Visible>
+      <ForeColor>0</ForeColor>
+      <BackColor>12648384</BackColor>
+      <Filter />
+      <Sort>N</Sort>
+      <SortSeq>0</SortSeq>
+      <HorizontalAlignment>C</HorizontalAlignment>
+      <RefDBField />
+      <RefCodeType />
+      <DummyFieldEditable />
+      <VerticalAlignment>C</VerticalAlignment>
+      <Lock>N</Lock>
+      <Mandatory>N</Mandatory>
+      <PrimaryKey>N</PrimaryKey>
+      <Preview>Y</Preview>
+      <Copy>N</Copy>
+      <NotAllowHidden>Y</NotAllowHidden>
+      <CellEditor>N</CellEditor>
+      <CellTypeCode>N</CellTypeCode>
+      <ColorRuleType>N</ColorRuleType>
+      <CellInput>L</CellInput>
+      <CellDisplay>M</CellDisplay>
+      <ValueDisplay>N</ValueDisplay>
+    </ColumnSchema>
+  </ColumnSchemas>
+</GridColumnSchema>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/schema/objects/spring-objects-1.1.xsd">
+
+  <object id="GNR-CTCM-RPV-EquInterchangeOrderReportHdl"    type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeOrderReportHdl, Tsb.Catos.Cm.Win"    lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeReceiptReportHdl"  type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeReceiptReportHdl, Tsb.Catos.Cm.Win"  lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-ServiceOrderReportHdl"           type="Tsb.Catos.Cm.Win.ReportHandler.ServiceOrderReportHdl, Tsb.Catos.Cm.Win"           lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-ServiceOrderReportLAIPHdl"   type="Tsb.Catos.Cm.Win.ReportHandler.ServiceOrderReportLAIPHdl, Tsb.Catos.Cm.Win"           lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-ServiceOrderReportPAPHdl"   type="Tsb.Catos.Cm.Win.ReportHandler.ServiceOrderReportPAPHdl, Tsb.Catos.Cm.Win"           lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-VesselOperationReportHdl"        type="Tsb.Catos.Cm.Win.ReportHandler.VesselOperationReportHdl, Tsb.Catos.Cm.Win"        lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-VesselOperationReportModeVesselHdl"      type="Tsb.Catos.Cm.Win.ReportHandler.VesselOperationReportModeVesselHdl, Tsb.Catos.Cm.Win"      lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-VesselOperationReportModeGangHdl"        type="Tsb.Catos.Cm.Win.ReportHandler.VesselOperationReportModeGangHdl, Tsb.Catos.Cm.Win"        lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-VesselOperationReportPCTCHdl"        type="Tsb.Catos.Cm.Win.ReportHandler.VesselOperationReportPCTCHdl, Tsb.Catos.Cm.Win"        lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeOrderByOrderReportHdl" type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeOrderByOrderReportHdl, Tsb.Catos.Cm.Win" lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeReceiptReportACCHCHdl" type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeReceiptReportACCHCHdl, Tsb.Catos.Cm.Win" lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeOrderReportPAPHdl"    type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeOrderReportPAPHdl, Tsb.Catos.Cm.Win"    lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeOrderReportBNPHdl"    type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeOrderReportBNPHdl, Tsb.Catos.Cm.Win"    lazy-init="true"/>
+  <object id="GNR-CTCM-RPV-EquInterchangeOrderByOrderReportBNPHdl"    type="Tsb.Catos.Cm.Win.ReportHandler.EquInterchangeOrderByOrderReportBNPHdl, Tsb.Catos.Cm.Win"    lazy-init="true"/>
+</objects>

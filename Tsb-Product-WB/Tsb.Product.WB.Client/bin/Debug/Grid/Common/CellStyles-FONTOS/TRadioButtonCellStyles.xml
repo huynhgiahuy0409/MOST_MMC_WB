@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<TRadioButtonCellStyles xmlns="http://www.tsb.co.kr/xsd/TRadioButtonCellStyles.xsd">
+  <CellStyles>
+    <TRadioButtonCellStyle Orientation="H">
+      <CellStyleID>SortDirection</CellStyleID>
+      <RadioMembers>
+          <RadioMember Key="Ascending"  Seq ="0" LabelResKey="WRD_CTCM_Ascending" Value="A"/>
+          <RadioMember Key="Descending" Seq ="1" LabelResKey="WRD_CTCM_Descending" Value="D"/>
+      </RadioMembers>
+    </TRadioButtonCellStyle>
+  </CellStyles>
+</TRadioButtonCellStyles>

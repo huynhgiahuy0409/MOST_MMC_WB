@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns='http://www.springframework.net'
+         xmlns:d="http://www.springframework.net/database">
+
+  <!-- Find View -->
+  <object id="SimpleSpreadFind" type="Tsb.Fontos.Win.Grid.Spread.Find.SimpleSpreadFindView, Tsb.Fontos.Win" factory-method="GetInstance" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="GeneralSpreadFilter" type="Tsb.Fontos.Win.Grid.Spread.Filter.GeneralSpreadFilterView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="LegacySpreadFilter" type="Tsb.Fontos.Win.Grid.Spread.Filter.LegacySpreadFilterView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="GeneralSpreadSort" type="Tsb.Fontos.Win.Grid.Spread.Sort.GeneralSpreadSortView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="LegacySpreadSort" type="Tsb.Fontos.Win.Grid.Spread.Sort.LegacySpreadSortView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="GeneralSpreadColSetting" type="Tsb.Fontos.Win.Grid.Spread.ColumnSetting.GeneralSpreadColSettingView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="LegacySpreadColSetting" type="Tsb.Fontos.Win.Grid.Spread.ColumnSetting.LegacySpreadColSettingView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="GeneralSpreadSummary" type="Tsb.Fontos.Win.Grid.Spread.Summary.GeneralSpreadSummaryPreViewView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+
+  <object id="SimpleSpreadFilter" type="Tsb.Fontos.Win.Grid.Spread.Filter.SimpleSpreadFilterView, Tsb.Fontos.Win" factory-method="GetInstance" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+  </object>
+	
+	<object id="DetailLayoutView" type="Tsb.Fontos.Win.Grid.Spread.DetailLayout.DetailLayoutView, Tsb.Fontos.Win" lazy-init="true">
+    <constructor-arg>
+      <object type="Tsb.Fontos.Win.Grid.Spread.TSpreadGrid, Tsb.Fontos.Win"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.Windows.Forms.Form, System.Windows.Forms"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.String, System"/>
+    </constructor-arg>
+    <constructor-arg>
+      <object type="System.String, System"/>
+    </constructor-arg>
+		<constructor-arg>
+			<object type="System.String, System"/>
+		</constructor-arg>
+
+    <property name="DefaultFieldWidth" value="100"/>
+    <property name="SelectedForeColor" value="0,255,0"/>
+  </object>
+
+</objects>

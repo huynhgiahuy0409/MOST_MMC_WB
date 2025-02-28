@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WRD_FTCO_ConfigurationType" xml:space="preserve">
+    <value>نوع التكوين</value>
+  </data>
+  <data name="WRD_FTCO_CurrencyDecimalDigits" xml:space="preserve">
+    <value>العملة عشري سيارة</value>
+  </data>
+  <data name="WRD_FTCO_CurrencyDecimalSeparator" xml:space="preserve">
+    <value>العملة عشري فاصل</value>
+  </data>
+  <data name="WRD_FTCO_CurrencyGroupSeparator" xml:space="preserve">
+    <value>المجموعة العملة فاصل</value>
+  </data>
+  <data name="WRD_FTCO_CurrencyGroupSizes" xml:space="preserve">
+    <value>العملة مقاسات المجموعة</value>
+  </data>
+  <data name="WRD_FTCO_CurrencySymbol" xml:space="preserve">
+    <value>رمز العملة</value>
+  </data>
+  <data name="WRD_FTCO_Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="WRD_FTCO_" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WRD_FTCO_Applicationcontextfile" xml:space="preserve">
+    <value>Application context file</value>
+  </data>
+  <data name="WRD_FTCO_FullDateTimePattern" xml:space="preserve">
+    <value>كامل تاريخ الوقت نمط</value>
+  </data>
+  <data name="WRD_FTCO_Information" xml:space="preserve">
+    <value>معلومات</value>
+  </data>
+  <data name="WRD_FTCO_LongDatePattern" xml:space="preserve">
+    <value>تاريخ طويل نمط</value>
+  </data>
+  <data name="WRD_FTCO_LongTimePattern" xml:space="preserve">
+    <value>وقت طويل نمط</value>
+  </data>
+  <data name="WRD_FTCO_MonthDayPattern" xml:space="preserve">
+    <value>يوم الشهر نمط</value>
+  </data>
+  <data name="WRD_FTCO_NumberDecimalDigits" xml:space="preserve">
+    <value>عدد عشري سيارة</value>
+  </data>
+  <data name="WRD_FTCO_NumberDecimalSeparator" xml:space="preserve">
+    <value>عدد عشري فاصل</value>
+  </data>
+  <data name="WRD_FTCO_NumberGroupSeparator" xml:space="preserve">
+    <value>عدد المجموعة فاصل</value>
+  </data>
+  <data name="WRD_FTCO_NumberGroupSizes" xml:space="preserve">
+    <value>مقاسات عدد المجموعة</value>
+  </data>
+  <data name="WRD_FTCO_Otherconfigurationtype" xml:space="preserve">
+    <value>Other configuration type</value>
+  </data>
+  <data name="WRD_FTCO_PercentNegativePattern" xml:space="preserve">
+    <value>Percent Negative Pattern</value>
+  </data>
+  <data name="WRD_FTCO_PercentPositivePattern" xml:space="preserve">
+    <value>Percent Positive Pattern</value>
+  </data>
+  <data name="WRD_FTCO_Question" xml:space="preserve">
+    <value>سؤال</value>
+  </data>
+  <data name="WRD_FTCO_ShortDatePattern" xml:space="preserve">
+    <value>Short Date Pattern</value>
+  </data>
+  <data name="WRD_FTCO_ShortTimePattern" xml:space="preserve">
+    <value>Short Time Pattern</value>
+  </data>
+  <data name="WRD_FTCO_SqlMapperHandlersetting" xml:space="preserve">
+    <value>SqlMapperHandler setting</value>
+  </data>
+  <data name="WRD_FTCO_Stop" xml:space="preserve">
+    <value>توقف</value>
+  </data>
+  <data name="WRD_FTCO_thisfile" xml:space="preserve">
+    <value>this file</value>
+  </data>
+  <data name="WRD_FTCO_Warning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+  <data name="WRD_FTCO_YearMonthPattern" xml:space="preserve">
+    <value>Year Month Pattern</value>
+  </data>
+  <data name="WRD_FTCO_Resourcefile" xml:space="preserve">
+    <value>Resource file</value>
+  </data>
+  <data name="WRD_FTCO_trueorfalse" xml:space="preserve">
+    <value>true or false</value>
+  </data>
+  <data name="WRD_FTCO_Add" xml:space="preserve">
+    <value>جمع</value>
+  </data>
+  <data name="WRD_FTCO_btn_OK" xml:space="preserve">
+    <value>حسنا</value>
+    <comment>hoon</comment>
+  </data>
+  <data name="WRD_FTCO_Cancel" xml:space="preserve">
+    <value>إلغاء</value>
+  </data>
+  <data name="WRD_FTCO_Cell" xml:space="preserve">
+    <value>الخلية</value>
+  </data>
+  <data name="WRD_FTCO_ChangePassword" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="WRD_FTCO_CheckAll" xml:space="preserve">
+    <value>تحقق جميع</value>
+  </data>
+  <data name="WRD_FTCO_Color" xml:space="preserve">
+    <value>لون</value>
+  </data>
+  <data name="WRD_FTCO_Column" xml:space="preserve">
+    <value>عمود</value>
+  </data>
+  <data name="WRD_FTCO_ColumnKey" xml:space="preserve">
+    <value>مفتاح العمود</value>
+  </data>
+  <data name="WRD_FTCO_ColumnSetting" xml:space="preserve">
+    <value>إعداد العمود</value>
+  </data>
+  <data name="WRD_FTCO_ColumnSettingList" xml:space="preserve">
+    <value>قائمة إعدادات العمود</value>
+  </data>
+  <data name="WRD_FTCO_ColumnSetting_" xml:space="preserve">
+    <value>ColumnSetting_</value>
+  </data>
+  <data name="WRD_FTCO_Configuration" xml:space="preserve">
+    <value>ترتيب</value>
+  </data>
+  <data name="WRD_FTCO_ConfirmNew" xml:space="preserve">
+    <value>تأكيد جديد</value>
+  </data>
+  <data name="WRD_FTCO_CopyRow" xml:space="preserve">
+    <value>نسخة صف</value>
+  </data>
+  <data name="WRD_FTCO_CRUDOperationCode" xml:space="preserve">
+    <value>CRUD Operation Code</value>
+  </data>
+  <data name="WRD_FTCO_Delete" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="WRD_FTCO_DeleteRow" xml:space="preserve">
+    <value>حذف صف</value>
+  </data>
+  <data name="WRD_FTCO_Down" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="WRD_FTCO_Endofsearch" xml:space="preserve">
+    <value>نهاية البحث</value>
+  </data>
+  <data name="WRD_FTCO_Excel" xml:space="preserve">
+    <value>تفوق</value>
+  </data>
+  <data name="WRD_FTCO_Filter" xml:space="preserve">
+    <value>مرشح</value>
+  </data>
+  <data name="WRD_FTCO_FilterList" xml:space="preserve">
+    <value>قائمة التصفية</value>
+  </data>
+  <data name="WRD_FTCO_FilterName_" xml:space="preserve">
+    <value>FilterName_</value>
+  </data>
+  <data name="WRD_FTCO_FilterSetting" xml:space="preserve">
+    <value>مرشح إعداد</value>
+  </data>
+  <data name="WRD_FTCO_Find" xml:space="preserve">
+    <value>اكتشاف</value>
+  </data>
+  <data name="WRD_FTCO_FindNext" xml:space="preserve">
+    <value>بحث عن التالي</value>
+  </data>
+  <data name="WRD_FTCO_FindWhat" xml:space="preserve">
+    <value>تجد ما</value>
+  </data>
+  <data name="WRD_FTCO_Font" xml:space="preserve">
+    <value>الخط</value>
+  </data>
+  <data name="WRD_FTCO_FrozenColumn" xml:space="preserve">
+    <value>العمود المجمدة</value>
+  </data>
+  <data name="WRD_FTCO_Insert" xml:space="preserve">
+    <value>أدخل</value>
+  </data>
+  <data name="WRD_FTCO_InsertRow" xml:space="preserve">
+    <value>إدراج صف</value>
+  </data>
+  <data name="WRD_FTCO_MatchCase" xml:space="preserve">
+    <value>المباراة حالة</value>
+  </data>
+  <data name="WRD_FTCO_MatchExactly" xml:space="preserve">
+    <value>تطابق بالضبط</value>
+  </data>
+  <data name="WRD_FTCO_Movedownrow" xml:space="preserve">
+    <value>تنزل الصف</value>
+  </data>
+  <data name="WRD_FTCO_Moveuprow" xml:space="preserve">
+    <value>نقل ما يصل الصف</value>
+  </data>
+  <data name="WRD_FTCO_name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="WRD_FTCO_NewPassword" xml:space="preserve">
+    <value>كلمة المرور الجديدة</value>
+  </data>
+  <data name="WRD_FTCO_NotFound" xml:space="preserve">
+    <value>لم يتم العثور على</value>
+  </data>
+  <data name="WRD_FTCO_Ok" xml:space="preserve">
+    <value>1Ok</value>
+  </data>
+  <data name="WRD_FTCO_OldPassword" xml:space="preserve">
+    <value>كلمة المرور القديمة</value>
+  </data>
+  <data name="WRD_FTCO_OpCode" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="WRD_FTCO_Operand" xml:space="preserve">
+    <value>المعامل</value>
+  </data>
+  <data name="WRD_FTCO_Operator" xml:space="preserve">
+    <value>المعامل</value>
+  </data>
+  <data name="WRD_FTCO_Password" xml:space="preserve">
+    <value>كلمة السر</value>
+  </data>
+  <data name="WRD_FTCO_passwordchange" xml:space="preserve">
+    <value>تغيير كلمة المرور</value>
+  </data>
+  <data name="WRD_FTCO_PDF" xml:space="preserve">
+    <value>PDF</value>
+  </data>
+  <data name="WRD_FTCO_Preview" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="WRD_FTCO_PrintOption" xml:space="preserve">
+    <value>Print Option</value>
+  </data>
+  <data name="WRD_FTCO_PrintPreview" xml:space="preserve">
+    <value>Print Preview</value>
+  </data>
+  <data name="WRD_FTCO_Remove" xml:space="preserve">
+    <value>نزع</value>
+  </data>
+  <data name="WRD_FTCO_Row" xml:space="preserve">
+    <value>Row</value>
+  </data>
+  <data name="WRD_FTCO_RowHeader" xml:space="preserve">
+    <value>Row Header</value>
+  </data>
+  <data name="WRD_FTCO_SelectComboBoxLabel" xml:space="preserve">
+    <value>- اختر -</value>
+  </data>
+  <data name="WRD_FTCO_SelectionType" xml:space="preserve">
+    <value>نوع الاختيار</value>
+  </data>
+  <data name="WRD_FTCO_SetasDefaultSetting" xml:space="preserve">
+    <value>Set as Default Setting</value>
+  </data>
+  <data name="WRD_FTCO_Size" xml:space="preserve">
+    <value>حجم</value>
+  </data>
+  <data name="WRD_FTCO_Sort" xml:space="preserve">
+    <value>نوع</value>
+  </data>
+  <data name="WRD_FTCO_SortDirection" xml:space="preserve">
+    <value>نوع اتجاه</value>
+  </data>
+  <data name="WRD_FTCO_SortList" xml:space="preserve">
+    <value>قائمة ترتيب</value>
+  </data>
+  <data name="WRD_FTCO_SortName_" xml:space="preserve">
+    <value>SortName_</value>
+  </data>
+  <data name="WRD_FTCO_SortSetting" xml:space="preserve">
+    <value>Sort Setting</value>
+  </data>
+  <data name="WRD_FTCO_style" xml:space="preserve">
+    <value>أسلوب</value>
+  </data>
+  <data name="WRD_FTCO_Summary" xml:space="preserve">
+    <value>ملخص</value>
+  </data>
+  <data name="WRD_FTCO_SummaryFilter" xml:space="preserve">
+    <value>Summary Filter</value>
+  </data>
+  <data name="WRD_FTCO_SummaryList" xml:space="preserve">
+    <value>Summary List</value>
+  </data>
+  <data name="WRD_FTCO_UncheckAll" xml:space="preserve">
+    <value>Uncheck All</value>
+  </data>
+  <data name="WRD_FTCO_UnsetColumnSetting" xml:space="preserve">
+    <value>Unset Column Setting</value>
+  </data>
+  <data name="WRD_FTCO_UnsetFilter" xml:space="preserve">
+    <value>Unset Filter</value>
+  </data>
+  <data name="WRD_FTCO_UnsetSort" xml:space="preserve">
+    <value>Unset Sort</value>
+  </data>
+  <data name="WRD_FTCO_Up" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="WRD_FTCO_UserID" xml:space="preserve">
+    <value>هوية المستخدم</value>
+  </data>
+  <data name="WRD_FTCO_Menu" xml:space="preserve">
+    <value>قائمة الطعام</value>
+  </data>
+  <data name="WRD_FTCO_ALLCOLUMNS" xml:space="preserve">
+    <value>[جميع الأعمدة ...]</value>
+  </data>
+  <data name="WRD_FTCO_endDate" xml:space="preserve">
+    <value>تاريخ انتهاء</value>
+  </data>
+  <data name="WRD_FTCO_startDate" xml:space="preserve">
+    <value>start date</value>
+  </data>
+  <data name="WRD_FTCO_FreezePanes" xml:space="preserve">
+    <value>تجميد الألواح</value>
+  </data>
+  <data name="WRD_FTCO_UnFreezePanes" xml:space="preserve">
+    <value>Unfreeze Panes</value>
+  </data>
+  <data name="WRD_FTCO_HeaderFilter" xml:space="preserve">
+    <value>رأس تصفية</value>
+  </data>
+  <data name="WRD_FTCO_FreezeColumn" xml:space="preserve">
+    <value>تجميد العمود</value>
+  </data>
+  <data name="WRD_FTCO_UnFreezeColumn" xml:space="preserve">
+    <value>Unfreeze Column</value>
+  </data>
+  <data name="WRD_FTCO_FileBrowser" xml:space="preserve">
+    <value>متصفح الملفات</value>
+  </data>
+  <data name="WRD_FTCO_ParentDirectory" xml:space="preserve">
+    <value>Parent Directory</value>
+  </data>
+  <data name="WRD_FTCO_WebBrowser" xml:space="preserve">
+    <value>متصفح الويب</value>
+  </data>
+  <data name="WRD_FTCO_X" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="WRD_FTCO_Y" xml:space="preserve">
+    <value>Y</value>
+  </data>
+  <data name="WRD_FTCO_Width" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="WRD_FTCO_Height" xml:space="preserve">
+    <value>ارتفاع</value>
+  </data>
+  <data name="WRD_FTCO_Wrokspace_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="WRD_FTCO_Wrokspace_OpenType" xml:space="preserve">
+    <value>Open Type</value>
+  </data>
+  <data name="WRD_FTCO_btn_Find" xml:space="preserve">
+    <value>Find[Ctrl+F]</value>
+  </data>
+  <data name="WRD_FTCO_CaseSensitive" xml:space="preserve">
+    <value>لحالة الأحرف</value>
+  </data>
+  <data name="WRD_FTCO_btn_Apply" xml:space="preserve">
+    <value>تطبق</value>
+  </data>
+  <data name="WRD_FTCO_btn_Export" xml:space="preserve">
+    <value>تصدير</value>
+  </data>
+  <data name="WRD_FTCO_ExcelOption" xml:space="preserve">
+    <value>التفوق الخيار</value>
+  </data>
+  <data name="WRD_FTCO_ColumnName" xml:space="preserve">
+    <value>اسم العمود</value>
+  </data>
+  <data name="WRD_FTCO_ColumnSeq" xml:space="preserve">
+    <value>يليها العمود</value>
+  </data>
+  <data name="WRD_FTCO_MatchedGridColumn" xml:space="preserve">
+    <value>عمود الشبكة المتطابقة</value>
+  </data>
+  <data name="WRD_FTCO_AutoMap" xml:space="preserve">
+    <value>خريطة السيارات</value>
+  </data>
+  <data name="WRD_FTCO_btn_Save" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="WRD_FTCO_EndColumn" xml:space="preserve">
+    <value>نهاية العمود</value>
+  </data>
+  <data name="WRD_FTCO_EndRow" xml:space="preserve">
+    <value>نهاية الصف</value>
+  </data>
+  <data name="WRD_FTCO_ExcelImportDialog" xml:space="preserve">
+    <value>التفوق استيراد</value>
+  </data>
+  <data name="WRD_FTCO_FileName" xml:space="preserve">
+    <value>اسم الملف</value>
+  </data>
+  <data name="WRD_FTCO_HeaderIncluded" xml:space="preserve">
+    <value>وشملت رأس</value>
+  </data>
+  <data name="WRD_FTCO_SheetName" xml:space="preserve">
+    <value>Sheet Name</value>
+  </data>
+  <data name="WRD_FTCO_StartRow" xml:space="preserve">
+    <value>Start Row</value>
+  </data>
+  <data name="WRD_FTCO_Template" xml:space="preserve">
+    <value>قالب</value>
+  </data>
+  <data name="WRD_FTCO_btn_Next" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="WRD_FTCO_btn_Previous" xml:space="preserve">
+    <value>سابق</value>
+  </data>
+  <data name="WRD_FTCO_Canceling" xml:space="preserve">
+    <value>Canceling</value>
+  </data>
+  <data name="WRD_FTCO_Validation" xml:space="preserve">
+    <value>Use Validation</value>
+  </data>
+  <data name="WRD_FTCO_Stopping" xml:space="preserve">
+    <value>Stopping</value>
+  </data>
+  <data name="WRD_FTCO_ExcelImportResult" xml:space="preserve">
+    <value>Excel Import Result</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeDefault" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle1" xml:space="preserve">
+    <value>Style 1</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle2" xml:space="preserve">
+    <value>Style 2</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle3" xml:space="preserve">
+    <value>Style 3</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle4" xml:space="preserve">
+    <value>Style 4</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle5" xml:space="preserve">
+    <value>Style 5</value>
+  </data>
+  <data name="WRD_FTCO_UIThemeStyle6" xml:space="preserve">
+    <value>Style 6</value>
+  </data>
+</root>

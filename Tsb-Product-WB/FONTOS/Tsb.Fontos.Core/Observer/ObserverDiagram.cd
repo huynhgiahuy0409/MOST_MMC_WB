@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tsb.Fontos.Core.Observer.TsbObservable" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAEgAEAAAAIAAAAAAABAhBAAAAAAAAAAAgEAA=</HashCode>
+      <FileName>Observer\TsbObservable.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tsb.Fontos.Core.Observer.TsbObserverItem">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAABAAAAAAAAEAAAAAAAAAAAADAAACAAA=</HashCode>
+      <FileName>Observer\TsbObserverItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.Observer.DataSyncAgent" BaseTypeListCollapsed="true">
+    <Position X="4" Y="5.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAIABACAAihAAAAAAAAAAABAAAAAAABAAAAAAAAgAAA=</HashCode>
+      <FileName>Observer\DataSyncAgent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Tsb.Fontos.Core.Observer.ObserverNotifiedEventArgs">
+    <Position X="0.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Observer\ObserverNotifiedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Tsb.Fontos.Core.Observer.ITsbObservable" Collapsed="true">
+    <Position X="6.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Observer\ITsbObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Tsb.Fontos.Core.Observer.IDataSyncAgent" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\IDataSyncAgent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Delegate Name="Tsb.Fontos.Core.Observer.ObserverNotifiedHandler">
+    <Position X="0.5" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Observer\ObserverNotifiedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Gulim" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Catos.Cm.Mobile.Service.Stoppage.Map.StoppageMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  
+  <alias>
+    <typeAlias alias="stoppageReasonParam" type="Tsb.Catos.Cm.Mobile.Common.Param.Stoppage.StoppageReasonParam, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="stoppageReasonItem" type="Tsb.Catos.Cm.Mobile.Common.Item.Stoppage.StoppageReasonItem, Tsb.Catos.Cm.Mobile" />
+  </alias>
+
+  <resultMaps>
+    <resultMap id="equipmentStoppageReasonResult" class="stoppageReasonItem">
+      <result property="StopCode" column="stop_code" nullValue=""></result>
+      <result property="StopDesc" column="stop_desc" nullValue=""></result>
+      <result property="UseGc" column="use_gc" nullValue=""></result>
+      <result property="UseYc" column="use_yc" nullValue=""></result>
+      <result property="UseYt" column="use_yt" nullValue=""></result>
+    </resultMap>
+  </resultMaps>
+  
+  <statements>
+  <select id="select-EquipmentStoppageReasonAll" parameterClass="stoppageReasonParam" resultMap="equipmentStoppageReasonResult" >
+    SELECT stop_code, stop_desc, use_gc, use_yc, use_yt
+    FROM tb_stpcode
+    <dynamic prepend="WHERE"> <!--added by BG.Kim (2023.01.10)	[PCT] Not show vessel stoppages on Tally VMT-->
+      <isEqual property="IsExcludeVesselStoppage" compareValue="true">
+        stop_type <![CDATA[<>]]> 'V'
+      </isEqual>
+    </dynamic>
+    ORDER BY stop_code
+  </select>
+
+  <select id="select-EquipmentStoppageReason" parameterClass="stoppageReasonParam" resultMap="equipmentStoppageReasonResult" >
+    SELECT r.stop_rsn stop_code, g.stop_desc stop_desc, '' use_gc, '' use_yc, '' use_yt
+    FROM tb_rsrc_stop r, tb_stpcode g
+    WHERE r.stop_rsn  = g.stop_code
+    AND r.stop_stime IS NOT NULL
+    AND r.resume_atime IS NULL
+    AND r.equ_no = #EquNo#
+  </select>
+  </statements>
+</sqlMap>

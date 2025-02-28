@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="DateTimeCellType" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="DateTimeCellType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CellTypeID" type="xs:string" />
+                <xs:element name="DateTimeFormat" type="xs:string" minOccurs="0" />
+                <xs:element name="UserDefinedFormat" type="xs:string" minOccurs="0" />
+                <xs:element name="StringTrim" type="xs:string" minOccurs="0" />
+                <xs:element name="SpinButton" type="xs:string" minOccurs="0" />
+                <xs:element name="DropDownButton" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//DateTimeCellType" />
+        <xs:field xpath="CellTypeID" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <DateTimeCellType>
+    <CellTypeID>LongDate</CellTypeID>
+    <DateTimeFormat>SDWT</DateTimeFormat>
+    <UserDefinedFormat>False</UserDefinedFormat>
+    <StringTrim>Y</StringTrim>
+    <SpinButton>N</SpinButton>
+    <DropDownButton>N</DropDownButton>
+  </DateTimeCellType>
+  <DateTimeCellType>
+    <CellTypeID>ShortDate</CellTypeID>
+    <DateTimeFormat>SD</DateTimeFormat>
+    <UserDefinedFormat />
+    <StringTrim>Y</StringTrim>
+    <SpinButton>N</SpinButton>
+    <DropDownButton>N</DropDownButton>
+  </DateTimeCellType>
+  <DateTimeCellType>
+    <CellTypeID>TimeOnly</CellTypeID>
+    <DateTimeFormat>T</DateTimeFormat>
+    <StringTrim>Y</StringTrim>
+    <SpinButton>N</SpinButton>
+    <DropDownButton>N</DropDownButton>
+  </DateTimeCellType>
+</NewDataSet>

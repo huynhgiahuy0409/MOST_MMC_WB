@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{305AEB21-9C74-4486-BEC9-C230D9FAD98F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tsb.Fontos.Core</RootNamespace>
+    <AssemblyName>Tsb.Fontos.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBatisNet.Common, Version=1.6.1.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\IBatis.Net\IBatisNet.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="IBatisNet.DataMapper, Version=1.6.1.0, Culture=neutral, PublicKeyToken=ed781d9fc396c6ca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\IBatis.Net\IBatisNet.DataMapper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Log4.Net\log4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Aop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BgWorker\AsyncAgent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\AsyncSequenceAgent.cs" />
+    <Compile Include="BgWorker\BaseAsyncAgent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Event\AsyncEventArgs.cs" />
+    <Compile Include="BgWorker\Event\AsyncFaultEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Event\AsyncResultEventArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Worker\AsyncActionWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Worker\AsyncFuncWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Worker\AsyncPureActionWorker.cs" />
+    <Compile Include="BgWorker\Worker\AsyncPureFuncWorker.cs" />
+    <Compile Include="BgWorker\Worker\AsyncTextWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BgWorker\Worker\BaseAsyncWorker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Caches\CacheConfigurator.cs" />
+    <Compile Include="Caches\CacheManager.cs" />
+    <Compile Include="Caches\ICacheDataProvider.cs" />
+    <Compile Include="Caches\ICacheProvider.cs" />
+    <Compile Include="Caches\Types\CachePriorityTypes.cs" />
+    <Compile Include="Caches\HttpRuntimeCacheProvider.cs" />
+    <Compile Include="Codes\CodeCacheDataProvider.cs" />
+    <Compile Include="Codes\CodeDataQueryDelegator.cs" />
+    <Compile Include="Codes\CodeDataParam.cs" />
+    <Compile Include="Codes\BaseCodeDataService.cs" />
+    <Compile Include="Codes\BaseCodeHandler.cs" />
+    <Compile Include="Codes\CodeManager.cs" />
+    <Compile Include="Codes\IBaseCodeDataDao.cs" />
+    <Compile Include="Codes\IBaseCodeDataService.cs" />
+    <Compile Include="Codes\ICodeDataItem.cs" />
+    <Compile Include="Codes\Type\CodeBindType.cs" />
+    <Compile Include="Codes\Type\CodeGroupTypes.cs" />
+    <Compile Include="Common\DataChange\BaseDataChangeManager.cs" />
+    <Compile Include="Common\DataChange\BaseDataChangeRule.cs" />
+    <Compile Include="Common\DataValidate\BaseDataValidateManager.cs" />
+    <Compile Include="Common\DataValidate\BaseDataValidateRule.cs" />
+    <Compile Include="Common\Param\BaseDataChangeParam.cs" />
+    <Compile Include="Common\Param\BaseDataValidateParam.cs" />
+    <Compile Include="Configuration\Client\BaseClientConfigInitAdapter.cs" />
+    <Compile Include="Configuration\IConfigInfo.cs" />
+    <Compile Include="Configuration\IConfigInitAdapter.cs" />
+    <Compile Include="Configuration\ConfigContext.cs" />
+    <Compile Include="Constant\DatabaseConstant.cs" />
+    <Compile Include="Constant\EventConstant.cs" />
+    <Compile Include="Constant\SysObjectSpec.cs" />
+    <Compile Include="Constant\ConfigConstant.cs" />
+    <Compile Include="Configuration\Types\ConfigSourceType.cs" />
+    <Compile Include="Configuration\Types\ConfigType.cs" />
+    <Compile Include="Configuration\ConfigUtil.cs" />
+    <Compile Include="Configuration\Event\ConfigChangedEventArgs.cs" />
+    <Compile Include="Configuration\Event\ConfigChangedHandler.cs" />
+    <Compile Include="Configuration\Event\ConfigChangedType.cs" />
+    <Compile Include="Constant\ControlConstant.cs" />
+    <Compile Include="Constant\CodeConstant.cs" />
+    <Compile Include="Context\SpringObjectBuilder.cs" />
+    <Compile Include="Context\IObjectBuilder.cs" />
+    <Compile Include="Context\ObjectBuilder.cs" />
+    <Compile Include="Data\IBatchDao.cs" />
+    <Compile Include="Data\IBatis\Batch\BatchConstant.cs" />
+    <Compile Include="Data\IBatis\Batch\BatchDataInfo.cs" />
+    <Compile Include="Data\IBatis\Batch\BatchGroupHander.cs" />
+    <Compile Include="Data\IBatis\Batch\MSSqlDynamicBatchHandler.cs" />
+    <Compile Include="Data\IBatis\Batch\MSSqlBaseBatchHandler.cs" />
+    <Compile Include="Data\IBatis\Batch\SqlBaseBatchHandler.cs" />
+    <Compile Include="Data\IBatis\SqlMapConfigHelper.cs" />
+    <Compile Include="Data\IBatis\StatementNameHandler.cs" />
+    <Compile Include="Data\IBatis\Batch\MSSqlStaticBatchHandler.cs" />
+    <Compile Include="Data\IBatis\Batch\OracleStaticBatchHandler.cs" />
+    <Compile Include="Data\IBatis\Batch\SqlBatchManager.cs" />
+    <Compile Include="Data\IBatis\Batch\OracleDynamicBatchHandler.cs" />
+    <Compile Include="Data\IBatis\Type\DecimalToDoubleTypeHandlerCallback.cs" />
+    <Compile Include="Data\IBatis\Type\DecimalToSingleTypeHandlerCallback.cs" />
+    <Compile Include="Data\IBatis\Type\OracleDoubleTypeHandlerCallback.cs" />
+    <Compile Include="Data\IBatis\Type\StringToNumericTypeHandlerCallback.cs" />
+    <Compile Include="Data\Information\DatabaseAvailabilityChangedEventArgs.cs" />
+    <Compile Include="Data\IBatis\Type\StringToColorTypeHandlerCallback.cs" />
+    <Compile Include="Data\IBatis\Type\YNBoolTypeHandlerCallback.cs" />
+    <Compile Include="Data\Information\DatabaseChange.cs" />
+    <Compile Include="Environments\AppEnv.cs" />
+    <Compile Include="Environments\AppEnvInfo.cs" />
+    <Compile Include="Environments\DiagnosticsInfo.cs" />
+    <Compile Include="Environments\LogPolicyInfo.cs" />
+    <Compile Include="Environments\GridPolicyInfo.cs" />
+    <Compile Include="Environments\Handler\ResourceConfigHandler.cs" />
+    <Compile Include="Environments\Item\ResourceDataItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Environments\MessagePolicyInfo.cs" />
+    <Compile Include="Environments\PersistenceInfo.cs" />
+    <Compile Include="Environments\SysServersInfo.cs" />
+    <Compile Include="Environments\SecurityPolicyInfo.cs" />
+    <Compile Include="Environments\Event\CultureChangedEventArgs.cs" />
+    <Compile Include="Environments\Event\CultureChangedHandler.cs" />
+    <Compile Include="Environments\LocalizationInfo.cs" />
+    <Compile Include="Environments\AppPathInfo.cs" />
+    <Compile Include="Environments\DeployInfo.cs" />
+    <Compile Include="Environments\Server.cs" />
+    <Compile Include="Environments\MachineInfo.cs" />
+    <Compile Include="Environments\ModuleInfo.cs" />
+    <Compile Include="Configuration\Provider\AppConfigProvider.cs" />
+    <Compile Include="Configuration\Provider\BaseConfigProvider.cs" />
+    <Compile Include="Configuration\Provider\IConfigProvider.cs" />
+    <Compile Include="Configuration\Provider\XmlConfigProvider.cs" />
+    <Compile Include="Environments\ArchitectureInfo.cs" />
+    <Compile Include="Environments\BaseEnvironmentInfo.cs" />
+    <Compile Include="Environments\Item\CultureFormatDataItem.cs" />
+    <Compile Include="Environments\Param\LocalizationSettingParam.cs" />
+    <Compile Include="Environments\SiteInfo.cs" />
+    <Compile Include="Environments\Type\CallingPositionTypes.cs" />
+    <Compile Include="Environments\Type\TextCharTypes.cs" />
+    <Compile Include="Exceptions\Business\TsbBizMenuException.cs" />
+    <Compile Include="Exceptions\Formatter\DetailExceptionFormatter.cs" />
+    <Compile Include="Exceptions\System\TsbLicenseExpiredException.cs" />
+    <Compile Include="Exceptions\System\TsbLicenseNotExistsException.cs" />
+    <Compile Include="Exceptions\System\TsbSysBusyException.cs" />
+    <Compile Include="Filter\CompareOperatorDecoder.cs" />
+    <Compile Include="Filter\EvaluateOperand.cs" />
+    <Compile Include="Filter\ExpressionComparer.cs" />
+    <Compile Include="Filter\ExpressionsCompareVisitor.cs" />
+    <Compile Include="Filter\ExpressionVisitor.cs" />
+    <Compile Include="Filter\FilterBuilder.cs" />
+    <Compile Include="Filter\FilterItemHandler.cs" />
+    <Compile Include="Filter\GenericFilter.cs" />
+    <Compile Include="Filter\IPropertyGenericFilter.cs" />
+    <Compile Include="Filter\Item\FilterGroup .cs" />
+    <Compile Include="Filter\Item\FilterItem.cs" />
+    <Compile Include="Filter\Item\IFilterItem.cs" />
+    <Compile Include="Filter\MatchExpressions.cs" />
+    <Compile Include="Filter\Multiplier.cs" />
+    <Compile Include="Filter\PropertyGenericFilter.cs" />
+    <Compile Include="Filter\Rule.cs" />
+    <Compile Include="Filter\SimpleWriter.cs" />
+    <Compile Include="Filter\Type\ConditionalOpType.cs" />
+    <Compile Include="Filter\Type\LogicalOpType.cs" />
+    <Compile Include="Hook\BaseHook.cs" />
+    <Compile Include="Hook\GlobalHook.cs" />
+    <Compile Include="Hook\KeyboardHook.cs" />
+    <Compile Include="Hook\MouseHook.cs" />
+    <Compile Include="IPC\IPCClientCommunicator.cs" />
+    <Compile Include="IPC\IPCCommunicator.cs" />
+    <Compile Include="IPC\IPCConstants.cs" />
+    <Compile Include="IPC\IPCMessageTypes.cs" />
+    <Compile Include="IPC\IPCServerCommunicator.cs" />
+    <Compile Include="IPC\IPCUtil.cs" />
+    <Compile Include="Item\BaseItemsDictionary.cs" />
+    <Compile Include="Item\BaseItemsList.cs" />
+    <Compile Include="Item\BaseItemsSortedList.cs" />
+    <Compile Include="Item\EnumDictionary.cs" />
+    <Compile Include="Item\IDataItemsList.cs" />
+    <Compile Include="Logging\Appender\RollingCompressingFileAppender.cs" />
+    <Compile Include="Logging\Appender\TGeneralRollingFileAppender.cs" />
+    <Compile Include="Logging\LogFileDeleteHandler.cs" />
+    <Compile Include="Log\GeneralLogger.cs" />
+    <Compile Include="Logging\LogWriteAdapter.cs" />
+    <Compile Include="Objects\ITsbBaseObject.cs" />
+    <Compile Include="Objects\ITsbDto.cs" />
+    <Compile Include="Objects\ObjectType.cs" />
+    <Compile Include="Objects\TsbBaseObject.cs" />
+    <Compile Include="Message\Type\MsgDisplayDialogTypes.cs" />
+    <Compile Include="Net\Types\EmailProtocolType.cs" />
+    <Compile Include="Resources\ResourceResx.cs" />
+    <Compile Include="Resources\TResourceManager.cs" />
+    <Compile Include="Resources\VocabularyResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VocabularyResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Security\Audit\AuditUtil.cs" />
+    <Compile Include="Security\Authentication\BaseAuthenHandler.cs" />
+    <Compile Include="Security\Authentication\IAuthenticationHandler.cs" />
+    <Compile Include="Security\Authentication\SiteItem.cs" />
+    <Compile Include="Security\Encryption\AESEncrypter.cs" />
+    <Compile Include="Security\Encryption\RSAEncrypter.cs" />
+    <Compile Include="Security\Hash\BaseHashProvider.cs" />
+    <Compile Include="Security\Hash\SHA1HashProvider.cs" />
+    <Compile Include="Security\Hash\MD5HashProvider.cs" />
+    <Compile Include="Security\ILicenseManager.cs" />
+    <Compile Include="Security\License\LicenseSchema.cs" />
+    <Compile Include="Security\Logging\ProgramAccessLogItem.cs" />
+    <Compile Include="Security\SSO\SecurityProcessParamHandler.cs" />
+    <Compile Include="Security\SSO\SSOAppUtil.cs" />
+    <Compile Include="Security\SSO\SSOConstant.cs" />
+    <Compile Include="Security\SSO\IPC\IPCUtil.cs" />
+    <Compile Include="Security\SSO\IPC\IPCClient.cs" />
+    <Compile Include="Security\SSO\Data\ISSOLogin.cs" />
+    <Compile Include="Security\SSO\IPC\IPCServer.cs" />
+    <Compile Include="Security\SSO\Data\SSOLogin.cs" />
+    <Compile Include="Security\SSO\SSOClientProxy.cs" />
+    <Compile Include="Security\SSO\SSOServerProxy.cs" />
+    <Compile Include="Security\Type\HashAlgorithmType.cs" />
+    <Compile Include="Security\Type\LicenseLanguageTypes.cs" />
+    <Compile Include="Threads\Parallel\ParallelUtil.cs" />
+    <Compile Include="Transaction\Type\TransactionManagerTypes.cs" />
+    <Compile Include="Security\Authentication\BasePwdChangeItem.cs" />
+    <Compile Include="Security\Authentication\lPwdChangeView.cs" />
+    <Compile Include="Security\Authorization\AuthorInfoItemList.cs" />
+    <Compile Include="Security\Type\AuthenPolicyTypes.cs" />
+    <Compile Include="Security\Type\AuthorLevelTypes.cs" />
+    <Compile Include="Security\Type\AuthenEncryptTypes.cs" />
+    <Compile Include="Environments\Type\ServerTypes.cs" />
+    <Compile Include="Environments\Type\DeployModeTypes.cs" />
+    <Compile Include="Environments\Type\CultureFormatTypes.cs" />
+    <Compile Include="Environments\Type\DBProductTypes.cs" />
+    <Compile Include="Environments\Type\DITechTypes.cs" />
+    <Compile Include="Environments\Type\LocalizationPolicyTypes.cs" />
+    <Compile Include="Environments\Type\ServiceArchTypes.cs" />
+    <Compile Include="Environments\Type\TierTypes.cs" />
+    <Compile Include="Environments\Type\LogTechTypes.cs" />
+    <Compile Include="Environments\Type\ORMTechTypes.cs" />
+    <Compile Include="Environments\Type\UITechTypes.cs" />
+    <Compile Include="Environments\LoginedUserInfo.cs" />
+    <Compile Include="Environments\VersionInfo.cs" />
+    <Compile Include="Event\BaseEventArgs.cs" />
+    <Compile Include="Exceptions\ExceptionInfo.cs" />
+    <Compile Include="Exceptions\ExceptionHandler.cs" />
+    <Compile Include="Exceptions\Formatter\DefaultExceptionFormatter.cs" />
+    <Compile Include="Codes\CodeDataItemList.cs" />
+    <Compile Include="Codes\CodeDataItem.cs" />
+    <Compile Include="Message\MessageBuilder.cs" />
+    <Compile Include="Message\DefaultMessage.cs" />
+    <Compile Include="Message\Type\MessageBoxButtonsType.cs" />
+    <Compile Include="Message\Type\MessageBoxIconType.cs" />
+    <Compile Include="Monitoring\Database\DBMonitorDao.cs" />
+    <Compile Include="Monitoring\Database\IDBMonitorDao.cs" />
+    <Compile Include="Monitoring\Database\DBMonitorService.cs" />
+    <Compile Include="Monitoring\Database\IDBMonitorService.cs" />
+    <Compile Include="Net\Email\OutlookInteropSender.cs" />
+    <Compile Include="Net\Email\EmailMessage.cs" />
+    <Compile Include="Net\Email\SmtpEmailSender.cs" />
+    <Compile Include="Net\Email\IEmailSender.cs" />
+    <Compile Include="Net\Email\EmailConfigInfo.cs" />
+    <Compile Include="Reflection\AssemInfo.cs" />
+    <Compile Include="Reflection\TypeInfo.cs" />
+    <Compile Include="Reflection\ObjectCreator.cs" />
+    <Compile Include="Reflection\ProcessInfo.cs" />
+    <Compile Include="Reflection\PropertyUtil.cs" />
+    <Compile Include="Resources\Menu\MenuNameResourceFactory.cs" />
+    <Compile Include="Resources\ResourceType.cs" />
+    <Compile Include="Security\Authentication\BaseExpirePolicyItem.cs" />
+    <Compile Include="Security\Authentication\lLoginView.cs" />
+    <Compile Include="Security\Authentication\PasswordAuthenHandler.cs" />
+    <Compile Include="Security\Authorization\AuthorInfoItem.cs" />
+    <Compile Include="Security\Authorization\ModuleAccessRightItem.cs" />
+    <Compile Include="Security\BaseSecurityParam.cs" />
+    <Compile Include="Security\ISecurityDao.cs" />
+    <Compile Include="Security\ISecurityService.cs" />
+    <Compile Include="Security\Encryption\IBaseEncrypter.cs" />
+    <Compile Include="Security\Encryption\PasswordEncrypter.cs" />
+    <Compile Include="Security\Profile\BaseGroupInfo.cs" />
+    <Compile Include="Security\Profile\BaseUserInfo.cs" />
+    <Compile Include="Observer\IDataSyncManager.cs" />
+    <Compile Include="Observer\IDataSyncAgent.cs" />
+    <Compile Include="Observer\DataSyncNotifiedEventArgs.cs" />
+    <Compile Include="Observer\DataSyncManager.cs" />
+    <Compile Include="Observer\DataSyncCallbackInfo.cs" />
+    <Compile Include="Observer\DataSyncAgent.cs" />
+    <Compile Include="Security\Type\AuthorTargetTypes.cs" />
+    <Compile Include="Security\Type\AuthorTargetUITypes.cs" />
+    <Compile Include="Security\Type\AuthorTargetOPTypes.cs" />
+    <Compile Include="Security\Type\AuthorRuleScopeTypes.cs" />
+    <Compile Include="Service\BaseServiceSpec.cs" />
+    <Compile Include="Service\DynamicProxy.cs" />
+    <Compile Include="Service\ITsbDynamicProxy.cs" />
+    <Compile Include="Service\BizServiceLocator.cs" />
+    <Compile Include="Service\ClientServiceProxy.cs" />
+    <Compile Include="Service\ClientServiceProxyFactory.cs" />
+    <Compile Include="Service\ITsbService.cs" />
+    <Compile Include="Threads\Menu\ManageMenuThreads.cs" />
+    <Compile Include="Transaction\TransactionOptionAttribute.cs" />
+    <Compile Include="Transaction\ResultDataType.cs" />
+    <Compile Include="Transaction\ResultType.cs" />
+    <Compile Include="Transaction\TransactionInfo.cs" />
+    <Compile Include="Configuration\Common\OpCodes.cs" />
+    <Compile Include="Data\IBatis\SqlMapDaoSupport.cs" />
+    <Compile Include="Data\IBatis\SqlMapperHandler.cs" />
+    <Compile Include="Data\IUnifiedDao.cs" />
+    <Compile Include="Exceptions\Business\TsbBizBatchJobException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizDAOException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizNetException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizServiceException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizUIException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizValidationException.cs" />
+    <Compile Include="Exceptions\System\TsbSysBaseException.cs" />
+    <Compile Include="Exceptions\System\TsbSysConfigException.cs" />
+    <Compile Include="Exceptions\System\TsbSysNetException.cs" />
+    <Compile Include="Exceptions\System\TsbSysSecurityException.cs" />
+    <Compile Include="Exceptions\System\TsbSysTypeException.cs" />
+    <Compile Include="Exceptions\System\TsbSysXmlException.cs" />
+    <Compile Include="Item\BaseDataItem.cs" />
+    <Compile Include="Item\IDataItem.cs" />
+    <Compile Include="Logging\LogLevel.cs" />
+    <Compile Include="Param\BaseParam.cs" />
+    <Compile Include="Param\BaseResult.cs" />
+    <Compile Include="Resources\Resource.cs" />
+    <Compile Include="Resources\ResourceFactory.cs" />
+    <Compile Include="Exceptions\TsbBaseException.cs" />
+    <Compile Include="Exceptions\Business\TsbBizBaseException.cs" />
+    <Compile Include="Logging\ITsbLog.cs" />
+    <Compile Include="Logging\LogFactory.cs" />
+    <Compile Include="Logging\TsbLogImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ResourceSection.cs" />
+    <Compile Include="Environments\Type\ResourceTypes.cs" />
+    <Compile Include="Service\BaseService.cs" />
+    <Compile Include="Transaction\Type\TransactionIsolationLevels.cs" />
+    <Compile Include="Transaction\Type\TransactionScopeTypes.cs" />
+    <Compile Include="Usage\Enum\UsageActionType.cs" />
+    <Compile Include="Usage\Item\UsageDataCollectionItem.cs" />
+    <Compile Include="Util\BaseUtil.cs" />
+    <Compile Include="Util\Collection\SynonymsHandler.cs" />
+    <Compile Include="Util\Converter\CollsConverter.cs" />
+    <Compile Include="Util\Diagnostics\Builder\PerformanceBuilder.cs" />
+    <Compile Include="Util\Diagnostics\Builder\PerformanceDirector.cs" />
+    <Compile Include="Util\Diagnostics\Builder\PerformanceGeneralWriteBuilder.cs" />
+    <Compile Include="Util\Diagnostics\Performance\CallStackPerformanceCounter.cs" />
+    <Compile Include="Util\Diagnostics\Performance\IPerfomanceCounter.cs" />
+    <Compile Include="Util\Diagnostics\Performance\IPerformanceAccept.cs" />
+    <Compile Include="Util\Diagnostics\Performance\PerformanceHandler.cs" />
+    <Compile Include="Util\Diagnostics\Performance\PerformanceInfo.cs" />
+    <Compile Include="Util\Diagnostics\Performance\PerformanceKey.cs" />
+    <Compile Include="Util\Diagnostics\Performance\PerformanceStore.cs" />
+    <Compile Include="Util\Diagnostics\Proxy\PerformanceProxy.cs" />
+    <Compile Include="Util\Diagnostics\Proxy\PerformanceProxyFactory.cs" />
+    <Compile Include="Util\Diagnostics\Type\PerformanceLevel.cs" />
+    <Compile Include="Util\Diagnostics\Type\PerformanceResultFormatType.cs" />
+    <Compile Include="Util\Diagnostics\Type\PerformanceType.cs" />
+    <Compile Include="Util\Diagnostics\Type\ResultFormatType.cs" />
+    <Compile Include="Util\Diagnostics\Type\OutputType.cs" />
+    <Compile Include="Util\Diagnostics\ElapseCounter.cs" />
+    <Compile Include="Util\File\FileUtil.cs" />
+    <Compile Include="Util\File\PathUtil.cs" />
+    <Compile Include="Util\Form\StyleUtil.cs" />
+    <Compile Include="Util\Linq\LinqExpressionUtil.cs" />
+    <Compile Include="Util\Lock\InterApplicationLock.cs" />
+    <Compile Include="Util\MatrixUtil.cs" />
+    <Compile Include="Util\Type\ConvertUtil.cs" />
+    <Compile Include="Util\Converter\EncodeUtil.cs" />
+    <Compile Include="Util\Type\DateTimeUtil.cs" />
+    <Compile Include="Util\Type\StringUtil.cs" />
+    <Compile Include="Util\Type\MethodInfoUtil.cs" />
+    <Compile Include="Validator\Type\StringChecker.cs" />
+    <Compile Include="Validator\UI\BasePasswordValidator.cs" />
+    <Compile Include="Validator\UI\DigitCreditValidator.cs" />
+    <Compile Include="Validator\UI\DuplicationValidator.cs" />
+    <Compile Include="Validator\UI\LowerCreditValidator.cs" />
+    <Compile Include="Validator\UI\MaximumLengthValidator.cs" />
+    <Compile Include="Validator\UI\MinimumLengthValidator.cs" />
+    <Compile Include="Validator\UI\SpecialCreditValidator.cs" />
+    <Compile Include="Validator\UI\UpperCreditValidator.cs" />
+    <Compile Include="Validator\ValidResultType.cs" />
+    <Compile Include="Validator\ValidResultItem.cs" />
+    <Compile Include="Validator\ValidatorChain.cs" />
+    <Compile Include="Validator\IO\FileExistValidator.cs" />
+    <Compile Include="Validator\Type\NumberChecker.cs" />
+    <Compile Include="Validator\BaseValidator.cs" />
+    <Compile Include="Xml\XmlType\XmlColor.cs" />
+    <Compile Include="Xml\XmlType\XmlFont.cs" />
+    <Compile Include="Xml\XmlType\XmlPoint.cs" />
+    <Compile Include="Xml\XmlType\XmlSerializationHelper.cs" />
+    <Compile Include="Xml\XmlType\XmlSize.cs" />
+    <Compile Include="Xml\XmlUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="BgWorker\ClassDiagram1.cd" />
+    <None Include="Observer\ObserverDiagram.cd" />
+    <None Include="Security\License\LicenseXmlSchema.xsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\MessageResource.ar-AE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MessageResource.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MessageResource.ko-KR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MessageResource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VocabularyResource.ar-AE.resx" />
+    <EmbeddedResource Include="Resources\VocabularyResource.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VocabularyResource.ko-KR.resx" />
+    <EmbeddedResource Include="Resources\VocabularyResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VocabularyResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration\Interface\" />
+    <Folder Include="Configuration\Server\" />
+    <Folder Include="Data\Ado\" />
+    <Folder Include="Exceptions\Report\" />
+    <Folder Include="Net\Event\" />
+    <Folder Include="Net\Protocol\" />
+    <Folder Include="Net\Queue\" />
+    <Folder Include="Net\Translator\" />
+    <Folder Include="Net\Transmission\" />
+    <Folder Include="Util\Controls\" />
+    <Folder Include="Validator\Net\" />
+    <Folder Include="Validator\Persistence\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>FarPoint.Win.Chart.Design</name>
+  </assembly>
+  <members>
+    <member name="T:FarPoint.Win.Chart.Design.BevelCollectionEditor">
+      <summary>Represents a UI editor for a bevel collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new bevel collection.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selecte multiple instances.</summary>
+      <returns>Always return false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CreateCollectionItemType">
+      <summary>Gets the data type that this collection contains.</summary>
+      <returns>The data type of the items in the collection, or an Object if no Item property can be located on the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CreateInstance(System.Type)">
+      <summary>Creates a new instance of bevel</summary>
+      <param name="itemType" />
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelCollectionEditor.SetItems(System.Object,System.Object[])">
+      <summary>Sets the specified array as the items of the collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <param name="value">An array of objects to set as the collection items.</param>
+      <returns>The newly created collection object or, otherwise, the collection indicated by the editValue parameter.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.BevelEditor">
+      <summary>Represents a user-interface type editor for a bevel.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelEditor.#ctor">
+      <summary>Creates a new bevel editor.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value.</summary>
+      <param name="context">Type descriptor context</param>
+      <param name="provider">Service provider</param>
+      <param name="value">Value</param>
+      <returns>Object containing the value</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.BevelEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the edit style.</summary>
+      <param name="context">Type descriptor context</param>
+      <returns>Edit style of the user-interface type editor</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.ChartModelLoadedEventArgs">
+      <summary>Represents the model loaded from file in Designer</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.ChartModelLoadedEventArgs.#ctor(FarPoint.Win.Chart.ChartModel)">
+      <summary>Event constructor</summary>
+      <param name="model" />
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.ChartModelLoadedEventArgs.Model">
+      <summary>Chart Model loaded in the event</summary>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.ClearCollectionCodeDomSerializer`1">
+      <summary>ClearCollectionCodeDomSerializer for custom collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.ClearCollectionCodeDomSerializer`1.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.ClearCollectionCodeDomSerializer`1" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.ClearCollectionCodeDomSerializer`1.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">collection object</param>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.CustomizedCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for custom collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.CustomizedCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.CustomizedCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.CustomizedCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">collection object</param>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DataSourceEditingEventArgs">
+      <summary>Represents an action of editing data source from Designer</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DataSourceEditingEventArgs.#ctor(System.Object)">
+      <summary>Event constructor</summary>
+      <param name="dataSource">Editing data source</param>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.DataSourceEditingEventArgs.DataSource">
+      <summary>Data Source to be edit</summary>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.Designer">
+      <summary>
+        <para> Designer allows the user to design chart type and fullly customize th eproperties for the chart type. The designer help the user 1) to manage plot areas, label areas and legend areas of the chart model; 2) to manage the series type of a plot area, 3) to customize plot area walls, series, axes, strips and so on. </para>
+        <para> Designer class exposes 2 properties, they are ChartModel and ChartView. </para>
+      </summary>
+      <example>
+        <code>
+            FarPoint.Win.Chart.Design.Designer designer = new FarPoint.Win.Chart.Design.Designer();
+            // give a default chart model and chart view to the designer if any
+            designer.ChartModel = chart2DControl.Model;
+            designer.ChartView = FarPoint.Win.Chart.Design.ChartViewType.Chart2D
+            if(designer.ShowDialog() == DialogResult.OK)
+            {
+                FarPoint.ChartModel chartModel = designer.ChartModel;
+                FarPoint.Win.Chart.Design.ChartViewType chartView = designer.ChartView;
+            
+                // Bind the chart model to 2D or 3D control
+                if(chartView == FarPoint.Win.Chart.Design.ChartViewType.Chart2D)
+                {
+                    chart2DControl.Model = chartModel;
+                }
+                else
+                {
+                    chart3DControl.Model = chartModel;
+                }
+            }
+            </code>
+      </example>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.Designer.#ctor">
+      <summary>Designer constructor</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.AllowEditDataPoint">
+      <summary>Controls whether enable edit data point dialog</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.AllowSaveAndLoad">
+      <summary>Controls whether allow save/load chart model data or not</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.AllowViewType">
+      <summary>Enable edit chart view</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.Model">
+      <summary>ChartModel property represents model for chart component</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.Site">
+      <summary>Gets or sets the site of the control.</summary>
+      <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the <see cref="T:System.Windows.Forms.Control" />, if any.</value>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.Designer.ViewType">
+      <summary>ChartView property represents a 2D or 3D view</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.Designer.Dispose(System.Boolean)">
+      <summary>Clean up any resources being used.</summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.Designer.ProcessDialogKey(System.Windows.Forms.Keys)">
+      <summary>Handle escape key pressed</summary>
+      <param name="keyData" />
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.Designer.RaiseDataSourceEditing(FarPoint.Win.Chart.Design.DataSourceEditingEventArgs)">
+      <summary>Raises the DataSourceEditing event</summary>
+      <param name="e">DataSourceEditingEvent</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.Designer.WndProc(System.Windows.Forms.Message@)">
+      <summary>To handle close by click on X button</summary>
+      <param name="m">window message</param>
+    </member>
+    <member name="E:FarPoint.Win.Chart.Design.Designer.ApplyButtonClicked">
+      <summary>ApplyButtonClicked event occurs when the Apply button is clicked.</summary>
+    </member>
+    <member name="E:FarPoint.Win.Chart.Design.Designer.ChartModelLoaded">
+      <summary>ChartModelLoaded event occurs when binary/xml deserialization finished</summary>
+    </member>
+    <member name="E:FarPoint.Win.Chart.Design.Designer.DataSourceEditing">
+      <summary>Occurs when user perform edit data point when data source is not null</summary>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DetachmentCollectionEditor">
+      <summary>Represents a UI collection editor for a Detachment collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new DetachmentCollection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.CreateCollectionItemType">
+      <summary>Gets the data type that this collection contains.</summary>
+      <returns>The data type of the items in the collection, or an Object if no Item property can be located on the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DetachmentCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DoubleCollectionCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for DoubleCollectionCollection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.DoubleCollectionCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the given collection into a CodeDOM object.</summary>
+      <param name="manager">The System.ComponentModel.Design.Serialization.IDesignerSerializationManager to use during serialization.</param>
+      <param name="value">The object to serialize.</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor">
+      <summary>Represents a UI collection editor for a DoubleCollection collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new DoubleCollection collection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DoubleCollectionEditor">
+      <summary>Represents a UI collection editor for a DoubleCollection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new DoubleCollection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.DoubleCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the editor style used by the System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object) method.</summary>
+      <param name="context">An System.ComponentModel.ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <returns>A System.Drawing.Design.UITypeEditorEditStyle enumeration value indicating the provided editing style.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.FillCollectionEditor">
+      <summary>Represents a UI collection editor for a fill collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new fill collection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CreateCollectionItemType">
+      <summary>Gets the data type that this collection contains.</summary>
+      <returns>The data type of the items in the collection, or an Object if no Item property can be located on the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CreateInstance(System.Type)">
+      <summary>Instantiates a new instance of object which this collection can contain.</summary>
+      <param name="itemType">Type of object to create</param>
+      <returns>New object instance</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillCollectionEditor.SetItems(System.Object,System.Object[])">
+      <summary>Sets the specified array as the items of the collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <param name="value">An array of objects to set as the collection items.</param>
+      <returns>The newly created collection object or the collection indicated by the editValue parameter.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.FillEditor">
+      <summary>Represents a user-interface type editor for the fill.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillEditor.#ctor">
+      <summary>Creates a new fill editor.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value.</summary>
+      <param name="context">Type descriptor context</param>
+      <param name="provider">Service provider</param>
+      <param name="value">Value</param>
+      <returns>Object containing the value</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FillEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the edit style.</summary>
+      <param name="context">Type descriptor context</param>
+      <returns>Edit style of the user-interface type editor</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.FpChartDesignerActionList">
+      <summary>FpChart control designer action list.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.FpChartDesignerActionList.ViewType">
+      <summary>Gets or sets a value indicating the chart is in 2D or 3D view.</summary>
+      <value>The chart view.</value>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FpChartDesignerActionList.GetSortedActionItems">
+      <summary>GetSortedActionItems</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FpChartDesignerActionList.LoadXML">
+      <summary>LoadChartModelTemplate</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FpChartDesignerActionList.SaveXML">
+      <summary>SaveChartModelTemplate</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FpChartDesignerActionList.ShowChartDesigner">
+      <summary>ShowChartDesigner</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.FpChartDesignerActionList.ShowChartWizard">
+      <summary>ShowChartWizard</summary>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.GeneralCollectionEditor">
+      <summary>Represents the collection editor for the custom display text.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.GeneralCollectionEditor.#ctor(System.Type)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.GeneralCollectionEditor" /> class.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.GeneralCollectionEditor.GetDisplayText(System.Object)">
+      <summary>Retrieves the display text for the given list item.</summary>
+      <param name="value">The list item for which to retrieve display text.</param>
+      <returns>The display text for <paramref name="value" />.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.LabelAreaCodeDome">
+      <summary>The custom serializer for the LabelAreaCodeDome type</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LabelAreaCodeDome.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.LabelAreaCodeDome" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LabelAreaCodeDome.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the specified object into a CodeDOM object.</summary>
+      <param name="manager" />
+      <param name="value" />
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.LightEditor">
+      <summary>Represents a type converter for a line.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LightEditor.#ctor(System.Type)">
+      <summary>Creates a new line converter.</summary>
+      <param name="type">Type</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LightEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LightEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.LineCollectionEditor">
+      <summary>Represent a UI collection editor for a Line collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new line collection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CreateCollectionItemType">
+      <summary>Gets the data type that this collection contains.</summary>
+      <returns>The data type of the items in the collection, or an Object if no Item property can be located on the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CreateInstance(System.Type)">
+      <summary>Instantiates a new instance of object which this collection can contain.</summary>
+      <param name="itemType">Type of object to create</param>
+      <returns>New object instance</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineCollectionEditor.SetItems(System.Object,System.Object[])">
+      <summary>Sets the specified array as the items of the collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <param name="value">An array of objects to set as the collection items.</param>
+      <returns>The newly created collection object; otherwise, the collection indicated by the editValue parameter.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.LineEditor">
+      <summary>Represents a user-interface type editor for a line.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineEditor.#ctor">
+      <summary>Creates a new line editor.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value.</summary>
+      <param name="context">Type descriptor context</param>
+      <param name="provider">Service provider</param>
+      <param name="value">Value</param>
+      <returns>Object containing the value</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.LineEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the edit style.</summary>
+      <param name="context">Type descriptor context</param>
+      <returns>Edit style of the user-interface type editor</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.MarkerCollectionEditor">
+      <summary>Represents a UI collection editor for a marker collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new marker collection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CreateCollectionItemType">
+      <summary>Gets the data type that this collection contains.</summary>
+      <returns>The data type of the items in the collection, or an Object if no Item property can be located on the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CreateInstance(System.Type)">
+      <summary>Creates an instance of Marker of derived type.</summary>
+      <param name="itemType">Type of Marker.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerCollectionEditor.SetItems(System.Object,System.Object[])">
+      <summary>Sets the specified array as the items of the collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <param name="value">An array of objects to set as the collection items.</param>
+      <returns>The newly created collection object; otherwise, the collection indicated by the editValue parameter.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.MarkerEditor">
+      <summary>Represents a user-interface type editor for a marker.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerEditor.#ctor">
+      <summary>Creates a new editor for a marker.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value.</summary>
+      <param name="context">Type descriptor context</param>
+      <param name="provider">Service provider</param>
+      <param name="value">Object with value</param>
+      <returns>Value or the marker dialog</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.MarkerEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the edit style.</summary>
+      <param name="context">Type descriptor context</param>
+      <returns>Edit style; this implementation alwyas returns modal</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.NullItemBevelCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for Bevel collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemBevelCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.NullItemBevelCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemBevelCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">Collection object</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.NullItemFillCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for Fill collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemFillCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.NullItemFillCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemFillCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">Collection object</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.NullItemLineCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for Line collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemLineCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.NullItemLineCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemLineCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">Collection object</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.NullItemMarkerCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for Marker collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemMarkerCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.NullItemMarkerCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemMarkerCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">Collection object</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.NullItemStringCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for String collection object</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemStringCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.NullItemStringCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.NullItemStringCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the collection object</summary>
+      <param name="manager">DesignerSerializationManager object</param>
+      <param name="value">Collection object</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.PlotAreaCollectionEditor">
+      <summary>Represents the plot area collection editor.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PlotAreaCollectionEditor.#ctor(System.Type)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.PlotAreaCollectionEditor" /> class.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PlotAreaCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PlotAreaCollectionEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.PointFSerializer`1">
+      <summary>The custom serializer for the PointF type</summary>
+      <typeparam name="T">Type of the object.</typeparam>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PointFSerializer`1.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.PointFSerializer`1" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PointFSerializer`1.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Deserializes the specified serialized CodeDOM object into an object.</summary>
+      <param name="manager" />
+      <param name="codeObject" />
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.PointFSerializer`1.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the specified object into a CodeDOM object.</summary>
+      <param name="manager">The serialization manager to use during serialization.</param>
+      <param name="value">The object to serialize.</param>
+      <returns>A CodeDOM object representing the object that has been serialized.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="manager" /> or <paramref name="value" /> is null.</exception>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.SeriesEditor">
+      <summary>Represents an editor for the series collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.SeriesEditor.#ctor(System.Type)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.SeriesEditor" /> class.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.SeriesEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.SeriesEditor.CreateCollectionForm">
+      <summary>Creates a collection form.</summary>
+      <returns>returns a collection form</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.SeriesEditor.CreateNewItemTypes">
+      <summary>Gets the data types that this collection editor can contain.</summary>
+      <returns>An array of data types that this collection can contain.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.SeriesEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value.</summary>
+      <param name="context">Type descriptor context</param>
+      <param name="provider">Service provider</param>
+      <param name="value">Value</param>
+      <returns>Object containing the value</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.StringCollectionCollectionCodeDomSerializer">
+      <summary>CodeDomSerializer for StringCollectionCollection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionCodeDomSerializer.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.StringCollectionCollectionCodeDomSerializer" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the given collection into a CodeDOM object.</summary>
+      <param name="manager">The System.ComponentModel.Design.Serialization.IDesignerSerializationManager to use during serialization.</param>
+      <param name="value">The object to serialize.</param>
+      <returns>A CodeDOM object representing value.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor">
+      <summary>Represents a UI collection editor for a StringCollection collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new StringCollection collection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.CanSelectMultipleInstances">
+      <summary>Selects multiple instances.</summary>
+      <returns>Always returns false</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.CancelChanges">
+      <summary>Cancels changes to the collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the value of the specified object.</summary>
+      <param name="context">An ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <param name="provider">A service provider object through which editing services can be obtained.</param>
+      <param name="value">The object to edit the value of.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Get UITypeEditor to edit StringCollectionCollection type.</summary>
+      <param name="context" />
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionCollectionEditor.GetItems(System.Object)">
+      <summary>Gets an array of objects containing the specified collection.</summary>
+      <param name="editValue">The collection to edit.</param>
+      <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from ICollection</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.StringCollectionEditor">
+      <summary>Represents a UI collection editor for a string collection.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionEditor.#ctor(System.Type)">
+      <summary>Creates a new StringCollection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionEditor.CreateCollectionForm">
+      <summary>Creates a new form to display and edit the current collection.</summary>
+      <returns>A CollectionEditor.CollectionForm to provide as the user interface for editing the collection.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the editor style used by the System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object) method.</summary>
+      <param name="context">An System.ComponentModel.ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <returns>A System.Drawing.Design.UITypeEditorEditStyle enumeration value indicating the provided editing style.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.StringCollectionItemEditor">
+      <summary>Represents a UI collection editor for a StringCollectionItem</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionItemEditor.#ctor(System.Type)">
+      <summary>Creates a new StringCollection editor.</summary>
+      <param name="type">The type of the collection for this editor to edit.</param>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.StringCollectionItemEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the editor style used by the System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object) method.</summary>
+      <param name="context">An System.ComponentModel.ITypeDescriptorContext that can be used to gain additional context information.</param>
+      <returns>A System.Drawing.Design.UITypeEditorEditStyle enumeration value indicating the provided editing style.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.TextDirectionEditor.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.TextDirectionEditor" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Chart.Design.TextDirectionEditor.IsDropDownResizable">
+      <summary>Gets a value indicating whether drop-down editors should be resizable by the user.</summary>
+      <value>true if drop-down editors are resizable; otherwise, false.</value>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.TextDirectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+      <summary>Edits the specified object's value using the editor style indicated by the <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> method.</summary>
+      <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+      <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
+      <param name="value">The object to edit.</param>
+      <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.TextDirectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+      <summary>Gets the editor style used by the <see cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" /> method.</summary>
+      <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
+      <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by the <see cref="M:System.Drawing.Design.UITypeEditor.EditValue(System.IServiceProvider,System.Object)" /> method. If the <see cref="T:System.Drawing.Design.UITypeEditor" /> does not support this method, then <see cref="M:System.Drawing.Design.UITypeEditor.GetEditStyle" /> will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.WaterfallSeriesCodeDomSerializer`1">
+      <summary>The custom serializer for the PointF type</summary>
+      <typeparam name="T">Type of the object.</typeparam>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.WaterfallSeriesCodeDomSerializer`1.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Chart.Design.WaterfallSeriesCodeDomSerializer`1" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.WaterfallSeriesCodeDomSerializer`1.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Deserializes the specified serialized CodeDOM object into an object.</summary>
+      <param name="manager" />
+      <param name="codeObject" />
+    </member>
+    <member name="M:FarPoint.Win.Chart.Design.WaterfallSeriesCodeDomSerializer`1.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)">
+      <summary>Serializes the specified object into a CodeDOM object.</summary>
+      <param name="manager">The serialization manager to use during serialization.</param>
+      <param name="value">The object to serialize.</param>
+      <returns>A CodeDOM object representing the object that has been serialized.</returns>
+      <exception cref="T:System.ArgumentNullException">
+        <paramref name="manager" /> or <paramref name="value" /> is null.</exception>
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.ChartModelLoadedEventHandler">
+      <summary>Represents a method that handles ChartModelLoaded events from Designer</summary>
+      <param name="sender" />
+      <param name="e" />
+    </member>
+    <member name="T:FarPoint.Win.Chart.Design.DataSourceEditingEventHandler">
+      <summary>Represents a method that handles DataSourceEditing events from Designer</summary>
+      <param name="sender" />
+      <param name="e" />
+    </member>
+  </members>
+</doc>

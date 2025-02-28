@@ -1,0 +1,140 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34729.46
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FONTOS", "FONTOS", "{7D9FB89B-72D5-44D9-AD7A-E8728782A52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Product.WB.Service", "Tsb.Product.WB.Service\Tsb.Product.WB.Service.csproj", "{E167C8BE-36C4-41FE-ADC6-7A6227031F95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Fontos.Core", "..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Core\Tsb.Fontos.Core.csproj", "{305AEB21-9C74-4486-BEC9-C230D9FAD98F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Fontos.Win", "..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win\Tsb.Fontos.Win.csproj", "{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Fontos.Win.Drawing", "..\..\FONTOS_Installation\FONTOS\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win.Drawing\Tsb.Fontos.Win.Drawing.csproj", "{98C17A29-41EC-4509-BD04-BF9D023BE32B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Global.Libraries", "..\..\FONTOS_Installation\FONTOS\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Tsb.Global.Libraries.csproj", "{796FC00E-649F-459A-8AFB-2F720704DEB6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CATOS-CM", "CATOS-CM", "{E609B98C-4ED6-4D53-ACFD-B4CAEF67F265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Catos.Cm.Core", "..\..\FONTOS_Installation\FONTOS\Tsb-Catos-Cm\MAIN\8.0-Std-Main\Tsb-Catos-Cm\Tsb.Catos.Cm.Core\Tsb.Catos.Cm.Core.csproj", "{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Catos.Cm.Win", "..\..\FONTOS_Installation\FONTOS\Tsb-Catos-Cm\MAIN\8.0-Std-Main\Tsb-Catos-Cm\Tsb.Catos.Cm.Win\Tsb.Catos.Cm.Win.csproj", "{57770B81-B9C4-4563-B93F-1E8194E0A6FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Catos.Cm.Win.Drawing", "..\..\FONTOS_Installation\FONTOS\Tsb-Catos-Cm\MAIN\8.0-Std-Main\Tsb-Catos-Cm\Tsb.Catos.Cm.Win.Drawing\Tsb.Catos.Cm.Win.Drawing.csproj", "{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Product.WB.Config", "Tsb.Product.WB.Config\Tsb.Product.WB.Config.csproj", "{52964714-64A5-43EF-BD8F-CEDA8A226939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Product.WB.Common", "Tsb.Product.WB.Common\Tsb.Product.WB.Common.csproj", "{D9019C9A-597C-4710-80AC-7C36F346007A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsb.Product.WB.Client", "Tsb.Product.WB.Client\Tsb.Product.WB.Client.csproj", "{B2F5A009-0D7A-47D5-A507-5DF2B1348822}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E167C8BE-36C4-41FE-ADC6-7A6227031F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E167C8BE-36C4-41FE-ADC6-7A6227031F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E167C8BE-36C4-41FE-ADC6-7A6227031F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E167C8BE-36C4-41FE-ADC6-7A6227031F95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{305AEB21-9C74-4486-BEC9-C230D9FAD98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305AEB21-9C74-4486-BEC9-C230D9FAD98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305AEB21-9C74-4486-BEC9-C230D9FAD98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305AEB21-9C74-4486-BEC9-C230D9FAD98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98C17A29-41EC-4509-BD04-BF9D023BE32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98C17A29-41EC-4509-BD04-BF9D023BE32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98C17A29-41EC-4509-BD04-BF9D023BE32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98C17A29-41EC-4509-BD04-BF9D023BE32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{796FC00E-649F-459A-8AFB-2F720704DEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796FC00E-649F-459A-8AFB-2F720704DEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796FC00E-649F-459A-8AFB-2F720704DEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796FC00E-649F-459A-8AFB-2F720704DEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57770B81-B9C4-4563-B93F-1E8194E0A6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57770B81-B9C4-4563-B93F-1E8194E0A6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57770B81-B9C4-4563-B93F-1E8194E0A6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57770B81-B9C4-4563-B93F-1E8194E0A6FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52964714-64A5-43EF-BD8F-CEDA8A226939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52964714-64A5-43EF-BD8F-CEDA8A226939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52964714-64A5-43EF-BD8F-CEDA8A226939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52964714-64A5-43EF-BD8F-CEDA8A226939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9019C9A-597C-4710-80AC-7C36F346007A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9019C9A-597C-4710-80AC-7C36F346007A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9019C9A-597C-4710-80AC-7C36F346007A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9019C9A-597C-4710-80AC-7C36F346007A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2F5A009-0D7A-47D5-A507-5DF2B1348822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2F5A009-0D7A-47D5-A507-5DF2B1348822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2F5A009-0D7A-47D5-A507-5DF2B1348822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2F5A009-0D7A-47D5-A507-5DF2B1348822}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{305AEB21-9C74-4486-BEC9-C230D9FAD98F} = {7D9FB89B-72D5-44D9-AD7A-E8728782A52D}
+		{7C1C1800-C613-4E7B-B5A2-4778BB655DAE} = {7D9FB89B-72D5-44D9-AD7A-E8728782A52D}
+		{98C17A29-41EC-4509-BD04-BF9D023BE32B} = {7D9FB89B-72D5-44D9-AD7A-E8728782A52D}
+		{796FC00E-649F-459A-8AFB-2F720704DEB6} = {7D9FB89B-72D5-44D9-AD7A-E8728782A52D}
+		{51EE7FDD-AAE6-4E45-83B5-DE68DC182392} = {E609B98C-4ED6-4D53-ACFD-B4CAEF67F265}
+		{57770B81-B9C4-4563-B93F-1E8194E0A6FF} = {E609B98C-4ED6-4D53-ACFD-B4CAEF67F265}
+		{5C139EE8-FEC1-4B68-8DFD-F92655B92D58} = {E609B98C-4ED6-4D53-ACFD-B4CAEF67F265}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17CD8E13-86B4-45BC-AE3A-735E51488F65}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tds.tsb.co.kr/product-net
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Tsb.Product.WB.Service\\Tsb.Product.WB.Service.csproj
+		SccProjectName1 = Tsb.Product.WB.Service
+		SccLocalPath1 = Tsb.Product.WB.Service
+		SccProjectUniqueName2 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Core\\Tsb.Fontos.Core.csproj
+		SccProjectTopLevelParentUniqueName2 = Tsb-Product-WB.sln
+		SccProjectName2 = ../../FONTOS_Installation/FONTOS/Tsb-Fontos-Framework/MAIN/2.0-Std-Main/Tsb-Fontos-Framework/Tsb.Fontos.Core
+		SccLocalPath2 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Core
+		SccProjectUniqueName3 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Win\\Tsb.Fontos.Win.csproj
+		SccProjectTopLevelParentUniqueName3 = Tsb-Product-WB.sln
+		SccProjectName3 = ../../FONTOS_Installation/FONTOS/Tsb-Fontos-Framework/MAIN/2.0-Std-Main/Tsb-Fontos-Framework/Tsb.Fontos.Win
+		SccLocalPath3 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Win
+		SccProjectUniqueName4 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Win.Drawing\\Tsb.Fontos.Win.Drawing.csproj
+		SccProjectTopLevelParentUniqueName4 = Tsb-Product-WB.sln
+		SccProjectName4 = ../../FONTOS_Installation/FONTOS/Tsb-Fontos-Framework/MAIN/2.0-Std-Main/Tsb-Fontos-Framework/Tsb.Fontos.Win.Drawing
+		SccLocalPath4 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Fontos-Framework\\MAIN\\2.0-Std-Main\\Tsb-Fontos-Framework\\Tsb.Fontos.Win.Drawing
+		SccProjectUniqueName5 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Global-Libraries\\MAIN\\2.0-Std-Main\\Tsb-Global-Libraries\\Tsb.Global.Libraries\\Tsb.Global.Libraries.csproj
+		SccProjectTopLevelParentUniqueName5 = Tsb-Product-WB.sln
+		SccProjectName5 = ../../FONTOS_Installation/FONTOS/Tsb-Global-Libraries/MAIN/2.0-Std-Main/Tsb-Global-Libraries/Tsb.Global.Libraries
+		SccLocalPath5 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Global-Libraries\\MAIN\\2.0-Std-Main\\Tsb-Global-Libraries\\Tsb.Global.Libraries
+		SccProjectUniqueName6 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Catos-Cm\\MAIN\\8.0-Std-Main\\Tsb-Catos-Cm\\Tsb.Catos.Cm.Win\\Tsb.Catos.Cm.Win.csproj
+		SccProjectTopLevelParentUniqueName6 = Tsb-Product-WB.sln
+		SccProjectName6 = ../../FONTOS_Installation/FONTOS/Tsb-Catos-Cm/MAIN/8.0-Std-Main/Tsb-Catos-Cm/Tsb.Catos.Cm.Win
+		SccLocalPath6 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Catos-Cm\\MAIN\\8.0-Std-Main\\Tsb-Catos-Cm\\Tsb.Catos.Cm.Win
+		SccProjectUniqueName7 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Catos-Cm\\MAIN\\8.0-Std-Main\\Tsb-Catos-Cm\\Tsb.Catos.Cm.Win.Drawing\\Tsb.Catos.Cm.Win.Drawing.csproj
+		SccProjectTopLevelParentUniqueName7 = Tsb-Product-WB.sln
+		SccProjectName7 = ../../FONTOS_Installation/FONTOS/Tsb-Catos-Cm/MAIN/8.0-Std-Main/Tsb-Catos-Cm/Tsb.Catos.Cm.Win.Drawing
+		SccLocalPath7 = ..\\..\\FONTOS_Installation\\FONTOS\\Tsb-Catos-Cm\\MAIN\\8.0-Std-Main\\Tsb-Catos-Cm\\Tsb.Catos.Cm.Win.Drawing
+		SccProjectUniqueName8 = Tsb.Product.WB.Config\\Tsb.Product.WB.Config.csproj
+		SccProjectName8 = Tsb.Product.WB.Config
+		SccLocalPath8 = Tsb.Product.WB.Config
+		SccProjectUniqueName9 = Tsb.Product.WB.Common\\Tsb.Product.WB.Common.csproj
+		SccProjectName9 = Tsb.Product.WB.Common
+		SccLocalPath9 = Tsb.Product.WB.Common
+		SccProjectUniqueName10 = Tsb.Product.WB.Client\\Tsb.Product.WB.Client.csproj
+		SccProjectName10 = Tsb.Product.WB.Client
+		SccLocalPath10 = Tsb.Product.WB.Client
+	EndGlobalSection
+EndGlobal

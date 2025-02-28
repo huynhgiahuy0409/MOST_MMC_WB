@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4736E723-4D83-4D7A-A9AC-816DAE17D4F5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tsb.Catos.Cm.Mobile</RootNamespace>
+    <AssemblyName>Tsb.Catos.Cm.Mobile</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Log4.Net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Spring.Aop, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Aop.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Core, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Spring.Data, Version=1.2.0.20288, Culture=neutral, PublicKeyToken=65e474d141e25e07, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Tsb-Global-Libraries\MAIN\2.0-Std-Main\Tsb-Global-Libraries\Tsb.Global.Libraries\Lib\Spring.Net\Spring.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.7.2</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Constants\CodeConstants.cs" />
+    <Compile Include="Common\Constants\MOCommonConstants.cs" />
+    <Compile Include="Common\Constants\DataSyncConstant.cs" />
+    <Compile Include="Common\Constants\ServiceConstant.cs" />
+    <Compile Include="Common\Constants\YDefineConstants.cs" />
+    <Compile Include="Common\Controls\ItemList\ItemListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Common\Controls\ItemList\ItemListControl.Designer.cs">
+      <DependentUpon>ItemListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Gps\Coordinates.cs" />
+    <Compile Include="Common\Gps\CoordinatesManager.cs" />
+    <Compile Include="Common\Gps\Dm.cs" />
+    <Compile Include="Common\Gps\GeoConverter.cs" />
+    <Compile Include="Common\Gps\GpsGnrmcInterface.cs" />
+    <Compile Include="Common\Gps\GpsGnrmcManager.cs" />
+    <Compile Include="Common\Handler\NetConnectionStatusHandler.cs" />
+    <Compile Include="Common\Handler\ErrorMessageHandler.cs" />
+    <Compile Include="Common\Handler\LoginHandler.cs" />
+    <Compile Include="Common\Item\BlockBayList\BlockBayListViewItem.cs" />
+    <Compile Include="Common\Item\BlockList\BlockListViewItem.cs" />
+    <Compile Include="Common\Item\CommonItemList\CommonItemListItem.cs" />
+    <Compile Include="Common\Item\ContainerRules\ContainerRuleItem.cs" />
+    <Compile Include="Common\Item\Gps\LocationItem.cs" />
+    <Compile Include="Common\Item\MobileContainerDetail\ContainerInfoItem.cs" />
+    <Compile Include="Common\Item\MobileContainerDetail\MobileContainerDetailItem.cs" />
+    <Compile Include="Common\Item\LogOutReason\LogOutReasonItem.cs" />
+    <Compile Include="Common\Item\Staff\StaffItem.cs" />
+    <Compile Include="Common\Item\UpdateSeal\UpdateSealItem.cs" />
+    <Compile Include="Common\Item\Stoppage\StoppageItem.cs" />
+    <Compile Include="Common\Item\Stoppage\StoppageReasonItem.cs" />
+    <Compile Include="Common\Item\Stoppage\StoppageReasonItemList.cs" />
+    <Compile Include="Common\Item\VesselInformation\ActivatedHatchInfoItem.cs" />
+    <Compile Include="Common\Item\VesselInformation\BerthPlanItem.cs" />
+    <Compile Include="Common\Item\VesselInformation\VesselBayItem.cs" />
+    <Compile Include="Common\Item\VesselInformation\HatchInfoItem.cs" />
+    <Compile Include="Common\Item\VesselInformation\VesselJobBayListViewItem.cs" />
+    <Compile Include="Common\Param\ContainerRules\ContainerRuleParam.cs" />
+    <Compile Include="Common\Param\CudServiceParam.cs" />
+    <Compile Include="Common\Param\MobileContainerDetail\MobileContainerDetailParam.cs" />
+    <Compile Include="Common\Param\Staff\GetStaffParam.cs" />
+    <Compile Include="Common\Param\UpdateSeal\UpdateSealParam.cs" />
+    <Compile Include="Common\Param\Stoppage\StoppageReasonParam.cs" />
+    <Compile Include="Common\Param\VesselInformation\ActivatedVesselInformationParam.cs" />
+    <Compile Include="Common\Param\VesselInformation\VesselInformationParam.cs" />
+    <Compile Include="Resources\VocabularyResource.es-ES.Designer.cs">
+      <DependentUpon>VocabularyResource.es-ES.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Service\MobileContainerDetail\Dao\IMobileContainerDetailDao.cs" />
+    <Compile Include="Service\MobileContainerDetail\Dao\MobileContainerDetailDao.cs" />
+    <Compile Include="Service\MobileContainerDetail\IMobileContainerDetailService.cs" />
+    <Compile Include="Service\MobileContainerDetail\MobileContainerDetailService.cs" />
+    <Compile Include="Service\UpdateSeal\IUpdateSealService.cs" />
+    <Compile Include="Service\UpdateSeal\UpdateSealService.cs" />
+    <Compile Include="Service\Stoppage\Dao\IStoppageDao.cs" />
+    <Compile Include="Service\Stoppage\Dao\StoppageDao.cs" />
+    <Compile Include="Service\Stoppage\IStoppageService.cs" />
+    <Compile Include="Service\Stoppage\StoppageService.cs" />
+    <Compile Include="Common\Item\YQAssignment\EquipmentCoverageItem.cs" />
+    <Compile Include="Common\Item\ItemListControlItem.cs" />
+    <Compile Include="Common\Item\YQAssignment\YQAssignmentItem.cs" />
+    <Compile Include="Common\Param\YQAssignment\YQAssignmentParam.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\VocabularyResource.Designer.cs">
+      <DependentUpon>VocabularyResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Service\UserIdList\UserIdListService.cs" />
+    <Compile Include="Service\UserIdList\Dao\UserIdListDao.cs" />
+    <Compile Include="Service\UserIdList\Dao\IUserIdListDao.cs" />
+    <Compile Include="Service\UserIdList\IUserIdListService.cs" />
+    <Compile Include="Service\VesselInformation\Dao\IVesselInformationDao.cs" />
+    <Compile Include="Service\VesselInformation\Dao\VesselInformationDao.cs" />
+    <Compile Include="Service\VesselInformation\IVesselInformationService.cs" />
+    <Compile Include="Service\VesselInformation\VesselInformationService.cs" />
+    <Compile Include="Service\YQAssignment\Dao\IYQAssignmentDao.cs" />
+    <Compile Include="Service\YQAssignment\Dao\YQAssignmentDao.cs" />
+    <Compile Include="Service\YQAssignment\IYQAssignmentService.cs" />
+    <Compile Include="Service\YQAssignment\YQAssignmentService.cs" />
+    <Compile Include="Service\MessgaeService.cs" />
+    <Compile Include="Win\BlockBayList\BlockBayListController.cs" />
+    <Compile Include="Win\BlockBayList\BlockBayListInterface.cs" />
+    <Compile Include="Win\BlockBayList\BlockBayListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\BlockBayList\BlockBayListView.Designer.cs">
+      <DependentUpon>BlockBayListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\BlockList\BlockListController.cs" />
+    <Compile Include="Win\BlockList\BlockListInterface.cs" />
+    <Compile Include="Win\BlockList\BlockListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\BlockList\BlockListView.Designer.cs">
+      <DependentUpon>BlockListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\HoldDeck\HoldDeckPopupView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\HoldDeck\HoldDeckPopupView.Designer.cs">
+      <DependentUpon>HoldDeckPopupView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\CommonItemList\CommonItemListController.cs" />
+    <Compile Include="Win\CommonItemList\CommonItemListInterface.cs" />
+    <Compile Include="Win\CommonItemList\CommonItemListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\CommonItemList\CommonItemListView.Designer.cs">
+      <DependentUpon>CommonItemListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\EquipmentList\EquipmentListController.cs" />
+    <Compile Include="Win\EquipmentList\EquipmentListInterface.cs" />
+    <Compile Include="Win\EquipmentList\EquipmentListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\EquipmentList\EquipmentListView.Designer.cs">
+      <DependentUpon>EquipmentListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\LogOutReason\LogOutReasonController.cs" />
+    <Compile Include="Win\LogOutReason\LogOutReasonInterface.cs" />
+    <Compile Include="Win\LogOutReason\LogOutReasonView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\LogOutReason\LogOutReasonView.Designer.cs">
+      <DependentUpon>LogOutReasonView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\MobileContainerDetail\MobileContainerDetailController.cs" />
+    <Compile Include="Win\MobileContainerDetail\MobileContainerDetailInterface.cs" />
+    <Compile Include="Win\MobileContainerDetail\MobileContainerDetailView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\MobileContainerDetail\MobileContainerDetailView.designer.cs">
+      <DependentUpon>MobileContainerDetailView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UpdateSealForTwin\UpdateSealForTwinController.cs" />
+    <Compile Include="Win\UpdateSealForTwin\UpdateSealForTwinInterface.cs" />
+    <Compile Include="Win\UpdateSealForTwin\UpdateSealForTwinView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UpdateSealForTwin\UpdateSealForTwinView.Designer.cs">
+      <DependentUpon>UpdateSealForTwinView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UpdateSeal\UpdateSealController.cs" />
+    <Compile Include="Win\UpdateSeal\UpdateSealInterface.cs" />
+    <Compile Include="Win\UpdateSeal\UpdateSealView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UpdateSeal\UpdateSealView.Designer.cs">
+      <DependentUpon>UpdateSealView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\StoppageResume\StoppageResumeController.cs" />
+    <Compile Include="Win\StoppageResume\StoppageResumeInterface.cs" />
+    <Compile Include="Win\StoppageResume\StoppageResumeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\StoppageResume\StoppageResumeView.Designer.cs">
+      <DependentUpon>StoppageResumeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\Stoppage\StoppageController.cs" />
+    <Compile Include="Win\Stoppage\StoppageInterface.cs" />
+    <Compile Include="Win\Stoppage\StoppageView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\Stoppage\StoppageView.Designer.cs">
+      <DependentUpon>StoppageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\UserIdList\UserIdListController.cs" />
+    <Compile Include="Win\UserIdList\UserIdListInterface.cs" />
+    <Compile Include="Win\UserIdList\UserIdListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\UserIdList\UserIdListView.Designer.cs">
+      <DependentUpon>UserIdListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\VesselJobBayList\VesselJobBayListController.cs" />
+    <Compile Include="Win\VesselJobBayList\VesselJobBayListInterface.cs" />
+    <Compile Include="Win\VesselJobBayList\VesselJobBayListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\VesselJobBayList\VesselJobBayListView.Designer.cs">
+      <DependentUpon>VesselJobBayListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\YtCPosList\YtCPosListController.cs" />
+    <Compile Include="Win\YtCPosList\YtCPosListInterface.cs" />
+    <Compile Include="Win\YtCPosList\YtCPosListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\YtCPosList\YtCPosListView.Designer.cs">
+      <DependentUpon>YtCPosListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\YtListSingleTwin\YtListSingleTwinController.cs" />
+    <Compile Include="Win\YtListSingleTwin\YtListSingleTwinInterface.cs" />
+    <Compile Include="Win\YtListSingleTwin\YtListSingleTwinView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\YtListSingleTwin\YtListSingleTwinView.Designer.cs">
+      <DependentUpon>YtListSingleTwinView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Win\YtList\YtListController.cs" />
+    <Compile Include="Win\YtList\YtListInterface.cs" />
+    <Compile Include="Win\YtList\YtListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Win\YtList\YtListView.Designer.cs">
+      <DependentUpon>YtListView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Common\Controls\ItemList\ItemListControl.resx">
+      <DependentUpon>ItemListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources\MessageResource.ko-KR.resx" />
+    <EmbeddedResource Include="Resources\MessageResource.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VocabularyResource.ko-KR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VocabularyResource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VocabularyResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\VocabularyResource.es-ES.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>VocabularyResource.es-ES.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\BlockBayList\BlockBayListView.resx">
+      <DependentUpon>BlockBayListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\BlockList\BlockListView.resx">
+      <DependentUpon>BlockListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\HoldDeck\HoldDeckPopupView.resx">
+      <DependentUpon>HoldDeckPopupView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\CommonItemList\CommonItemListView.resx">
+      <DependentUpon>CommonItemListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\EquipmentList\EquipmentListView.resx">
+      <DependentUpon>EquipmentListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\LogOutReason\LogOutReasonView.resx">
+      <DependentUpon>LogOutReasonView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\MobileContainerDetail\MobileContainerDetailView.resx">
+      <DependentUpon>MobileContainerDetailView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UpdateSealForTwin\UpdateSealForTwinView.resx">
+      <DependentUpon>UpdateSealForTwinView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UpdateSeal\UpdateSealView.resx">
+      <DependentUpon>UpdateSealView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\StoppageResume\StoppageResumeView.resx">
+      <DependentUpon>StoppageResumeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\Stoppage\StoppageView.resx">
+      <DependentUpon>StoppageView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\UserIdList\UserIdListView.resx">
+      <DependentUpon>UserIdListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\VesselJobBayList\VesselJobBayListView.resx">
+      <DependentUpon>VesselJobBayListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\YtCPosList\YtCPosListView.resx">
+      <DependentUpon>YtCPosListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\YtListSingleTwin\YtListSingleTwinView.resx">
+      <DependentUpon>YtListSingleTwinView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Win\YtList\YtListView.resx">
+      <DependentUpon>YtListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Core\Tsb.Fontos.Core.csproj">
+      <Project>{305AEB21-9C74-4486-BEC9-C230D9FAD98F}</Project>
+      <Name>Tsb.Fontos.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Net\Tsb.Fontos.Net.csproj">
+      <Project>{E1D014AE-CBB7-46C5-B220-9A468E5B1F08}</Project>
+      <Name>Tsb.Fontos.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win.Drawing\Tsb.Fontos.Win.Drawing.csproj">
+      <Project>{98C17A29-41EC-4509-BD04-BF9D023BE32B}</Project>
+      <Name>Tsb.Fontos.Win.Drawing</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\Tsb-Fontos-Framework\MAIN\2.0-Std-Main\Tsb-Fontos-Framework\Tsb.Fontos.Win\Tsb.Fontos.Win.csproj">
+      <Project>{7C1C1800-C613-4E7B-B5A2-4778BB655DAE}</Project>
+      <Name>Tsb.Fontos.Win</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Catos.Cm.Core\Tsb.Catos.Cm.Core.csproj">
+      <Project>{51EE7FDD-AAE6-4E45-83B5-DE68DC182392}</Project>
+      <Name>Tsb.Catos.Cm.Core</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Catos.Cm.Net\Tsb.Catos.Cm.Net.csproj">
+      <Project>{E2A2A75F-9B2B-441F-A080-7EA1ED94F027}</Project>
+      <Name>Tsb.Catos.Cm.Net</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Catos.Cm.Win.Drawing\Tsb.Catos.Cm.Win.Drawing.csproj">
+      <Project>{5C139EE8-FEC1-4B68-8DFD-F92655B92D58}</Project>
+      <Name>Tsb.Catos.Cm.Win.Drawing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tsb.Catos.Cm.Win\Tsb.Catos.Cm.Win.csproj">
+      <Project>{57770B81-B9C4-4563-B93F-1E8194E0A6FF}</Project>
+      <Name>Tsb.Catos.Cm.Win</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\YQAssignment\Map\YQAssignmentMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\Stoppage\Map\StoppageMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\VesselInformation\Map\VesselInformationMap.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\MobileContainerDetail\Map\MobileContainerDetailMap.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Service\UserIdList\Map\UserIdListMap.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Win\VesselJobBayHoldDeckList\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

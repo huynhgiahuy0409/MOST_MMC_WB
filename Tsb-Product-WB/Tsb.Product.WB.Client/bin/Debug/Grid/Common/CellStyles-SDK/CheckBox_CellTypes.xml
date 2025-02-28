@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CheckBoxCellType" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CheckBoxCellType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CellTypeID" type="xs:string" />
+                <xs:element name="ThreeState" type="xs:string" minOccurs="0" />
+                <xs:element name="TextTrue" type="xs:string" minOccurs="0" />
+                <xs:element name="TextFalse" type="xs:string" minOccurs="0" />
+                <xs:element name="TextIndeterminate" type="xs:string" minOccurs="0" />
+                <xs:element name="TextAlign" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//CheckBoxCellType" />
+        <xs:field xpath="CellTypeID" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <CheckBoxCellType>
+    <CellTypeID>CheckBox</CellTypeID>
+    <ThreeState>N</ThreeState>
+    <TextTrue />
+    <TextFalse />
+    <TextIndeterminate />
+    <TextAlign />
+  </CheckBoxCellType>
+  <CheckBoxCellType>
+    <CellTypeID>CheckBoxAllowSelection</CellTypeID>
+    <ThreeState>N</ThreeState>
+  </CheckBoxCellType>
+</NewDataSet>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.net http://www.springframework.net/xsd/spring-objects.xsd">
+
+  <!-- AESEncrypter: MSCTV, GOCT -->
+
+  <!-- Service: INITIALIZATION -->
+  <object id="SYS_OBJECT_APP_INITIALIZER" singleton="true" type="Tsb.Catos.Cm.Win.Init.CTAppInitializer, Tsb.Catos.Cm.Win">
+    <property name="DoCheckDBConnection"  value="true"/>
+    <property name="DoCheckAppConnection" value="false"/>
+    <property name="DBMonitorService"     ref ="SYS_OBJECT_DB_MONITOR_SERVICE" />
+    <property name="StartLogoView">
+      <object type="Tsb.Catos.Cm.Win.Init.StartLogoView, Tsb.Catos.Cm.Win" />
+    </property>
+    <property name="ConfigInitAdapter">
+      <object type="Tsb.Catos.Cm.Core.Configuration.Client.CTClientConfigInitAdapter, Tsb.Catos.Cm.Core">
+        <property name="PasswordEncrypter">
+          <object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />
+        </property>
+      </object>
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_TEST_CONFIG_INIT_ADAPTER" type="Tsb.Catos.Cm.Core.Configuration.Client.CTTestClientConfigInitAdapter, Tsb.Catos.Cm.Core"/>
+
+  <object id="SYS_OBJECT_DB_MONITOR_SERVICE" type="Tsb.Fontos.Core.Monitoring.Database.DBMonitorService, Tsb.Fontos.Core">
+    <property name="DBMonitorDao">
+      <object type="Tsb.Fontos.Core.Monitoring.Database.DBMonitorDao, Tsb.Fontos.Core">
+      </object>
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_APP_AUTHEN_HANDLER" singleton="true" type="Tsb.Catos.Cm.Core.Security.Authentication.CTPasswordAuthenHandler, Tsb.Catos.Cm.Core">
+    <property name="PasswordEncrypter">
+      <!--<object type="Tsb.Fontos.Core.Security.Encryption.AESEncrypter, Tsb.Fontos.Core" />--> <!--max commented on 13-06-2024-->
+	    <object type="Tsb.Product.WB.Service.Security.Encryption.MTEncrypter, Tsb.Product.WB.Service" />
+	</property>	
+  </object>
+<!--max commented on 13-06-2024-->
+  <!--<object id="SYS_OBJECT_LOGIN_VIEW" type="Tsb.Fontos.Win.Security.Login.GeneralLoginView, Tsb.Fontos.Win" />-->
+	
+	<!--max added on 13-06-2024-->
+	<object id="SYS_OBJECT_LOGIN_VIEW" type="Tsb.Most.Wb.Client.Login.LoginView, Module" />
+
+	<object id="SYS_OBJECT_SECURITY_SERVICE" type="Tsb.Catos.Cm.Core.Security.Service.CTSecurityService, Tsb.Catos.Cm.Core">
+    <property name="SecurityDao">
+      <object type ="Tsb.Catos.Cm.Core.Security.Service.Dao.CTSecurityDao, Tsb.Catos.Cm.Core">
+      </object>
+    </property>
+  </object>
+
+  <object id="SYS_OBJECT_LICENSE_MANAGER" type="Tsb.Catos.Cm.Core.Security.Service.CTLicenseManager, Tsb.Catos.Cm.Core">
+  </object>
+	
+  <object id="SYS_OBJECT_APP_AUTHEN_SSO_HANDLER" singleton="true" type="Tsb.Catos.Cm.Core.Security.Authentication.SSOAuthenHandler, Tsb.Catos.Cm.Core" />
+</objects>

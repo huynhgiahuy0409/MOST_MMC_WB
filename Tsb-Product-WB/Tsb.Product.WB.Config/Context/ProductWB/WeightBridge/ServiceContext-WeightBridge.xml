@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns='http://www.springframework.net'
+         xmlns:d="http://www.springframework.net/database">
+
+	<!-- Service Start-->
+	<object id="SVC-PT-PTWB-WB-MainService"						 type="Tsb.Product.WB.Service.WeightBridge.MainService,				Tsb.Product.WB.Service">
+		<property name="MainDao" ref="DAO-PT-PTWB-WB-MainDao"/>
+	</object>
+
+	<object id="SVC-PT-PTWB-WB-JobService"						 type="Tsb.Product.WB.Service.WeightBridge.JobService,				Tsb.Product.WB.Service">
+		<property name="JobDao" ref="DAO-PT-PTWB-WB-JobDao"/>
+	</object>
+
+	<object id="SVC-PT-PTWB-WB-WeightBridgeService"				type="Tsb.Product.WB.Service.WeightBridge.WeightBridgeService,		Tsb.Product.WB.Service">
+		<property name="WeightBridgeDao" ref="DAO-PT-PTWB-WB-WeightBridgeDao"/>
+	</object>
+	<!-- The End of Service -->
+
+	<!-- DAOs -->
+	<object id="DAO-PT-PTWB-WB-MainDao"							type="Tsb.Product.WB.Service.WeightBridge.Dao.Maindao,				Tsb.Product.WB.Service"/>
+	<object id="DAO-PT-PTWB-WB-JobDao"							type="Tsb.Product.WB.Service.WeightBridge.Dao.JobDao,				Tsb.Product.WB.Service"/>
+	<object id="DAO-PT-PTWB-WB-WeightBridgeDao"					type="Tsb.Product.WB.Service.WeightBridge.Dao.WeightBridgeDao,		Tsb.Product.WB.Service"/>
+	<!-- The End of DAO -->
+
+</objects>

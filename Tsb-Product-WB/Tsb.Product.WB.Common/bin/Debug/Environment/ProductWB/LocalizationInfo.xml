@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="Policy Setting">
+      <!-- Basic, OS, Custom  -->
+      <setting name ="Type">OS</setting>
+  </section>
+
+  <section name ="Module Resource Setting">
+    <setting name ="ResourceAssembly">Tsb.Product.WB.Common</setting>
+    <setting name ="MessageBase">Tsb.Product.WB.Common.Resources.MessageResource</setting>
+    <setting name ="VocabularyBase">Tsb.Product.WB.Common.Resources.VocabularyResource</setting>
+    <setting name ="MessagePrefix">MSG_PTWB</setting>
+    <setting name ="VocabularyPrefix">WRD_PTWB</setting>
+  </section>
+
+  <section name ="Product Common Resource Setting">
+    <setting name ="ResourceAssembly">Tsb.Catos.Cm.Core</setting>
+    <setting name ="MessageBase">Tsb.Catos.Cm.Core.Resources.MessageResource</setting>
+    <setting name ="VocabularyBase">Tsb.Catos.Cm.Core.Resources.VocabularyResource</setting>
+    <setting name ="MessagePrefix">MSG_CTCM</setting>
+    <setting name ="VocabularyPrefix">WRD_CTCM</setting>
+  </section>
+ 
+  <section name ="Culture Setting">
+      <!-- 
+       based on RFC 4646 : 
+       en-US  [  English (United States)   ]
+       en-GB  [  English (United Kingdom)  ]
+       ko-KR  [  Korean (Korea)            ]
+       ja-JP  [  Japanese (Japan)          ] 
+      -->
+      <setting name ="Name">en-US</setting>
+      <!-- <setting name ="Name">ko-KR</setting> -->
+  </section>
+  
+  <section name ="Custom.DateTime.Format">
+    <!--
+       dddd = Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+       MMMM = January, February, March...
+       dd   = 01    (Day)
+       d    = 1     (Day)
+       yyyy = 2009  (Year)
+       h    = 3     (Hour)
+       hh   = 03    (Hour)
+       HH   = 15    (Hour)
+       mm   = 08    (Minute)
+       tt   = AM PM
+    -->
+    <setting name ="FullDateTime">dddd, MMMM dd, yyyy h:mm:ss tt</setting>
+    <setting name ="LongDate">dddd, MMMM dd, yyyy</setting>
+    <setting name ="ShortDate">M/d/yyyy</setting>
+    <setting name ="MonthDay">MMMM dd</setting>
+    <setting name ="YearMonth">MMMM, yyyy</setting>
+    <setting name ="ShortTime">h:mm tt</setting>
+    <setting name ="LongTime">h:mm:ss tt</setting>
+  </section>
+
+  <section name ="Custom.Currency.Format">
+    <setting name ="Symbol">USD</setting>
+    <setting name ="DecimalDigits">2</setting>
+    <setting name ="DecimalSeparator">.</setting>
+    <setting name ="GroupSizes">3</setting>
+    <setting name ="GroupSeparator">,</setting>
+  </section>
+
+  <section name ="Custom.Number.Format">
+    <setting name ="DecimalDigits">2</setting>
+    <setting name ="DecimalSeparator">.</setting>
+    <setting name ="GroupSizes">3</setting>
+    <setting name ="GroupSeparator">,</setting>
+    <!-- 0=[n %] 1=[n%]  2=[%n]  3=[% n] -->
+    <setting name ="PercentPositive">1</setting>
+    <!-- 0=[-n %] 1=[-n%]  2=[-%n]  3=[%-n] 4=[%n-] 5=[n-%] 6=[n%-] 7=[-% n] 8=[n %-] 9=[% n-] 10=[% -n] 11=[n- %]-->
+    <setting name ="PercentNegative">1</setting>
+  </section>
+</configuration>

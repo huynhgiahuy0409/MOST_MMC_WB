@@ -1,0 +1,43 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="UnitNumberCellType" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="UnitNumberCellType">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="CellTypeID" type="xs:string" />
+                <xs:element name="DecimalPlace" type="xs:int" minOccurs="0" />
+                <xs:element name="Separator" type="xs:string" minOccurs="0" />
+                <xs:element name="MaxValue" type="xs:double" minOccurs="0" />
+                <xs:element name="MinValue" type="xs:double" minOccurs="0" />
+                <xs:element name="StringTrim" type="xs:string" minOccurs="0" />
+                <xs:element name="NegativeRed" type="xs:string" minOccurs="0" />
+                <xs:element name="SpinButton" type="xs:string" minOccurs="0" />
+                <xs:element name="UnitSymbol" type="xs:string" minOccurs="0" />
+                <xs:element name="UnitPlace" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1">
+        <xs:selector xpath=".//UnitNumberCellType" />
+        <xs:field xpath="CellTypeID" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <UnitNumberCellType>
+    <CellTypeID>Unit Number</CellTypeID>
+    <DecimalPlace>0</DecimalPlace>
+    <Separator>Y</Separator>
+    <MaxValue>0</MaxValue>
+    <MinValue>0</MinValue>
+    <StringTrim>N</StringTrim>
+    <NegativeRed>N</NegativeRed>
+    <SpinButton>N</SpinButton>
+    <UnitSymbol>False</UnitSymbol>
+    <UnitPlace>False</UnitPlace>
+  </UnitNumberCellType>
+</NewDataSet>

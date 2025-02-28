@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns='http://www.springframework.net'
+         xmlns:d="http://www.springframework.net/database">
+
+
+  <!-- Service Start -->
+  <object id="SVC-FT-VS-ViewStateService" type="Tsb.Catos.Cm.ViewState.Service.ViewStateService, Tsb.Catos.Cm.ViewState">
+    <property name="ViewStateDao" ref="DAO-FT-VS-ViewStateDao"/>
+  </object>
+  <!-- The End of Service -->
+
+  <!-- DAOs  Start -->
+  <object id="DAO-FT-VS-ViewStateDao" type="Tsb.Catos.Cm.ViewState.Service.Dao.ViewStateDao, Tsb.Catos.Cm.ViewState">
+  </object>
+  <!-- The End of DAO -->
+  
+  <!-- View State Serializer Start -->
+  <object id="SVC-FT-VS-ViewStateDefineStoreHandler" type="Tsb.Catos.Cm.ViewState.Store.ViewStateDefineStoreHandler, Tsb.Catos.Cm.ViewState" singleton="false">
+    <!--
+      Sets a value indicating whether the data memory cache about view state define information use or not.
+    -->
+    <property name="UseDataCache" value="true" />
+    <property name="ViewStateService" ref="SVC-FT-VS-ViewStateService" />
+  </object>
+  
+  <object id="SVC-FT-VS-ViewStateStoreHandler" type="Tsb.Catos.Cm.ViewState.Store.ViewStateStoreHandler, Tsb.Catos.Cm.ViewState" singleton="false">
+    <!--
+      Sets a value indicating whether the data memory cache about view state value information use or not.
+    -->
+    <property name="UseDataCache" value="true" />
+    <property name="ViewStateService" ref="SVC-FT-VS-ViewStateService" />
+  </object>
+
+  <object id="SVC-FT-VS-ValueHandler" type="Tsb.Fontos.Win.ViewState.Handler.DefaultStateValueHandler, Tsb.Fontos.Win">
+  </object>
+
+  <object id="SVC-FT-VS-StateDefineHandler" type="Tsb.Fontos.Win.ViewState.ViewStateDefineHandler, Tsb.Fontos.Win"/>
+
+  <object id="SVC-FT-VS-ViewStateDefineControlManager" type="Tsb.Fontos.Win.ViewState.ViewStateDefineControlManager, Tsb.Fontos.Win" singleton="false">
+    <property name="StoreHandler" ref="SVC-FT-VS-ViewStateDefineStoreHandler"/>
+  </object>
+
+  <object id="SVC-FT-VS-ViewStateManager" type="Tsb.Fontos.Win.ViewState.ViewStateManager, Tsb.Fontos.Win" singleton="false">
+    <property name="StoreHandler" ref="SVC-FT-VS-ViewStateStoreHandler"/>
+    <property name="StateValueHandler" ref="SVC-FT-VS-ValueHandler"/>
+  </object>
+
+  <object id="SVC-FT-VS-ViewStateDefineManager" type="Tsb.Fontos.Win.ViewState.ViewStateDefineManager, Tsb.Fontos.Win" singleton="false">
+    <property name="StateDefineHandler" ref="SVC-FT-VS-StateDefineHandler"/>
+    <property name="StateValueHandler" ref="SVC-FT-VS-ValueHandler"/>
+  </object>
+  <!-- View State Serializer End -->
+
+  <!-- View Start Definen Form-->
+  <object id="ViewStateControlDefineView"     type="Tsb.Catos.Cm.ViewState.Win.ViewStateControlDefineView, Tsb.Catos.Cm.ViewState"  lazy-init="true" />
+  <!-- The End of View Start Definen Form -->
+  
+  <!-- The End of Menu -->
+</objects>

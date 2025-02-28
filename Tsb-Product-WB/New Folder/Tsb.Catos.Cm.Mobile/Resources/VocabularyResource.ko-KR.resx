@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WRD_CTMO_Bay" xml:space="preserve">
+    <value>베이</value>
+  </data>
+  <data name="WRD_CTMO_BlockArea" xml:space="preserve">
+    <value>블록 / 에어리어</value>
+  </data>
+  <data name="WRD_CTMO_Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="WRD_CTMO_ChangeEqNo" xml:space="preserve">
+    <value>장비 번호 변경</value>
+  </data>
+  <data name="WRD_CTMO_ChangeVessel" xml:space="preserve">
+    <value>모선 변경</value>
+  </data>
+  <data name="WRD_CTMO_ContainerInformation" xml:space="preserve">
+    <value>컨테이너 정보</value>
+  </data>
+  <data name="WRD_CTMO_ContainerNo" xml:space="preserve">
+    <value>컨테이너 번호</value>
+  </data>
+  <data name="WRD_CTMO_EndOfShift" xml:space="preserve">
+    <value>시프트 종료</value>
+  </data>
+  <data name="WRD_CTMO_Equipment" xml:space="preserve">
+    <value>장비</value>
+  </data>
+  <data name="WRD_CTMO_EquipmentList" xml:space="preserve">
+    <value>장비 목록</value>
+  </data>
+  <data name="WRD_CTMO_ErrorHandler" xml:space="preserve">
+    <value>에러 핸들러</value>
+  </data>
+  <data name="WRD_CTMO_JobBay" xml:space="preserve">
+    <value>작업 베이</value>
+  </data>
+  <data name="WRD_CTMO_JobCode" xml:space="preserve">
+    <value>작업 코드</value>
+  </data>
+  <data name="WRD_CTMO_Location" xml:space="preserve">
+    <value>위치</value>
+  </data>
+  <data name="WRD_CTMO_LogOut" xml:space="preserve">
+    <value>로그아웃</value>
+  </data>
+  <data name="WRD_CTMO_LogOutReason" xml:space="preserve">
+    <value>로그아웃 사유</value>
+  </data>
+  <data name="WRD_CTMO_Ok" xml:space="preserve">
+    <value>확인</value>
+  </data>
+  <data name="WRD_CTMO_Others" xml:space="preserve">
+    <value>기타</value>
+  </data>
+  <data name="WRD_CTMO_Resume" xml:space="preserve">
+    <value>재개</value>
+  </data>
+  <data name="WRD_CTMO_Stoppage_Resume" xml:space="preserve">
+    <value>중단 재개</value>
+  </data>
+  <data name="WRD_CTMO_ResumeTime" xml:space="preserve">
+    <value>재개 시간</value>
+  </data>
+  <data name="WRD_CTMO_Row" xml:space="preserve">
+    <value>로우</value>
+  </data>
+  <data name="WRD_CTMO_Search" xml:space="preserve">
+    <value>검색</value>
+  </data>
+  <data name="WRD_CTMO_ShowAllBlockArea" xml:space="preserve">
+    <value>모든 블록 / 에어리어 조회</value>
+  </data>
+  <data name="WRD_CTMO_Stoppage" xml:space="preserve">
+    <value>중단</value>
+  </data>
+  <data name="WRD_CTMO_Time" xml:space="preserve">
+    <value>시간</value>
+  </data>
+  <data name="WRD_CTMO_VesselSchedule" xml:space="preserve">
+    <value>모선 스케쥴</value>
+  </data>
+  <data name="WRD_CTMO_WorkFinished" xml:space="preserve">
+    <value>작업 종료 됨</value>
+  </data>
+  <data name="WRD_CTMO_YardPosition" xml:space="preserve">
+    <value>야드 위치</value>
+  </data>
+  <data name="WRD_CTMO_YtList" xml:space="preserve">
+    <value>야드 트랙터 목록</value>
+  </data>
+  <data name="WRD_CTMO_Seal" xml:space="preserve">
+    <value>봉인 번호</value>
+  </data>
+  <data name="WRD_CTMO_UpdateSeal" xml:space="preserve">
+    <value>봉인 번호 업데이트</value>
+  </data>
+  <data name="WRD_CTMO_CarrierSeal" xml:space="preserve">
+    <value>선사 봉인 번호</value>
+  </data>
+  <data name="WRD_CTMO_CustomsSeal" xml:space="preserve">
+    <value>세관 봉인 번호</value>
+  </data>
+  <data name="WRD_CTMO_AuthoritySeal" xml:space="preserve">
+    <value>권한 봉인 번호</value>
+  </data>
+  <data name="WRD_CTMO_Undo" xml:space="preserve">
+    <value>실행 취소</value>
+  </data>
+  <data name="WRD_CTMO_Stoppage_Reason" xml:space="preserve">
+    <value>중단 사유</value>
+  </data>
+  <data name="WRD_CTMO_CreateB1" xml:space="preserve">
+    <value>B1 작업 생성</value>
+  </data>
+  <data name="WRD_CTMO_UserIdList" xml:space="preserve">
+    <value>장비기사 ID</value>
+  </data>
+  <data name="WRD_CTMO_AllYtList" xml:space="preserve">
+    <value>모든 트랙터</value>
+  </data>
+  <data name="WRD_CTMO_PoolYtList" xml:space="preserve">
+    <value>그룹 트랙터</value>
+  </data>
+  <data name="WRD_CTMO_ChangeOperator" xml:space="preserve">
+    <value>Change Operator</value>
+  </data>
+	<data name="WRD_CTMO_SortEquipmentGroupings" xml:space="preserve">
+    <value>장비 그룹화 정렬</value>
+  </data>
+</root>

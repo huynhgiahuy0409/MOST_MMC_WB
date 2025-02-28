@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="MESSAGE_DISPLAY">
+    <!-- ExceptionReport/MessageBox-->
+    <setting name ="Dialog">MessageBoxLegacy</setting>
+  </section>
+  <section name ="EXCEPTION_REPORT">
+    <!-- SMTP/SimpleMAPI -->
+    <setting name ="EMailProtocol">SMTP</setting>
+    <setting name ="EMaileServer">pacific.tsb.co.kr</setting>
+    <setting name ="SendReport">Y</setting>
+    <setting name ="ContactEmail">recon@tsb.co.kr</setting>
+  </section>
+</configuration>

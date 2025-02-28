@@ -1,0 +1,979 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MSG_FTCO_00000" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="MSG_FTCO_00001" xml:space="preserve">
+    <value>{0} 서비스를 호출 할 때 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00002" xml:space="preserve">
+    <value>다른 환경설정 소스 유형은 현재 지원되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00003" xml:space="preserve">
+    <value>환경설정 파일 읽기 오류. [섹션 - {0}] [설정 - {1}]을 (를) {2} 파일에서 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00004" xml:space="preserve">
+    <value>환경설정 파일 읽기 오류. [섹션 - {0}] [설정- {1}] 값이 유효하지 않습니다. {2} 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00005" xml:space="preserve">
+    <value>환경설정 경로를 확인할 때 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00006" xml:space="preserve">
+    <value>환경설정 파일을 열거 나 읽는 중 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00007" xml:space="preserve">
+    <value>[{0}] 개체를 만들지 못했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00008" xml:space="preserve">
+    <value>응용 프로그램 구성 파일 읽기 오류. [설정- {0}]을 {1} 파일에서 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00009" xml:space="preserve">
+    <value>Null 또는 빈 리소스 키(key)는 허용되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00010" xml:space="preserve">
+    <value>리소스 키 [{0}]이 없습니다. {1}을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00011" xml:space="preserve">
+    <value>사용 가능한 리소스 설정이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00012" xml:space="preserve">
+    <value>리소스 옵션 [{0}]이 지원되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00013" xml:space="preserve">
+    <value>{0} 메소드가 {1} 클래스에서 구현되지 않았습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00014" xml:space="preserve">
+    <value>{0} 속성이 {1} 클래스에 구현되어 있지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00015" xml:space="preserve">
+    <value>그리드 초기화 에러입니다. [CellStyleID- {0}]을 {1} 파일에서 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00016" xml:space="preserve">
+    <value>그리드 {0} 셀 방식 로드 오류.</value>
+  </data>
+  <data name="MSG_FTCO_00017" xml:space="preserve">
+    <value>[{0}] 그리드를 만들 때 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00018" xml:space="preserve">
+    <value>지정한 그리드 스키마 파일이 없습니다 (경로 : {0}).</value>
+  </data>
+  <data name="MSG_FTCO_00019" xml:space="preserve">
+    <value>[{0}] 값이 허용되는 값 범위내에 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00020" xml:space="preserve">
+    <value>지정된 그리드 설정 값과 일치하는 것이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00021" xml:space="preserve">
+    <value>[{0}] 그리드 열을 설정할 때 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00022" xml:space="preserve">
+    <value>그리드를 검색 할 때 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00023" xml:space="preserve">
+    <value>[{0}] 데이터 소스에서 계산 한 데이터가 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00024" xml:space="preserve">
+    <value>[{0}] 속성은 null 일 수 없습니다. [{0}] 속성 값을 설정하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00025" xml:space="preserve">
+    <value>[{0}] 그리드 ID를 양식에서 찾을 수 없습니다. [{0}] 속성 값을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00026" xml:space="preserve">
+    <value>선택된 필터를 삭제하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00027" xml:space="preserve">
+    <value>상세 [{0}] 속성은 {1} 클래스에 존재하지 않습니다. 클래스 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00028" xml:space="preserve">
+    <value>[{0}] 속성 값은 설정되어야 합니다. [{1}] 그리드 속성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00029" xml:space="preserve">
+    <value>지정된 [{0}] 어셈블리가 유효하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00030" xml:space="preserve">
+    <value>클래스 생성에 실패했습니다. 지정된 [{0}] 클래스 이름이 유효하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00031" xml:space="preserve">
+    <value>해당 필터 설정은 유효하지 않은 옵션을 가지고 있습니다. 해당 열은 선택되어야 합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00032" xml:space="preserve">
+    <value>해당 필터 설정은 유효하지 않은 옵션을 가지고 있습니다. 해당 필터 선사는 선택되어야 합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00033" xml:space="preserve">
+    <value>해당 필터 설정은 유효하지 않은 옵션을 가지고 있습니다. 상세 선사에 대해 해당 빈칸 피연산자 값은 허용되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00034" xml:space="preserve">
+    <value>파일 열기 작업에 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00035" xml:space="preserve">
+    <value>파일 저장 작업에 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00036" xml:space="preserve">
+    <value>컨테이너 수정 파일을 처리하는 과정에서 에러가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00037" xml:space="preserve">
+    <value>{0} XML 파일을 읽어들이는 동안에 직렬화 작업에 실패했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00038" xml:space="preserve">
+    <value>필터 상태가 어떠한 데이터에도 일치하지 않습니다. 전체 문자가 맞는지 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00039" xml:space="preserve">
+    <value>변경한 것을 저장하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00040" xml:space="preserve">
+    <value>필터에 적용된 그리드 데이터가 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00041" xml:space="preserve">
+    <value>선택된 정렬을 삭제하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00042" xml:space="preserve">
+    <value>열 개수 제한에 도달했기 때문에 정렬 설정을 추가하는 것은 생성할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00043" xml:space="preserve">
+    <value>처리할 행이 하나 이상 있어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00044" xml:space="preserve">
+    <value>해당 정렬 설정은 유효하지 않은 옵션을 포함합니다. 해당 열은 선택되어야 합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00045" xml:space="preserve">
+    <value>해당 정렬 설정은 유효하지 않은 옵션을 포함합니다. 해당 정렬 방향은 선택되어야 합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00046" xml:space="preserve">
+    <value>정렬 설정이 충돌했습니다! 다른 정렬 방향이있는 동일한 열 [열 : {0}]이 이미 있습니다. 확인 후 다시 시도하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00047" xml:space="preserve">
+    <value>선택된 열 설정을 제거 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00048" xml:space="preserve">
+    <value>지정된 열 스키마를 찾을 수 없습니다.(열 스키마의 키(key)={0})</value>
+  </data>
+  <data name="MSG_FTCO_00049" xml:space="preserve">
+    <value>캐시 키(key) 문자열은 null이 될 수 없습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00050" xml:space="preserve">
+    <value>해당 [{1}] 값이 [{2}]으로 설정되었을 때, [{0}] 속성 값은 설정되어야 합니다. [{3}] 속성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00051" xml:space="preserve">
+    <value>[{0}] 속성 값은 null 혹은 빈 문자열이 될 수 없습니다. [{0}] 속성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00052" xml:space="preserve">
+    <value>[{0}] 개체 복제에 실패했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00053" xml:space="preserve">
+    <value>지정된 연결된 레이블 이름을 찾을 수 없습니다. [연결된 레이블 이름 = {0}]</value>
+  </data>
+  <data name="MSG_FTCO_00054" xml:space="preserve">
+    <value>[{2}] 속성 값이 [{3}]으로 설정되면 [{0}] 속성 값은 [{1}]으로 설정되어야합니다. [{4}] 속성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00055" xml:space="preserve">
+    <value>[{0}]으로 메일을 보내는 중 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00056" xml:space="preserve">
+    <value>[{0}] 속성 값이 설정되면 [{1}] 속성 값을 설정해야합니다. [{2}] 그리드 속성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00057" xml:space="preserve">
+    <value>[{0}] 속성은 null이거나 비워 둘 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00058" xml:space="preserve">
+    <value>데이터베이스에 연결하는 동안 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00059" xml:space="preserve">
+    <value>상세 그리드 열 키(key)를 찾을 수 없습니다. [그리드 열 키(key) = {0}]</value>
+  </data>
+  <data name="MSG_FTCO_00060" xml:space="preserve">
+    <value>지정된 그리드 스키마 파일에 스키마 정보 (경로 : {0})가 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00061" xml:space="preserve">
+    <value>지정된 색상 값 [{1}]을 사용하여 셀 [{0}]에 색상을 적용하는데 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00062" xml:space="preserve">
+    <value>지정된 캐시 키(key)를 사용하여 캐시 된 데이터를 찾을 수 없습니다. [키(key) = {0}]</value>
+  </data>
+  <data name="MSG_FTCO_00063" xml:space="preserve">
+    <value>삭제 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00064" xml:space="preserve">
+    <value>[{0}] 레코드는 다른 레코드에서 참조했기 때문에 삭제할 수 없습니다</value>
+  </data>
+  <data name="MSG_FTCO_00065" xml:space="preserve">
+    <value>입력 된 값은 중복 키(key) 값입니다. [키(key) : {0}, 입력 된 값 : {1}]</value>
+  </data>
+  <data name="MSG_FTCO_00066" xml:space="preserve">
+    <value>[{0}] 값을 변환 할 때 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00067" xml:space="preserve">
+    <value>일부 값을 해독 할 때 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00068" xml:space="preserve">
+    <value>일부 값을 암호화 할 때 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00069" xml:space="preserve">
+    <value>구성 파일 [Path : {0}]을 열거나 읽는 중 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00070" xml:space="preserve">
+    <value>시스템 서버 정보를 구성 할 때 시스템에서 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00071" xml:space="preserve">
+    <value>시스템을 초기화 할 때 치명적인 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00072" xml:space="preserve">
+    <value>리소스 [{0}] 이미지 파일이 존재하지 않습니다. 이미지 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00073" xml:space="preserve">
+    <value>애플리케이션 구성 파일 읽기 오류. [섹션- {0}] [키(key)- {1}]이 {2}에서 발견되지 않았습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00074" xml:space="preserve">
+    <value>필수 항목이 입력되지 않았습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00075" xml:space="preserve">
+    <value>유효성 검사가 성공적입니다.</value>
+  </data>
+  <data name="MSG_FTCO_00076" xml:space="preserve">
+    <value>유효성 검사 구문 오류입니다. [{0}] 검사기를 사용하려면 [{1}] 속성을 설정해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00077" xml:space="preserve">
+    <value>ID를 입력하지 않았습니다.
+ID를 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00078" xml:space="preserve">
+    <value>암호를 입력하지 않았습니다.
+비밀번호를 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00079" xml:space="preserve">
+    <value>로그인에 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00080" xml:space="preserve">
+    <value>이 기능을 사용하기 위해 선택된 행이 없습니다.
+다시 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00081" xml:space="preserve">
+    <value>데이터베이스 서버에 연결하지 못했습니다. 데이터베이스 설정을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00082" xml:space="preserve">
+    <value>보안 확인 중에 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오. 시스템 오류 메시지는 [{0}]입니다.</value>
+  </data>
+  <data name="MSG_FTCO_00083" xml:space="preserve">
+    <value>허가된 사용자가 아닙니다. 사용자 ID를 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00084" xml:space="preserve">
+    <value>이 애플리케이션에 대한 액세스 권한이 없습니다. 관리자에게 문의해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00085" xml:space="preserve">
+    <value>암호가 틀립니다. 비밀번호를 다시 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00086" xml:space="preserve">
+    <value>암호가 만료되었습니다. 관리자에게 문의해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00087" xml:space="preserve">
+    <value>ID가 만료되었습니다. 관리자에게 문의해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00088" xml:space="preserve">
+    <value>ID가 관리자에 의해 갱신되었습니다. 암호를 변경해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00089" xml:space="preserve">
+    <value>비밀번호가 만료되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00090" xml:space="preserve">
+    <value>비밀번호는 {0} 일 후에 만료됩니다. 비밀번호를 변경 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00091" xml:space="preserve">
+    <value>입력한 새 암호가 {0}과 다를 수 있습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00092" xml:space="preserve">
+    <value>확인 암호가 새 암호와 동일하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00093" xml:space="preserve">
+    <value>이전 암호로 제공된 값이 올바르지 않습니다. 올바른 이전 암호를 다시 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00094" xml:space="preserve">
+    <value>비밀번호 변경에 실패했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00095" xml:space="preserve">
+    <value>[{0}] 메소드에 대한 [TransactionOption] 특성 정의가 없습니다. TransactionOption 특성을 정의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00096" xml:space="preserve">
+    <value>시스템에서 글꼴 이름 [{0}]을 지원하지 않습니다. [{3}] 파일에서 [섹션- {1}] [설정- {2}] 값을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00097" xml:space="preserve">
+    <value>색상 설정 값 [{0}]이 잘못되었습니다. [{3}] 파일에서 [섹션- {1}] [설정- {2}] 값을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00098" xml:space="preserve">
+    <value>{0}로드에 실패했습니다. 구성에는 최소한 기본 {0} {1} [{2}] 값이 있습니다. [{3}] 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00099" xml:space="preserve">
+    <value>지정된 {0}을(를) {0} 캐시에서 찾을 수 없습니다. [{0} = {1}의 캐시 키(key). [{2}] 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00100" xml:space="preserve">
+    <value>지정된 {0} 이름 ({1})을 {2}에서 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00101" xml:space="preserve">
+    <value>시스템에서 일부 값을 해싱 ​​할 때 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00102" xml:space="preserve">
+    <value>해시 값을 비교할 때 시스템에서 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00103" xml:space="preserve">
+    <value>[{0}] 파일을 쓰는 중 오류가 발생했습니다. 내부 시스템 오류 메시지는 [{1}]입니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00104" xml:space="preserve">
+    <value>[{0}] 파일을 읽을 때 오류가 발생했습니다. 내부 시스템 오류 메시지는 [{1}]입니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00105" xml:space="preserve">
+    <value>라이센스 파일 [{0}]이 유효하지 않습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00106" xml:space="preserve">
+    <value>사용중인 클라이언트 응용 프로그램의 사용이 허가되지 않았습니다. 이 모듈에 대한 라이센스를 얻으려면 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00107" xml:space="preserve">
+    <value>시스템 라이센스가 만료되었습니다. 로그온 요청이 거부되었습니다. 이 모듈에 대한 라이센스를 얻으려면 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00108" xml:space="preserve">
+    <value>[{0}] 속성 정의가 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00109" xml:space="preserve">
+    <value>컨테이너 번호에 손상된 데이터를 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_0011" xml:space="preserve">
+    <value>지금 {0} 파일을 보시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00110" xml:space="preserve">
+    <value>[로그인 실패]
+서버에 연결할 수 없습니다.
+서버 및 구성을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00111" xml:space="preserve">
+    <value>[연결 실패]
+서버에서 응답 없음.</value>
+  </data>
+  <data name="MSG_FTCO_00112" xml:space="preserve">
+    <value>[연결 실패]
+연결 실패.</value>
+  </data>
+  <data name="MSG_FTCO_00113" xml:space="preserve">
+    <value>[연결 실패]</value>
+  </data>
+  <data name="MSG_FTCO_00114" xml:space="preserve">
+    <value>해당 작업이 성공적으로 완료되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00115" xml:space="preserve">
+    <value>데이터베이스 INSERT 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00116" xml:space="preserve">
+    <value>데이터베이스 SELECT 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00117" xml:space="preserve">
+    <value>데이터베이스 UPDATE 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00118" xml:space="preserve">
+    <value>데이터베이스 DELETE 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00119" xml:space="preserve">
+    <value>추가 작업을 시도하기 전에 {0}이 필요합니다. {1}을(를) 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00120" xml:space="preserve">
+    <value>메소드 실행 중에 서비스 호출이 실패했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00121" xml:space="preserve">
+    <value>{0}이(가) 없습니다. {1}을(를) 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00122" xml:space="preserve">
+    <value>{0} 또는 [1}이 없습니다. {2}을(를) 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00123" xml:space="preserve">
+    <value>지정한 경로가 잘못되었습니다 (경로 : {0}).</value>
+  </data>
+  <data name="MSG_FTCO_00124" xml:space="preserve">
+    <value>입력 된 {0} 값 ({1})은 지원되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00125" xml:space="preserve">
+    <value>값 ({0})을 [1]로 변환 할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00126" xml:space="preserve">
+    <value>[{0}] 파일이 존재하지 않습니다. 이 파일을 확인하십시오 (경로 : {1}).</value>
+  </data>
+  <data name="MSG_FTCO_00127" xml:space="preserve">
+    <value>[{0}] 데이터 검색에 실패했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00128" xml:space="preserve">
+    <value>지정된 날짜 시간 문자열 [{0}]이 지원되지 않는 형식입니다.</value>
+  </data>
+  <data name="MSG_FTCO_00129" xml:space="preserve">
+    <value>{0}이(가) 정의되지 않았습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00130" xml:space="preserve">
+    <value>{0}은(는) 지원되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00131" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="MSG_FTCO_00132" xml:space="preserve">
+    <value>다음의 지정된 텍스트를 찾을 수 없습니다 : {0}</value>
+  </data>
+  <data name="MSG_FTCO_00133" xml:space="preserve">
+    <value>찾기는 검색의 시작 지점에 도달했습니다. 첫 줄부터 계속 검색 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00134" xml:space="preserve">
+    <value>지정된 [{0}]을 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00135" xml:space="preserve">
+    <value>숫자에만 유효합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00136" xml:space="preserve">
+    <value>십진수는 두 개 이상의 점을 가질 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00137" xml:space="preserve">
+    <value>-'은 시작 위치에만 있을 수 있습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00138" xml:space="preserve">
+    <value>숫자 및 점에서만 유효합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00139" xml:space="preserve">
+    <value>값은 적어도 {0} 자 이상이어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00140" xml:space="preserve">
+    <value>값은 적어도 {0} 자릿수를 입력해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00141" xml:space="preserve">
+    <value>지금 {0} 파일을 보시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00142" xml:space="preserve">
+    <value>유효성 검사 에러</value>
+  </data>
+  <data name="MSG_FTCO_00143" xml:space="preserve">
+    <value>{0} 작업이 성공적으로 완료되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00144" xml:space="preserve">
+    <value>C3IT NULL 메시지 {0}</value>
+  </data>
+  <data name="MSG_FTCO_00145" xml:space="preserve">
+    <value>컨테이너 번호에만 유효합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00146" xml:space="preserve">
+    <value>ResourceManager가 존재하지 않습니다. [LocalizationInfo.xml] 또는 [Resource.resx]를 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00147" xml:space="preserve">
+    <value>응용 프로그램 메뉴를 구성 할 때 시스템에서 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00148" xml:space="preserve">
+    <value>시스템을 초기화 할 때 치명적인 오류가 발생했습니다. 시스템 관리자에게 문의하십시오. 시스템 오류 메시지는 [{0}]입니다.</value>
+  </data>
+  <data name="MSG_FTCO_00149" xml:space="preserve">
+    <value>인쇄 할 {0} 참조가 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00150" xml:space="preserve">
+    <value>[로그인 실패!]
+인증 된 사용자가 아닙니다.
+사용자 ID를 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00151" xml:space="preserve">
+    <value>UIStyleInfo.xml을 확인하십시오 (원래 예외 메시지 : {0}).</value>
+  </data>
+  <data name="MSG_FTCO_00152" xml:space="preserve">
+    <value>{0} ({1})이 {2} ({3})보다 빠릅니다.</value>
+  </data>
+  <data name="MSG_FTCO_00153" xml:space="preserve">
+    <value>인쇄 설정에 문제가 있을 수 있습니다. 기본 프린터 설정을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00154" xml:space="preserve">
+    <value>XmlElement를 추가 할 때 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00155" xml:space="preserve">
+    <value>구성 파일 [{0}]을 열거나 읽는 동안 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00156" xml:space="preserve">
+    <value>리본을 만들 때 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00157" xml:space="preserve">
+    <value>프로그램을 종료 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00158" xml:space="preserve">
+    <value>데이터베이스 [{0}] 키(key)가 없습니다. [{1}]을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00159" xml:space="preserve">
+    <value>&lt;{1}&gt;의 지정된 &lt;{0}&gt; 값은 null 일 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00160" xml:space="preserve">
+    <value>SqlMap 연결 키 [{0}]이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00161" xml:space="preserve">
+    <value>세션 [{0}]은 중첩 될 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00162" xml:space="preserve">
+    <value>디코더 사전에 '{0}'유형의 비교 연산이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00163" xml:space="preserve">
+    <value>디코더 사전에 '{1}' 유형보다 비교 연산 '{0}'이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00164" xml:space="preserve">
+    <value>처리되지 않은 표현식 유형 : '{0}'</value>
+  </data>
+  <data name="MSG_FTCO_00165" xml:space="preserve">
+    <value>처리되지 않은 바인딩 유형 '{0}'</value>
+  </data>
+  <data name="MSG_FTCO_00166" xml:space="preserve">
+    <value>null 또는 빈 값 : '{0}'</value>
+  </data>
+  <data name="MSG_FTCO_00167" xml:space="preserve">
+    <value>매개 변수 '{0}'은 패턴 본문에 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00168" xml:space="preserve">
+    <value>매칭은 곱셈 전에 수행되어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00169" xml:space="preserve">
+    <value>{0}' 유형에는 '{1}' 속성이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00170" xml:space="preserve">
+    <value>Statement ID : &lt;{0}&gt;,
+메시지 : '{1}'</value>
+  </data>
+  <data name="MSG_FTCO_00171" xml:space="preserve">
+    <value>AsyncAgent가 이미 비동기 작업을 실행 중입니다.</value>
+  </data>
+  <data name="MSG_FTCO_00172" xml:space="preserve">
+    <value>새 화면을 여시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00173" xml:space="preserve">
+    <value>열린 보기가 최대 수 &lt;{0}&gt;을 초과합니다!</value>
+  </data>
+  <data name="MSG_FTCO_00174" xml:space="preserve">
+    <value>필터 설정이 충돌합니다!
+동일한 열 [열 : {0}]이 다른 필터 조건이 이미 있습니다.
+다시 확인하고 다시 시도하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00175" xml:space="preserve">
+    <value>{0} 이름 [{1}]이 이미 있습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00176" xml:space="preserve">
+    <value>드라이브 또는 디렉토리 액세스가 거부되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00177" xml:space="preserve">
+    <value>드라이브가 준비되지 않았거나 디렉토리가 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00178" xml:space="preserve">
+    <value>Null 또는 빈 {0} 이름은 허용되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00179" xml:space="preserve">
+    <value>선택한 작업 영역을 제거 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00180" xml:space="preserve">
+    <value>{0}을(를) 입력하지 않았습니다. {0}을(를) 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00181" xml:space="preserve">
+    <value>열려있는 양식 / 창이 없습니다. 하나 이상의 양식 / 창을 열어주세요.</value>
+  </data>
+  <data name="MSG_FTCO_00182" xml:space="preserve">
+    <value>선택한 작업 공간이 작업 공간 목록에 없습니다. 작업 공간 양식 작업 공간 목록을 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00183" xml:space="preserve">
+    <value>{0}이(가) 유효하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00184" xml:space="preserve">
+    <value>저장된 Workspace 로드 중 ...</value>
+  </data>
+  <data name="MSG_FTCO_00185" xml:space="preserve">
+    <value>이 명령은 여러 선택 항목에서 사용할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00186" xml:space="preserve">
+    <value>암호는 {0} 자 이상이어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00187" xml:space="preserve">
+    <value>대문자 (A - Z)는 {0} 이상이어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00188" xml:space="preserve">
+    <value>소문자 (a - z)는 {0} 이상이어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00189" xml:space="preserve">
+    <value>숫자 (0 - 9)는 {0} 이상이어야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00190" xml:space="preserve">
+    <value>특수 문자 (예 :! @ # $ % * () _ + ^ &amp; :;;?.)는 {0}보다 커야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00191" xml:space="preserve">
+    <value>비밀번호에는 {0} 문자 유형이 포함되어야합니다. {1}</value>
+  </data>
+  <data name="MSG_FTCO_00192" xml:space="preserve">
+    <value>데이터베이스 프로시저 호출 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00193" xml:space="preserve">
+    <value>지정된 그리드 열 태그가 Null입니다. [그리드 열 인덱스 = {0}]</value>
+  </data>
+  <data name="MSG_FTCO_00194" xml:space="preserve">
+    <value>작업 공간 이름이 이미 사용 중입니다. 다른 이름을 사용하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00195" xml:space="preserve">
+    <value>{0}이(가) 비어 있습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00196" xml:space="preserve">
+    <value>선택한 열은 null이거나 빈 문자열 일 수 없습니다.
+템플릿 이름 [{0}]을 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00197" xml:space="preserve">
+    <value>템플릿 이름이 이미 존재합니다. [{0}]</value>
+  </data>
+  <data name="MSG_FTCO_00198" xml:space="preserve">
+    <value>널 또는 비어있는 그룹은 허용되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00199" xml:space="preserve">
+    <value>{0}.
+창을 닫으시겠습니까?
+  </value>
+  </data>
+  <data name="MSG_FTCO_00200" xml:space="preserve">
+    <value>DB 공급자가 SQL 일괄 작업을 지원하지 않습니다. [명령 유형 : {1}]</value>
+  </data>
+  <data name="MSG_FTCO_00201" xml:space="preserve">
+    <value>데이터베이스 일괄 SQL 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00202" xml:space="preserve">
+    <value>({0})을 눌렀습니다. 코드의 두 번째 키(key)를 기다리는 중 ...</value>
+  </data>
+  <data name="MSG_FTCO_00203" xml:space="preserve">
+    <value>키(key) 조합 ({0})은 명령이 아닙니다.</value>
+  </data>
+  <data name="MSG_FTCO_00204" xml:space="preserve">
+    <value>{0} 이름 길이 [{1}]이 최대 길이 [{2}]를 초과합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00205" xml:space="preserve">
+    <value>열 구성이 변경되었습니다. 열 설정을 사용하여 설정을 수정하십시오.
+(누락 된 열 키(key) : {0})</value>
+  </data>
+  <data name="MSG_FTCO_00206" xml:space="preserve">
+    <value>동기화 메시지 요청 시간이 초과되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00207" xml:space="preserve">
+    <value>요청 동기화 메시지가 취소되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00208" xml:space="preserve">
+    <value>서버에 연결하지 못했습니다. 서버 [{0}]을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00209" xml:space="preserve">
+    <value>pdf를 내보낼 때 최대 {0} 페이지까지 인쇄 할 수 있습니다.
+총 {1} 페이지 중 {0} 페이지를 인쇄 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00210" xml:space="preserve">
+    <value>배치 유형은 MSSQL에서 지원되지 않습니다. [배치 SQL : {0}]</value>
+  </data>
+  <data name="MSG_FTCO_00211" xml:space="preserve">
+    <value>내보내기 전에 Excel 파일을 닫으십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00212" xml:space="preserve">
+    <value>{0} XML 파일을로드하는 중 deserialize 조작이 실패했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00213" xml:space="preserve">
+    <value>{0} XML 파일, DELETE 실행 중에 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00214" xml:space="preserve">
+    <value>템플릿 [{0}]은 Excel 가져오기가 일치하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00215" xml:space="preserve">
+    <value>열 [{0}]이 이미 사용 중입니다. 다른 열을 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00216" xml:space="preserve">
+    <value>1000 개가 넘는 행에는 지원되지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00217" xml:space="preserve">
+    <value>[{0}]은 Excel을 가져 오는 데 지원되지 않습니다. 파일을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00218" xml:space="preserve">
+    <value>템플릿 이름은 빈 문자열 일 수 없습니다. 템플릿 이름을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00219" xml:space="preserve">
+    <value>가져 오기 전에 동일한 파일을 닫으십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00220" xml:space="preserve">
+    <value>파일을 여는 중 ...</value>
+  </data>
+  <data name="MSG_FTCO_00221" xml:space="preserve">
+    <value>파일을 가져 오는 중 ...</value>
+  </data>
+  <data name="MSG_FTCO_00222" xml:space="preserve">
+    <value>{0} 스타일을 변경 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00223" xml:space="preserve">
+    <value>{0} 스타일이 이미 적용되었으므로 컨테이너 스타일을 변경할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00224" xml:space="preserve">
+    <value>이 화면이 사용 중이므로 이 명령을 실행할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00225" xml:space="preserve">
+    <value>이 화면이 사용 중이므로 {0} 명령을 실행할 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00226" xml:space="preserve">
+    <value>이 화면이 진행 중이므로 닫을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00227" xml:space="preserve">
+    <value>이 화면은 진행중인 작업입니다.
+정말로 이 화면을 닫으시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00228" xml:space="preserve">
+    <value>화면은 변경된 데이터입니다.
+작업을 계속 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00229" xml:space="preserve">
+    <value>Excel 파일을 닫으시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00230" xml:space="preserve">
+    <value>가져 오기 결과를 여시겠습니까?
+(주의 : 엑셀 파일 크기에 따라 오래 걸릴 수 있습니다.)</value>
+  </data>
+  <data name="MSG_FTCO_00231" xml:space="preserve">
+    <value>코드 값의 길이가 현재 셀의 최대 길이를 초과합니다.
+최대 길이 : [{0}], 값 길이 : [{1}]</value>
+  </data>
+  <data name="MSG_FTCO_00232" xml:space="preserve">
+    <value>하나 이상의 [피연산 함수] 값이 길이 한계를 초과합니다 (최대 : 4000).
+피연산 함수 셀의 값을 확인하십시오. (행 : {0})</value>
+  </data>
+  <data name="MSG_FTCO_00234" xml:space="preserve">
+    <value>계속 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00235" xml:space="preserve">
+    <value>가져 오기가 사용자에 의해 중단되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00236" xml:space="preserve">
+    <value>가져 오기가 완료되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00237" xml:space="preserve">
+    <value>Excel 파일을 가져오는 중 잘못된 값이 있습니다.
+아래 사항을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00238" xml:space="preserve">
+    <value>선택한 템플릿이 변경되었습니다. 저장 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00239" xml:space="preserve">
+    <value>사용자 ID로 제공된 값이 올바르지 않습니다. 올바른 사용자 ID를 다시 입력하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00240" xml:space="preserve">
+    <value>라이센스 확인 모듈을 로드하는 중 오류가 발생했습니다. 시스템 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00241" xml:space="preserve">
+    <value>데이터베이스에서 사용자 정보를 가져 오는 데 실패했습니다.
+CATOS 환경설정을 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00242" xml:space="preserve">
+    <value>확인 및 종료 버튼의 정의가 필요합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00243" xml:space="preserve">
+    <value>Wagon 번호에만 유효합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00244" xml:space="preserve">
+    <value>선택한 보고서가 존재하지 않습니다. 보고서 목록에서 보고서를 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00255" xml:space="preserve">
+    <value>리스너가 'tnsnames.ora'파일에서 연결 식별자를 분석 할 수 없습니다. 파일이 루트 폴더에 존재하는지 또는 서비스 이름이 올바른지 확인하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00256" xml:space="preserve">
+    <value>이 행이 열의 헤더로 선택됩니다.</value>
+  </data>
+  <data name="MSG_FTCO_00257" xml:space="preserve">
+    <value>그리드로 가져올 셀 범위를 설정하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00258" xml:space="preserve">
+    <value>정보가 일치하는 열을 결과에 포함 하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00259" xml:space="preserve">
+    <value>행 [{0}]이 선택되었습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00260" xml:space="preserve">
+    <value>이 행을 열의 헤더로 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00261" xml:space="preserve">
+    <value>선택 해제</value>
+  </data>
+  <data name="MSG_FTCO_00262" xml:space="preserve">
+    <value>Excel 가져오기 (1/3 단계 : 열의 헤더 선택)</value>
+  </data>
+  <data name="MSG_FTCO_00263" xml:space="preserve">
+    <value>Excel 가져 오기 (2/3 단계 : 데이터 범위 설정)</value>
+  </data>
+  <data name="MSG_FTCO_00264" xml:space="preserve">
+    <value>Excel 가져 오기 (3/3 단계 : Excel과 그리드 사이의 데이터 열 일치)</value>
+  </data>
+  <data name="MSG_FTCO_00265" xml:space="preserve">
+    <value>인쇄 내용을 종료하지 마십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00266" xml:space="preserve">
+    <value>기본 프린터를 찾을 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00267" xml:space="preserve">
+    <value>기본 프린터를 종료하지 마십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00268" xml:space="preserve">
+    <value>[{0}] 인수는 null 일 수 없습니다. [{0}] 인수 값을 설정하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00269" xml:space="preserve">
+    <value>인쇄 할 페이지를 설정해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00270" xml:space="preserve">
+    <value>이 필드는 비워 둘 수 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00271" xml:space="preserve">
+    <value>이 레이아웃 이름은 이미 선택한 스키마에 대해 존재합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00272" xml:space="preserve">
+    <value>정의 된 열이 없습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00273" xml:space="preserve">
+    <value>먼저 레이아웃을 선택하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_00274" xml:space="preserve">
+    <value>스키마 파일을 먼저 선택해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00275" xml:space="preserve">
+    <value>매핑 정보가 손실 될 수 있습니다.
+계속 하시겠습니까?</value>
+  </data>
+  <data name="MSG_FTCO_00276" xml:space="preserve">
+    <value>[{0}] 필드는 데이터에 존재하지 않습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00277" xml:space="preserve">
+    <value>ID가 잘못되었습니다. Single Sign-On 에이전트와 일치해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00278" xml:space="preserve">
+    <value>암호가 틀립니다. Single Sign-On 에이전트와 일치해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00285" xml:space="preserve">
+    <value>테마 설정 파일이 존재하지 않습니다.
+{0}</value>
+  </data>
+  <data name="MSG_FTCO_99997" xml:space="preserve">
+    <value>{0}
+[{1}]</value>
+  </data>
+  <data name="MSG_FTCO_99998" xml:space="preserve">
+    <value>예기치 않은 오류가 발생했습니다. 내부 시스템 오류 메시지는 [{0}]입니다. 관리자에게 문의하십시오.</value>
+  </data>
+  <data name="MSG_FTCO_99999" xml:space="preserve">
+    <value>예기치 않은 오류가 발생했습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00286" xml:space="preserve">
+    <value>서버와 통신연결에 실패하였습니다.. 네트워크 상태를 확인하세요.</value>
+  </data>
+  <data name="MSG_FTCO_00287" xml:space="preserve">
+    <value>ID의 만료일이 경과 되었습니다. 관리자에게 문의해야합니다.</value>
+  </data>
+  <data name="MSG_FTCO_00288" xml:space="preserve">
+    <value>선택할 수 있는 개수를 초가하였습니다.
+최대 {0}개 가지 선택할 수 있습니다.</value>
+  </data>
+  <data name="MSG_FTCO_00289" xml:space="preserve">
+    <value>Building an import result log …</value>
+  </data>
+</root>

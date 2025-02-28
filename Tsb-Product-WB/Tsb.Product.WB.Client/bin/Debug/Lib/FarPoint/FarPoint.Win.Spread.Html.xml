@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>FarPoint.Win.Spread.Html</name>
+  </assembly>
+  <members>
+    <member name="M:FarPoint.Win.Spread.Html.Export.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Html.Export" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtml(FarPoint.Win.Spread.SheetView,System.String)">
+      <summary>Saves the specified SheetView to the specified file as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="filename">string</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtml(FarPoint.Win.Spread.SheetView,System.IO.Stream)">
+      <summary>Saves the specified SheetView to the specified stream as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="stream">Stream</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtmlRange(FarPoint.Win.Spread.SheetView,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.String)">
+      <summary>Saves the specified range in the specified SheetView to the specified file as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="row">Starting row index of range to save</param>
+      <param name="column">Starting column index of range to save</param>
+      <param name="rowCount">Number of rows in range to save</param>
+      <param name="columnCount">Number of columns in range to save</param>
+      <param name="rowHeaders">True to include row headers</param>
+      <param name="columnHeaders">True to include column headers</param>
+      <param name="filename">string</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtmlRange(FarPoint.Win.Spread.SheetView,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.String)">
+      <summary>Saves the specified range in the specified SheetView to the specified file as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="row">Starting row index of range to save</param>
+      <param name="column">Starting column index of range to save</param>
+      <param name="rowCount">Number of rows in range to save</param>
+      <param name="columnCount">Number of columns in range to save</param>
+      <param name="rowHeaders">True to include row headers</param>
+      <param name="columnHeaders">True to include column headers</param>
+      <param name="columnFooter">True to include column footers</param>
+      <param name="filename">string</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtmlRange(FarPoint.Win.Spread.SheetView,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.IO.Stream)">
+      <summary>Saves the specified range in the specified SheetView to the specified stream as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="row">Starting row index of range to save</param>
+      <param name="column">Starting column index of range to save</param>
+      <param name="rowCount">Number of rows in range to save</param>
+      <param name="columnCount">Number of columns in range to save</param>
+      <param name="rowHeaders">True to include row headers</param>
+      <param name="columnHeaders">True to include column headers</param>
+      <param name="stream">Stream</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Html.Export.SaveHtmlRange(FarPoint.Win.Spread.SheetView,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean,System.IO.Stream)">
+      <summary>Saves the specified range in the specified SheetView to the specified stream as an HTML table.</summary>
+      <param name="sheetView">SheetView</param>
+      <param name="row">Starting row index of range to save</param>
+      <param name="column">Starting column index of range to save</param>
+      <param name="rowCount">Number of rows in range to save</param>
+      <param name="columnCount">Number of columns in range to save</param>
+      <param name="rowHeaders">True to include row headers</param>
+      <param name="columnHeaders">True to include column headers</param>
+      <param name="columnFooter">True to include column footers</param>
+      <param name="stream">Stream</param>
+    </member>
+  </members>
+</doc>

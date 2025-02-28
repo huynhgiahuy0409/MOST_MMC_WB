@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tsb.Fontos.Core.BgWorker.Event.AsyncEventArgs" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAQA=</HashCode>
+      <FileName>BgWorker\Event\AsyncEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Event.AsyncFaultEventArgs" Collapsed="true">
+    <Position X="1.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Event\AsyncFaultEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Event.AsyncResultEventArgs" Collapsed="true">
+    <Position X="4" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACAAAAAAAAgAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Event\AsyncResultEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Info.AsyncActionWorker&lt;T&gt;" Collapsed="true">
+    <Position X="6" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Worker\AsyncActionWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Info.AsyncFuncWorker&lt;T&gt;" Collapsed="true">
+    <Position X="2" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Worker\AsyncFuncWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Info.AsyncTextWorker" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAIAAAAAAAAAAAAAAAAAAAAgAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Worker\AsyncTextWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.Info.BaseAsyncWorker" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAABIAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\Worker\BaseAsyncWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.AsyncAgent" Collapsed="true">
+    <Position X="6.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\AsyncAgent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tsb.Fontos.Core.BgWorker.BaseAsyncAgent" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IARAAABAFCUBHEAAAAkEgABBAIAiAAAEAgFAQAACQFE=</HashCode>
+      <FileName>BgWorker\BaseAsyncAgent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Delegate Name="Tsb.Fontos.Core.BgWorker.ResultEventHandler" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\BaseAsyncAgent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Tsb.Fontos.Core.BgWorker.FaultEventHandler" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BgWorker\BaseAsyncAgent.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <CATOS_Operation>
+    <Common>
+      <add key="DMS" value="MSSQL" />
+      <add key="UID" value="MOST_MMC" />
+      <add key="PWD" value="qosv5wLaUjiR+GwlEl2JMg==" />
+      <add key="DBQ" value="SQL1127.tsb.co.kr;database=MOST_TS" />
+      <add key="YDF" value="&#xD;&#xA;    " />
+      <add key="NWD" value="&#xD;&#xA;    " />
+      <add key="RYD" value="True" />
+      <add key="RDBLink" value="True" />
+      <add key="TIP" value="127.0.0.1" />
+      <add key="TPT" value="6777" />
+      <add key="ORT" value="30" />
+      <add key="ORC" value="3" />
+      <add key="OTI" value="100" />
+      <add key="FontName" value="Tahoma" />
+      <add key="FontSize" value="9" />
+      <add key="AL_DH" value="0" />
+      <add key="AL_DM" value="0" />
+      <add key="AL_UID" value="HUYADMIN" />
+      <add key="Language" value="English" />
+      <add key="System Admin Use" value="0" />
+    </Common>
+    <WB>
+      <add key="WindowPosition" value="N" />
+      <add key="WindowSize" value="N" />
+      <add key="LoadNoneDockStatus" value="N" />
+    </WB>
+  </CATOS_Operation>
+</configuration>

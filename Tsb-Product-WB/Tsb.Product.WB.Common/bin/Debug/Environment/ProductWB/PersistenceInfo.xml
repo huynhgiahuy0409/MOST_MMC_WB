@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="TRANSACTION">
+    <!-- TransactionScope/ORMTechInternal/DBProviderInternal/DITechInternal-->
+    <setting name ="TransactionManager">ORMTechInternal</setting>
+  </section>
+  <section name ="MAIN_DATABASE">
+    <!-- ORACLE,MSSQL,MYSQL -->
+    <setting name ="Product">ORACLE</setting>
+    <setting name ="Version">11g</setting>
+    <setting name ="AssemblyName">Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342</setting>
+  </section>
+</configuration>

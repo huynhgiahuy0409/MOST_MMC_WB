@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+  
+  <object id="applicationContext" type="Tsb.Fontos.Core.Context.SpringObjectBuilder, Tsb.Fontos.Core">
+    <property name="FileNames">
+      <list>
+
+        <!-- SYSTEM COMMON (MANDATORY) AREA START-->
+        <value>Context/CatosCm/Init/ConfigContext-ConfigInit.xml</value>
+        <!-- SYSTEM COMMON (MANDATORY) AREA END-->
+
+        <!-- APPLICATION COMMON (MANDATORY) AREA START-->
+        <value>Context/ProductWB/Common/UIControlContext-MenuForm.xml</value>
+        <value>Context/ProductWB/Common/UIControlContext-Grid.xml</value>
+        <!-- APPLICATION COMMON (MANDATORY) AREA END-->
+
+        <!-- APPLICATION BUSINESS AREA START-->
+        <value>Context/ProductWB/Sample/ServiceContext-Sample.xml</value>
+		<value>Context/ProductWB/WeightBridge/ServiceContext-WeightBridge.xml</value>
+		<value>Context/ProductWB/Popup/ServiceContext-Popup.xml</value>
+        <!-- APPLICATION BUSINESS AREA START-->
+
+
+		  <!-- SYSTEM COMMON (MANDATORY) AREA START-->
+		  <!--<value>Context/ProductWB/Init/ConfigContext-ConfigInit.xml</value>-->
+		  <!-- SYSTEM COMMON (MANDATORY) AREA END--> 
+		  
+      </list>
+    </property>
+  </object>
+  
+</objects>
+
+

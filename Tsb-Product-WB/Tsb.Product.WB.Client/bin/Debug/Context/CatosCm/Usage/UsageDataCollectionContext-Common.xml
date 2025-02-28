@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns='http://www.springframework.net'
+         xmlns:d="http://www.springframework.net/database">
+
+	<!-- Handler Start-->
+	<object id="GNR-FT-FTWN-USG-UsageDataCollectionManager" type="Tsb.Fontos.Win.Usage.Manager.UsageDataCollectionManager, Tsb.Fontos.Win">
+		<property name="UsageDataCollectionHandler" ref="GNR-CT-CTWN-USG-CTUsageDataCollectionHandler"/>
+	</object>
+	<!--Hander End-->
+	
+	<!-- Handler Start-->
+	<object id="GNR-CT-CTWN-USG-CTUsageDataCollectionHandler" type="Tsb.Catos.Cm.Win.Usage.CTUsageDataCollectionHandler, Tsb.Catos.Cm.Win">
+		<property name="UsageDataCollectionService" ref="SVC-CT-CTCM-USG-CTUsageDataCollectionService"/>
+	</object>
+	<!--Hander End-->
+
+	<!-- Service Start -->
+	<object id="SVC-CT-CTCM-USG-CTUsageDataCollectionService" type="Tsb.Catos.Cm.Core.Usage.Service.CTUsageDataCollectionService, Tsb.Catos.Cm.Core">
+		<property name="UsageDataCollectionDao" ref="SVC-CT-CTCM-USG-CTUsageDataCollectionDao"/>
+	</object>
+	<!-- The End of Service -->
+
+	<!-- DAOs  Start -->
+	<object id="SVC-CT-CTCM-USG-CTUsageDataCollectionDao" type="Tsb.Catos.Cm.Core.Usage.Service.Dao.CTUsageDataCollectionDao, Tsb.Catos.Cm.Core">
+	</object>
+	<!-- The End of DAO -->
+</objects>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Catos.Cm.Mobile.Service.MobileContainerDetail.Map.MobileContainerDetailMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+  <alias>
+    <typeAlias alias="mobileContainerDetailParam" type="Tsb.Catos.Cm.Mobile.Common.Param.MobileContainerDetail.MobileContainerDetailParam, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="containerInfoItem" type="Tsb.Catos.Cm.Mobile.Common.Item.MobileContainerDetail.ContainerInfoItem, Tsb.Catos.Cm.Mobile" />
+  </alias>
+
+  <resultMaps>
+    <resultMap id="containerListResult" class="containerInfoItem">
+      <result property="ContainerNo"  column="cntr_no"      nullValue=""></result>
+      <result property="QJobType"     column="qjob_type"    nullValue=""></result>
+      <result property="DBay"         column="dbay"         nullValue=""></result>
+      <result property="DRow"         column="drow"         nullValue=""></result>
+      <result property="DTier"        column="dtier"        nullValue=""></result>
+      <result property="DHoldDeck"    column="dhd"          nullValue=""></result>
+      <result property="LBay"         column="lbay"         nullValue=""></result>
+      <result property="LRow"         column="lrow"         nullValue=""></result>
+      <result property="LTier"        column="ltier"        nullValue=""></result>
+      <result property="LHoldDeck"    column="lhd"          nullValue=""></result>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="select-GetContainerList" parameterClass="mobileContainerDetailParam" resultMap="containerListResult" >
+      SELECT cntr_no, qjob_type, dbay, drow, dtier, dhd, lbay, lrow, ltier, lhd
+        FROM tb_gc_odr
+       WHERE plan_time IS NOT NULL
+         AND cntr_no LIKE '%$ContainerNo$'
+         AND vsl_cd = #VesselCode#
+         AND call_year = #CallYear#
+         AND call_seq = #CallSequence#
+    </select>
+    
+    <select id="select-GetShipPosition" parameterClass="mobileContainerDetailParam" resultClass="String" >
+      SELECT CASE WHEN qjob_type = 'GL' OR qjob_type = 'SL' THEN lbay || '-' || lrow || '-' || ltier || '/' || lhd
+                  ELSE dbay || '-' || drow || '-' || dtier || '/' || dhd
+             END ship_position
+        FROM tb_gc_odr
+       WHERE plan_time IS NOT NULL
+         AND cntr_no = #ContainerNo#
+         AND vsl_cd = #VesselCode#
+         AND call_year = #CallYear#
+         AND call_seq = #CallSequence#
+         AND qjob_type = #QJobType#
+    </select>
+  </statements>
+</sqlMap>

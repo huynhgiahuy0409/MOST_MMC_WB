@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Catos.Cm.Mobile.Service.YQAssignment.Map.YQAssignmentMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+  
+  <alias>
+    <typeAlias alias="yqAssignmentParam" type="Tsb.Catos.Cm.Mobile.Common.Param.YQAssignment.YQAssignmentParam, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="equipmentCoverageItem" type="Tsb.Catos.Cm.Mobile.Common.Item.YQAssignment.EquipmentCoverageItem, Tsb.Catos.Cm.Mobile" />
+  </alias>
+
+  <resultMaps>
+    <resultMap id="yqCoverageListResult" class="equipmentCoverageItem">
+      <result property="EquNo"            column="equ_no"       nullValue=""></result>
+      <result property="Block"            column="block"        nullValue=""></result>
+      <result property="FromBayIndex"     column="from_bay"     nullValue="0"></result>
+      <result property="ToBayIndex"       column="to_bay"       nullValue="0"></result>
+      <result property="AssignType"       column="assign_type"  nullValue=""></result>
+    </resultMap>
+  </resultMaps>
+  
+  <statements>
+    <select id="select-yqCoverageList" parameterClass="yqAssignmentParam" resultMap="yqCoverageListResult" >
+      SELECT equ_no, block, TO_NUMBER(NVL(from_bay, 0)) AS from_bay, TO_NUMBER(NVL(to_bay, 0)) as to_bay, assign_type
+        FROM tb_equ_cover
+       WHERE equ_no = #EquNo#
+    </select>
+  </statements>
+</sqlMap>

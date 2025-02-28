@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WRD_PTWB_ApplicationName" xml:space="preserve">
+    <value>Weight Bridge System</value>
+  </data>
+  <data name="WRD_PTWB_BLNo" xml:space="preserve">
+    <value>BL No</value>
+  </data>
+  <data name="WRD_PTWB_BookingNo" xml:space="preserve">
+    <value>Booking No</value>
+  </data>
+  <data name="WRD_PTWB_CLASS" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="WRD_PTWB_Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="WRD_PTWB_DisplayOption" xml:space="preserve">
+    <value>Display Option</value>
+  </data>
+  <data name="WRD_PTWB_DModeLocation" xml:space="preserve">
+    <value>D.Mode Location</value>
+  </data>
+  <data name="WRD_PTWB_Ems" xml:space="preserve">
+    <value>Ems</value>
+  </data>
+  <data name="WRD_PTWB_ExtendGroup" xml:space="preserve">
+    <value>Extend Group</value>
+  </data>
+  <data name="WRD_PTWB_FlashPoint" xml:space="preserve">
+    <value>Flash Point</value>
+  </data>
+  <data name="WRD_PTWB_GRNo" xml:space="preserve">
+    <value>GR No</value>
+  </data>
+  <data name="WRD_PTWB_GrORSdo" xml:space="preserve">
+    <value>Gr or SDO</value>
+  </data>
+  <data name="WRD_PTWB_IMDGClass" xml:space="preserve">
+    <value>IMDG Class</value>
+  </data>
+  <data name="WRD_PTWB_LimitedQuantity" xml:space="preserve">
+    <value>LimitedQuantity</value>
+  </data>
+  <data name="WRD_PTWB_LorryNo" xml:space="preserve">
+    <value>Lorry No</value>
+  </data>
+  <data name="WRD_PTWB_Main_Button_CancleJob" xml:space="preserve">
+    <value>Cancle Job</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Button_Clear" xml:space="preserve">
+    <value>Clear</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Button_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Button_PrintCIR" xml:space="preserve">
+    <value>Print CIR</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Button_ReadWeight" xml:space="preserve">
+    <value>Read Weight</value>
+  </data>
+  <data name="WRD_PTWB_Main_Button_Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Button_Update" xml:space="preserve">
+    <value>Update</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_CmdtDesc" xml:space="preserve">
+    <value>Commodity Description</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_DModeLocation" xml:space="preserve">
+    <value>D.Mode Location</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_FirstWeight" xml:space="preserve">
+    <value>1st Weight (KG)</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_GrORSdo" xml:space="preserve">
+    <value>GR or SDO</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_LorryNo" xml:space="preserve">
+    <value>Lorry No</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_NetCargoWeight" xml:space="preserve">
+    <value>Net Cargo Weight</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_PrintCIR" xml:space="preserve">
+    <value>Print CIR</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_SecondWeight" xml:space="preserve">
+    <value>2nd Weight (KG)</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_ShprCnsnNm" xml:space="preserve">
+    <value>Shipper/Consignee</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_SnOrBl" xml:space="preserve">
+    <value>SN No or BL No</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_TruckTransactionNo" xml:space="preserve">
+    <value>Truck Transaction No</value>
+  </data>
+  <data name="WRD_PTWB_Main_Grid_WeightDate" xml:space="preserve">
+    <value>Weight Date</value>
+  </data>
+  <data name="WRD_PTWB_Main_GroupBox_CargoInfomation" xml:space="preserve">
+    <value>Cargo Infomation</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_GroupBox_Monitoring" xml:space="preserve">
+    <value>Monitoring</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_GroupBox_Search" xml:space="preserve">
+    <value>Search</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_GroupBox_WeightInfomation" xml:space="preserve">
+    <value>Weight Infomation</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_GroupBox_WeightScaleMesurement" xml:space="preserve">
+    <value>Weight Scale Mesurement</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_BillOfLaddingNo" xml:space="preserve">
+    <value>Bill of Lading No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_CargoWeight" xml:space="preserve">
+    <value>Cargo Weight:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_ChassisNo" xml:space="preserve">
+    <value>Chassis No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_CmdtDesc" xml:space="preserve">
+    <value>Comodity Description:</value>
+  </data>
+  <data name="WRD_PTWB_Main_Label_FileInfomation" xml:space="preserve">
+    <value>File Infomation:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_FirstWeight" xml:space="preserve">
+    <value>1st Weight Scale:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_GatePoint" xml:space="preserve">
+    <value>Gate Point:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_GoodReceiptNo" xml:space="preserve">
+    <value>Good Receipt No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_KG" xml:space="preserve">
+    <value>KG:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_Lane" xml:space="preserve">
+    <value>Lane:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_LorryNo" xml:space="preserve">
+    <value>Lorry No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_Remark" xml:space="preserve">
+    <value>Remark:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_ScanHere" xml:space="preserve">
+    <value>Scan Here:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_SecondWeight" xml:space="preserve">
+    <value>2nd Weight Scale:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_ShippingNoteNo" xml:space="preserve">
+    <value>Shipping Note No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_ShprOrCnsnNm" xml:space="preserve">
+    <value>Shipper/Consignee Name:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_SubDeliveryOrderNo" xml:space="preserve">
+    <value>Sub Delivery Order No:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_TransporterNm" xml:space="preserve">
+    <value>Transporter Name:</value>
+  </data>
+  <data name="WRD_PTWB_Main_Label_VesselCallId" xml:space="preserve">
+    <value>Vessel Call Id:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_WeightDateFrom" xml:space="preserve">
+    <value>Weight Date From:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_Main_Label_WeightDateTo" xml:space="preserve">
+    <value>Weight Date To:</value>
+    <comment>Main</comment>
+  </data>
+  <data name="WRD_PTWB_MarinePollutant" xml:space="preserve">
+    <value>Marine Pollutant</value>
+  </data>
+  <data name="WRD_PTWB_Menu_SingleGrid" xml:space="preserve">
+    <value>SingleGrid Sample</value>
+  </data>
+  <data name="WRD_PTWB_Menu_SingleGridDetail" xml:space="preserve">
+    <value>SingleGridDetial Sample</value>
+  </data>
+  <data name="WRD_PTWB_Menu_TruckList" xml:space="preserve">
+    <value>Truck List</value>
+  </data>
+  <data name="WRD_PTWB_MstBlNo" xml:space="preserve">
+    <value>Master BL No</value>
+  </data>
+  <data name="WRD_PTWB_NetCargoWeight" xml:space="preserve">
+    <value>Net Cargo Weight (KG)</value>
+  </data>
+  <data name="WRD_PTWB_PackingGrp" xml:space="preserve">
+    <value>Packing Group</value>
+  </data>
+  <data name="WRD_PTWB_PrintCIR" xml:space="preserve">
+    <value>PrintCIR</value>
+  </data>
+  <data name="WRD_PTWB_ProperShippingName" xml:space="preserve">
+    <value>Proper Shipping Name</value>
+  </data>
+  <data name="WRD_PTWB_QRNo" xml:space="preserve">
+    <value>QR No</value>
+  </data>
+  <data name="WRD_PTWB_Sample" xml:space="preserve">
+    <value>Sample</value>
+  </data>
+  <data name="WRD_PTWB_SampleGrid" xml:space="preserve">
+    <value>Sample Grid</value>
+  </data>
+  <data name="WRD_PTWB_SDONo" xml:space="preserve">
+    <value>SDO No</value>
+  </data>
+  <data name="WRD_PTWB_ShippingNote" xml:space="preserve">
+    <value>Shipping Note</value>
+  </data>
+  <data name="WRD_PTWB_SnNoOrBLNo" xml:space="preserve">
+    <value>SN No or BL No</value>
+  </data>
+  <data name="WRD_PTWB_SubsidiaryRisk" xml:space="preserve">
+    <value>Subsidiary Risk</value>
+  </data>
+  <data name="WRD_PTWB_Template" xml:space="preserve">
+    <value>Fontos Template</value>
+  </data>
+  <data name="WRD_PTWB_TruckNo" xml:space="preserve">
+    <value>Truck No</value>
+  </data>
+  <data name="WRD_PTWB_UNID" xml:space="preserve">
+    <value>UNID</value>
+  </data>
+  <data name="WRD_PTWB_UNNo" xml:space="preserve">
+    <value>UNNo</value>
+  </data>
+  <data name="WRD_PTWB_Update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="WRD_PTWB_ValueColor" xml:space="preserve">
+    <value>Value Color</value>
+  </data>
+  <data name="WRD_PTWB_VslCallID" xml:space="preserve">
+    <value>Vessel Call ID</value>
+  </data>
+  <data name="WRD_PTWB_WB" xml:space="preserve">
+    <value>Weight Bridge</value>
+  </data>
+</root>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<TDateTimeCellStyles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.tsb.co.kr/xsd/TDateTimeCellStyles.xsd">
+  <CellStyles>
+    <TDateTimeCellStyle>
+      <CellStyleID>LongDate</CellStyleID>
+      <DateTimeFormat>SDWT</DateTimeFormat>
+      <UserDefinedFormat>dddd  MMMM d,  yyyy</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>LongDateWithShortTimeDialog</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>yyyy-MM-dd~HH:mm</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>LongDateWithShortTime</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>yyyy-MM-dd HH:mm</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>LongDateWithShortTimes</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>yyyy-MM-dd HH:mm:ss</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>ShortDate</CellStyleID>
+      <DateTimeFormat>SD</DateTimeFormat>
+      <UserDefinedFormat>dd/MM/yyyy</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>ShortTime</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>HH : mm</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>dd/MM/yyyy HH:mm:ss</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>dd'/'MM'/'yyyy HH:mm:ss</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>dd/MM/yyyy</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>dd'/'MM'/'yyyy</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+    <TDateTimeCellStyle>
+      <CellStyleID>Hour</CellStyleID>
+      <DateTimeFormat>U</DateTimeFormat>
+      <UserDefinedFormat>HH : 00</UserDefinedFormat>
+      <StringTrim>Y</StringTrim>
+      <SpinButton>N</SpinButton>
+      <DropDownButton>N</DropDownButton>
+    </TDateTimeCellStyle>
+  </CellStyles>
+</TDateTimeCellStyles>

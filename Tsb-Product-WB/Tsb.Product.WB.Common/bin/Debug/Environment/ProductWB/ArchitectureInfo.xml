@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <section name ="DI">
+    <!-- Spring, Unity,StructureMap -->
+    <setting name ="Tech">Spring</setting>
+  </section>
+  <section name ="ORM">
+    <!-- iBatis, NHibernate, EntityFramework -->
+    <setting name ="Tech">iBatis</setting>
+  </section>
+  <section name ="LOG">
+    <!-- Log4Net -->
+    <setting name ="Tech">Log4Net</setting>
+  </section>
+  <section name ="TIER">
+    <!-- CS, WEB, MultiTier-->
+    <setting name ="Type">CS</setting>
+  </section>
+  <section name ="SERVICE">
+    <!-- PONO, Remoting, WebService, COMPlus -->
+    <setting name ="Type">PONO</setting>
+  </section>
+  <section name ="UI">
+    <!-- WinForm,  WPF, SilverLight, ASPNET, CE -->
+    <setting name ="Tech">WinForm</setting>
+  </section>
+  <section name ="DB">
+    <!-- ORACLE/MSSQL/MYSQL -->
+    <setting name ="Product">MSSQL</setting>
+  </section>
+  <section name ="RESOURCE">
+    <!-- Resx -->
+    <setting name ="Type">Resx</setting>
+  </section>
+</configuration>

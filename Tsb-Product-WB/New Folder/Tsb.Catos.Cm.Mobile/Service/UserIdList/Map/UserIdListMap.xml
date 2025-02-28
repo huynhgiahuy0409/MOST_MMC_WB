@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Catos.Cm.Mobile.Service.UserIdList.Map.UserIdListMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+  <alias>
+    <typeAlias alias="staffItem" type="Tsb.Catos.Cm.Mobile.Common.Item.Staff.StaffItem, Tsb.Catos.Cm.Mobile" />
+    <typeAlias alias="getStaffParam" type="Tsb.Catos.Cm.Mobile.Common.Param.Staff.GetStaffParam, Tsb.Catos.Cm.Mobile" />
+  </alias>
+  
+  <resultMaps>
+    <resultMap id="driverIdListResult" class="staffItem">
+      <result property="StaffCode"        column="staff_cd"           nullValue=""/>
+      <result property="LocalName"        column="lcl_nm"             nullValue=""/>
+      <result property="UserGroup"        column="user_group"         nullValue=""/>
+    </resultMap>
+  </resultMaps>
+
+  <statements>
+    <select id="select-UserIdList" resultMap="driverIdListResult" parameterClass="getStaffParam" >
+      SELECT staff_cd, lcl_nm, user_group
+        FROM tb_staff
+       WHERE 1 = 1
+       <isNotEmpty property="UserGroup" prepend="AND">
+         user_group = #UserGroup#
+       </isNotEmpty>
+     </select>
+    
+  </statements>
+</sqlMap>

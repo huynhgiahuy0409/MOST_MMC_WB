@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap namespace="Tsb.Product.WB.Service.WeightBridge.Map.JobMap"
+xmlns="http://ibatis.apache.org/mapping"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+
+	<alias>
+		<typeAlias	alias="jobItem"						type="Tsb.Product.WB.Common.Item.WeightBridge.JobItem,			 Tsb.Product.WB.Common" />
+		<typeAlias	alias="jobParam"					type="Tsb.Product.WB.Common.Param.WeightBridge.JobParam,		 Tsb.Product.WB.Common" />
+	</alias>
+
+	<resultMaps>
+		<resultMap	id="jobResult"						class="jobItem">
+			<result property="JobTpCd"					column="JOB_TP_CD" />
+			<result property="JobPurpCd"				column="JOB_PURP_CD" />
+		</resultMap>
+	</resultMaps>
+
+	<statements>
+		<!-- SEARCH AREA START -->
+			<select id="select-job" parameterType="jobParam" resultMap="jobResult">
+				SELECT
+				JOB_TP_CD,
+				JOB_PURP_CD
+				FROM
+				TMT_JOB JB
+				LEFT JOIN TMT_GR GR ON JB.VSL_CALL_ID = GR.VSL_CALL_ID AND JB.MF_DOC_ID = GR.MF_DOC_ID
+				LEFT JOIN TMT_BL BL ON JB.VSL_CALL_ID = BL.VSL_CALL_ID AND JB.MF_DOC_ID = BL.MF_DOC_ID
+				WHERE
+				JB.VSL_CALL_ID = #VslCallId#
+				AND JB.LORRY_NO	= #LorryNo#
+				AND JB.WB_TRANSACTION_NO IS NULL
+				<isNotNull  property="GateTxnNo"			prepend="AND">
+						JB.GATE_TXN_NO		= #GateTxnNo#
+						<isNotNull  property="SdoNo"			prepend="AND">
+							JB.SDO_NO		    = #SdoNo#
+							AND JB.CG_NO = #BlNo#
+						</isNotNull>
+						<isNotNull  property="GrNo"			prepend="AND">
+							JB.CG_NO		    = #GrNo#
+						</isNotNull>
+					</isNotNull>
+					<isNull  property="GateTxnNo"			prepend="AND">
+						(JB.GATE_TXN_NO	IS NULL OR JB.GATE_TXN_NO = '')
+						<isNotNull  property="BlNo"			prepend="AND">
+							JB.CG_NO = #BlNo#
+						</isNotNull>
+						<isNotNull  property="SnNo"			prepend="AND">
+							GR.SHIPG_NOTE_NO  = #SnNo#
+						</isNotNull>
+					</isNull>
+			</select>
+		<!-- SELECT AREA END -->
+
+		<!-- CUD AREA START -->
+		
+		<!-- CUD AREA END -->
+	</statements>
+
+</sqlMap>

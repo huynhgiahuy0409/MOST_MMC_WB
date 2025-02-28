@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>FarPoint.Win.Spread.Design</name>
+  </assembly>
+  <members>
+    <member name="M:FarPoint.Win.Spread.Design.BorderEditor.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.BorderEditor" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.BorderPreviewControl.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.BorderPreviewControl" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.CellTypeDlgV3">
+      <summary>Represents the Cell Type Dialog for Spread Designer.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.#ctor(FarPoint.Win.Spread.FpSpread)">
+      <summary>Creates a new Cell Type dialog.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.#ctor">
+      <summary>Creates a new Cell Type dialog.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.CellTypeDlgV3.CellTypeIndex">
+      <summary>Gets or sets the cell type index.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.ApplyCellType(FarPoint.Win.Spread.CellType.ICellType,System.Boolean)">
+      <summary>Applies the cell type in the cell type dialog.</summary>
+      <param name="ct">Cell Type</param>
+      <param name="locked">Whether the cell is locked</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.ApplyData(System.Object)">
+      <summary>Applies the data in the cell type dialog.</summary>
+      <param name="data">Data</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.InitValues(FarPoint.Win.Spread.CellType.ICellType,System.Object)">
+      <summary>Sets the initial values to the cell type dialog.</summary>
+      <param name="celltype">Cell Type</param>
+      <param name="data">Data</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CellTypeDlgV3.SetInitValues(FarPoint.Win.Spread.CellType.ICellType,System.Object)">
+      <summary>Sets the initial values to the cell type dialog.</summary>
+      <param name="celltype">Cell Type</param>
+      <param name="data">Data</param>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.ColorEventArgs">
+      <summary>Represents information about event color.</summary>
+      <seealso cref="T:System.EventArgs" />
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ColorEventArgs.#ctor(System.Drawing.Color)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.ColorEventArgs" /> class.</summary>
+      <param name="color">The color.</param>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.ColorEventArgs.Color">
+      <summary>Gets or sets the color.</summary>
+      <value>The color.</value>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.common.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.common" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.common.HyperLink.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.common.HyperLink" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.common.HyperlinkEditor.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.common.HyperlinkEditor" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.COMRECT.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.COMRECT" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ContextMenuExtension.GetMenu(System.Windows.Forms.ContextMenuStrip,System.String)">
+      <summary>Gets the menu or submenu of contextmenu.</summary>
+      <param name="contextMenu">The context menu.</param>
+      <param name="name">The name.</param>
+      <exception cref="T:System.NullReferenceException" />
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.CustomDropCellType">
+      <summary>Represents the custom drop cell type.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.#ctor(System.Int32,System.Int32)">
+      <summary>Creates a new custom drop cell type.</summary>
+      <param name="x">X coordinate</param>
+      <param name="y">Y coordinate</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.PaintCell(System.Drawing.Graphics,System.Drawing.Rectangle,FarPoint.Win.Spread.Appearance,System.Object,System.Boolean,System.Boolean,System.Single)">
+      <summary>Paints the cell for the custom drop cell type.</summary>
+      <param name="g">Graphics device</param>
+      <param name="r">Rectangle bounding the cell</param>
+      <param name="appearance">Appearance object with display settings</param>
+      <param name="value">Value in the cell</param>
+      <param name="isSelected">Whether the cell is selected</param>
+      <param name="isLocked">Whether the cell is locked</param>
+      <param name="zoomFactor">Zoom factor</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.SetEditorValue(System.Object)">
+      <summary>Sets the editor value.</summary>
+      <param name="value">Object with value</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.SetNewLocation(System.Int32,System.Int32)">
+      <summary>Sets the new location for the custom drop cell type.</summary>
+      <param name="x">X coordinate</param>
+      <param name="y">Y coordinate</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.StartEditing(System.EventArgs,System.Boolean,System.Boolean)">
+      <summary>Occurs when the user starts edit mode in the cell.</summary>
+      <param name="e">EventArgs object with event data</param>
+      <param name="selectAll">Whether all are selected</param>
+      <param name="autoClipboard">Whether to handle the shortcut keys for Clipboard actions</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.CustomDropCellType.StopEditing">
+      <summary>Occurs when the user stops edit mode in the cell.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DesignerMain.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.DesignerMain" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DesignerMain.#ctor(System.Object,System.Object)">
+      <summary>Constructor for the calling control to use. The designer object will be either a System.Windows.Forms.Design.ControlDesigner or a System.Web.UI.Design.ControlDesigner.</summary>
+      <param name="control" />
+      <param name="designer" />
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.DesignerMain.IsResizedShowPropertyGrid">
+      <summary>Get or set visible status of PropertyGrid panel with current size</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.DesignerMain.IsShowPropertyGrid">
+      <summary>Determine current PropertyGrid panel visible status</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.DesignerMain.IsShowPropertyGridValue">
+      <summary>Get or set visible status of PropertyGrid panel</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.DesignerMain.shapeRenderWorksheet">
+      <summary>A temp Worksheet is used for Create/Paint new shapes</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DesignerMain.Dispose(System.Boolean)">
+      <summary>Clean up any resources being used.</summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DesignerMain.ProcessDialogKey(System.Windows.Forms.Keys)">
+      <summary>Process dialog key to invoke Form_KeyDown because based control (C1RibbonForm) doesn't fire KeyDown to child.</summary>
+      <param name="keyData" />
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.DropDownCalendar">
+      <summary>Represents the drop-down calendar in the Spread Designer.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.#ctor(System.Int32,System.Int32)">
+      <summary>Creates a new drop-down calendar.</summary>
+      <param name="x">X coordinate</param>
+      <param name="y">Y coordinate</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.GetDateSelected">
+      <summary>Gets the date selected from the drop-down calendar.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.GetPreferredSize">
+      <summary>Gets the maximum (preferred) size.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.GetSubEditorControl">
+      <summary>Gets the subeditor control in the drop-down calendar.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.GetValue">
+      <summary>Gets the value in the drop-down calendar.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.OnDeactivate(System.EventArgs)">
+      <summary>Raises the Deactivate event.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+      <summary>Raises the KeyDown event.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.DropDownCalendar.SetValue(System.Object)">
+      <summary>Sets the value in the drop-down calendar.</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.DropDownCalendar.CloseUp">
+      <summary>Occurs when the user closes the drop-down calendar.</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.DropDownCalendar.ValueChanged">
+      <summary>Occurs when the user changes the value in the drop-down calendar.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.ExternalDialogs">
+      <summary>Represents the dialogs that can be used external to Spread Designer. This class cannot be inherited.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ExternalDialogs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.ExternalDialogs" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ExternalDialogs.BorderEditor(FarPoint.Win.Spread.FpSpread)">
+      <summary>Represents the border editor dialog for the specified FarPoint Spread.</summary>
+      <param name="spread">FarPoint Spread</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ExternalDialogs.CellTypeEditor(FarPoint.Win.Spread.FpSpread)">
+      <summary>Represents the cell type editor dialog for the specified FarPoint Spread.</summary>
+      <param name="spread">FarPoint Spread</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ExternalDialogs.CellTypeEditor(FarPoint.Win.Spread.FpSpread,FarPoint.Win.Spread.Design.DesignerMain.CellTypeEnum)">
+      <summary>Represents the cell type editor dialog for the specified FarPoint Spread.</summary>
+      <param name="spread">FarPoint Spread</param>
+      <param name="DefaultCellType">Celltype enum to load if celltype of select cell is nothing</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ExternalDialogs.SpreadSettingsEditor(FarPoint.Win.Spread.FpSpread,System.String,System.String)">
+      <summary>Represents the Spread settings editor dialog for the specified FarPoint Spread.</summary>
+      <param name="spread">FarPoint Spread</param>
+      <param name="helpFile">File name, including path if necessary, for the help file</param>
+      <param name="topic">Help topic within the help file</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FocusEditor.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.FocusEditor" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.FpSpreadDesigner">
+      <summary>Component that supports invoking Designer for a particular FpSpread object at runtime.</summary>
+      <remarks>The FpSpreadDesigner component requires a license for Spread.NET Professional.</remarks>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FpSpreadDesigner.#ctor">
+      <summary>Initializes a new instance of the FpSpreadDesigner component.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FpSpreadDesigner.Show(FarPoint.Win.Spread.FpSpread)">
+      <summary>Display SpreadDesigner for the specific FpSpread control.</summary>
+      <param name="spread">FpSpread object</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FpSpreadDesigner.Show(FarPoint.Win.Spread.FpSpread,System.Windows.Forms.IWin32Window)">
+      <summary>Display SpreadDesigner for the specific FpSpread control.</summary>
+      <param name="spread">FpSpread object</param>
+      <param name="owner">Any object that implements System.Windows.Forms.IWin32Window that represents the top-level window that will own the SpreadDesigner form</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FpSpreadDesigner.ShowDialog(FarPoint.Win.Spread.FpSpread)">
+      <summary>Display SpreadDesigner form as a modal dialog box for the specific FpSpread control.</summary>
+      <param name="spread">FpSpread object</param>
+      <returns>One of the System.Windows.Forms.DialogResult values</returns>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.FpSpreadDesigner.ShowDialog(FarPoint.Win.Spread.FpSpread,System.Windows.Forms.IWin32Window)">
+      <summary>Display SpreadDesigner form as a modal dialog box for the specific FpSpread control.</summary>
+      <param name="spread">FpSpread object</param>
+      <param name="owner">Any object that implements System.Windows.Forms.IWin32Window that represents the top-level window that will own the SpreadDesigner form</param>
+      <returns>One of the System.Windows.Forms.DialogResult values</returns>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.HistoryItem.#ctor(System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.HistoryItem" /> class.</summary>
+      <param name="text">The text.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.HistoryItem.#ctor(System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.HistoryItem" /> class.</summary>
+      <param name="text">The text.</param>
+      <param name="filename">The filename.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.HistoryItem.ToString">
+      <summary>Returns a <see cref="T:System.String" /> that represents this instance.</summary>
+      <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="text">The text.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="text">The text.</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String,System.Boolean,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+      <param name="hasSep">if set to <c>true</c> [has sep].</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String,System.Collections.Generic.List{FarPoint.Win.Spread.Design.SubItem},System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+      <param name="subItems">The sub items.</param>
+      <param name="subTitle">The sub title.</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String,System.Collections.Generic.List{FarPoint.Win.Spread.Design.SubItem},System.String,System.Boolean,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Item" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+      <param name="subItems">The sub items.</param>
+      <param name="subTitle">The sub title.</param>
+      <param name="hasSep">if set to <c>true</c> [has sep].</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.Item.SubItems">
+      <summary>Gets or sets the sub items.</summary>
+      <value>The sub items.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.Item.SubTitle">
+      <summary>Gets or sets the sub title.</summary>
+      <value>The sub title.</value>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Item.ToString">
+      <summary>Returns a <see cref="T:System.String" /> that represents this instance.</summary>
+      <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.MarginCollection.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.MarginCollection" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginCollection.MarginList">
+      <summary>Gets the margin list.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.MarginCollection.Add(FarPoint.Win.Spread.Design.MarginInfo)">
+      <summary>Adds the specified mi.</summary>
+      <param name="mi">The mi.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.MarginCollection.FindMarginByID(System.Int32)">
+      <summary>Finds the margin by ID.</summary>
+      <param name="ID">The ID.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.MarginCollection.UpdateMargin(System.Int32)">
+      <summary>Updates the margin.</summary>
+      <param name="sheetID">The sheet ID.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.MarginInfo.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.MarginInfo" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Bottom">
+      <summary>Gets or sets the bottom.</summary>
+      <value>The bottom.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Footer">
+      <summary>Gets or sets the footer.</summary>
+      <value>The footer.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Header">
+      <summary>Gets or sets the header.</summary>
+      <value>The header.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Left">
+      <summary>Gets or sets the left.</summary>
+      <value>The left.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Right">
+      <summary>Gets or sets the right.</summary>
+      <value>The right.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.SheetID">
+      <summary>Gets or sets the sheet ID.</summary>
+      <value>The sheet ID.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.MarginInfo.Top">
+      <summary>Gets or sets the top.</summary>
+      <value>The top.</value>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.NativeMethods.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.NativeMethods" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.OpenArgs">
+      <summary>Represents information about event open file.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.OpenArgs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.OpenArgs" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.OpenArgs.Cancel">
+      <summary>Gets or sets a value indicating whether the event was cancel.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.OutlineSettings.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.OutlineSettings" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.PreviewDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.PreviewDlg" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.PrintArgs">
+      <summary>Represents information about event print.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.PrintArgs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.PrintArgs" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.PrintArgs.Cancel">
+      <summary>Gets or sets a value indicating whether the event was cancel.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.PrintArgs.PrintOption">
+      <summary>Get information option to print.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.PrintOptionsDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.PrintOptionsDlg" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.ResourceStringHelper">
+      <summary>get string from resource</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ResourceStringHelper.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.ResourceStringHelper" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ResourceStringHelper.GetString(System.String)">
+      <param name="name" />
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.RowHeightDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.RowHeightDlg" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.SaveArgs">
+      <summary>Represents information about event save to file.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SaveArgs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SaveArgs" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.SaveArgs.Cancel">
+      <summary>Gets or sets a value indicating whether the event was cancel.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SheetSettingsDlgV3.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SheetSettingsDlgV3" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SortDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SortDlg" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SparklineWeight.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SparklineWeight" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SpreadOptionsDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SpreadOptionsDlg" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.StartMenuForm" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.AltKeyMode">
+      <summary>Gets or sets the alt key mode.</summary>
+      <value>The alt key mode.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.AlyKey">
+      <summary>Gets or sets the aly key.</summary>
+      <value>The aly key.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.DropDownVisible">
+      <summary>Gets a value indicating whether [drop down visible].</summary>
+      <value>
+        <c>true</c> if [drop down visible]; otherwise, <c>false</c>.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.FormMode">
+      <summary>Gets or sets the form mode.</summary>
+      <value>The form mode.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.HistoryItems">
+      <summary>Gets or sets the history items.</summary>
+      <value>The history items.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.HistorySelectedIndex">
+      <summary>Gets the index of the history selected.</summary>
+      <value>The index of the history selected.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.MainItems">
+      <summary>Gets or sets the main items.</summary>
+      <value>The main items.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.SelectedIndex">
+      <summary>Gets the index of the selected.</summary>
+      <value>The index of the selected.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.StartMenuForm.ToolTips">
+      <summary>Gets the Tooltips form</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.AddHistory(System.String)">
+      <summary>Adds the history.</summary>
+      <param name="path">The path.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.CloseDropDown">
+      <summary>Closes the drop down.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.Dispose(System.Boolean)">
+      <summary>Clean up any resources being used.</summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.GetSubItemState(System.String,System.String)">
+      <summary>Gets the state of the sub item.</summary>
+      <param name="MainText">The main text.</param>
+      <param name="SubText">The sub text.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.LoadHistory">
+      <summary>Loads the history.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.OperateAccessKey(System.Windows.Forms.KeyEventArgs)">
+      <summary>Operates the access key.</summary>
+      <param name="e">The <see cref="T:System.Windows.Forms.KeyEventArgs" /> instance containing the event data.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.SaveHistory">
+      <summary>Saves the history.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)">
+      <summary>Scales a control's location, size, padding and margin.</summary>
+      <param name="factor" />
+      <param name="specified" />
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.SetButtonImage(System.Int32)">
+      <summary>Sets the button image.</summary>
+      <param name="index">The index.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.SetItemState(System.String,System.Boolean)">
+      <summary>Sets the state of the item.</summary>
+      <param name="Text">The text.</param>
+      <param name="value">if set to <c>true</c> [value].</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.SetSubItemState(System.String,System.String,System.Boolean)">
+      <summary>Sets the state of the sub item.</summary>
+      <param name="MainText">The main text.</param>
+      <param name="SubText">The sub text.</param>
+      <param name="value">if set to <c>true</c> [value].</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.UpdateHistory">
+      <summary>Updates the history.</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.AltKeyModeChanged">
+      <summary>Occurs when [alt key mode changed].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnAboutButtonClicked">
+      <summary>Occurs when [on about button clicked].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnCloseButtonClicked">
+      <summary>Occurs when [on close button clicked].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnHistoryItemClicked">
+      <summary>Occurs when [on history item clicked].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnMainItemClicked">
+      <summary>Occurs when [on main item clicked].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnStartMenuButtonClick">
+      <summary>Occurs when [on start menu button click].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnStartMenuImageChanged">
+      <summary>Occurs when [on start menu image changed].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnStartMenuShowing">
+      <summary>Occurs when [on start menu showing].</summary>
+    </member>
+    <member name="E:FarPoint.Win.Spread.Design.StartMenuForm.OnSubItemClicked">
+      <summary>Occurs when [on sub item clicked].</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.HistoryEventArgs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.StartMenuForm.HistoryEventArgs" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.StartMenuImageChangedEventArgs.#ctor(System.Int32)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.StartMenuForm.StartMenuImageChangedEventArgs" /> class.</summary>
+      <param name="index">The index.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartMenuForm.SubMenuEventArgs.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.StartMenuForm.SubMenuEventArgs" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.StartupScreen.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.StartupScreen" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SubItem.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SubItem" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="text">The text.</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SubItem.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SubItem" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+      <param name="altKey">The alt key.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SubItem.#ctor(System.Int32,System.Drawing.Image,System.Drawing.Image,System.Drawing.Image,System.String)">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.SubItem" /> class.</summary>
+      <param name="id">The id.</param>
+      <param name="img">The img.</param>
+      <param name="imgHover">The img hover.</param>
+      <param name="imgDisable">The img disable.</param>
+      <param name="text">The text.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.SubItem.ToString">
+      <summary>Returns a <see cref="T:System.String" /> that represents this instance.</summary>
+      <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TabStripDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.TabStripDlg" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TabStripDlg.ScaleCore(System.Single,System.Single)">
+      <summary>Save height of the form after performing scale.</summary>
+      <param name="x" />
+      <param name="y" />
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TextOptionsDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.TextOptionsDlg" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TooltipsForm.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.TooltipsForm" /> class.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.TooltipsForm.CreateParams">
+      <summary>Gets the create params.</summary>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.TooltipsForm.Title">
+      <summary>Gets or sets the title.</summary>
+      <value>The title.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.TooltipsForm.ToolTipImage">
+      <summary>Gets or sets the tool tip image.</summary>
+      <value>The tool tip image.</value>
+    </member>
+    <member name="P:FarPoint.Win.Spread.Design.TooltipsForm.ToolTipText">
+      <summary>Gets or sets the tool tip text.</summary>
+      <value>The tool tip text.</value>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TooltipsForm.Dispose(System.Boolean)">
+      <summary>Clean up any resources being used.</summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TooltipsForm.OnPaint(System.Windows.Forms.PaintEventArgs)">
+      <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TooltipsForm.ShowToolTip">
+      <summary>Shows the tool tip.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.TooltipsForm.WndProc(System.Windows.Forms.Message@)">
+      <summary>WNDs the proc.</summary>
+      <param name="m">The m.</param>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.Wizard.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.Wizard" /> class.</summary>
+    </member>
+    <member name="M:FarPoint.Win.Spread.Design.ZoomDlg.#ctor">
+      <summary>Initializes a new instance of the <see cref="T:FarPoint.Win.Spread.Design.ZoomDlg" /> class.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.DesignerMain.GridLineViewType">
+      <summary>Grid line view type</summary>
+    </member>
+    <member name="F:FarPoint.Win.Spread.Design.DesignerMain.GridLineViewType.Both">
+      <summary>Both grid line</summary>
+    </member>
+    <member name="F:FarPoint.Win.Spread.Design.DesignerMain.GridLineViewType.Vertical">
+      <summary>Vertical grid line</summary>
+    </member>
+    <member name="F:FarPoint.Win.Spread.Design.DesignerMain.GridLineViewType.Horizontal">
+      <summary>Horizontal grid line</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.PrintOption">
+      <summary>The option to print.</summary>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.CustomDropCellType.ValueChangedEventHandler">
+      <summary>Occurs when the user changes the value of the custom drop cell type.</summary>
+      <param name="sender">Object that fires the event</param>
+      <param name="e">Event data</param>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.StartMenuForm.HistoryClickedEventHandler">
+      <param name="sender">The sender.</param>
+      <param name="e">The <see cref="!:FarPoint.Win.Ribbon.StartMenuForm.HistoryEventArgs" /> instance containing the event data.</param>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.StartMenuForm.StartMenuImageChangedEventHandler">
+      <param name="sender">The sender.</param>
+      <param name="e">The <see cref="!:FarPoint.Win.Ribbon.StartMenuForm.StartMenuImageChangedEventArgs" /> instance containing the event data.</param>
+    </member>
+    <member name="T:FarPoint.Win.Spread.Design.StartMenuForm.SubClickedEventHandler">
+      <param name="sender">The sender.</param>
+      <param name="e">The <see cref="!:FarPoint.Win.Ribbon.StartMenuForm.SubMenuEventArgs" /> instance containing the event data.</param>
+    </member>
+  </members>
+</doc>
